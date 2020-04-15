@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {% if page and page.content != "" %}
+            <title>{{ page.title }} - Made by Hanno</title>
+        {% else %}
+            <title>Made by Hanno</title>
+        {% endif %}
+
+        <link href="/base.css" rel="stylesheet" type="text/css" media="all" />
+        {% block css %}{% endblock css %}
+
+        <link href="rss.xml" rel="alternate" type="application/rss+xml" />
+    </head>
+    <body>
+        <header>
+            {% block header %}{%endblock header %}
+        </header>
+        <main>
+            {% block main %}{% endblock main %}
+        </main>
+        <hr />
+        <footer>
+            {% block footer %}{% endblock footer %}
+            <table>
+                <tr>
+                    <th>Postal Address</th>
+                    <td>
+                        <p>Hanno Braun</p>
+                        <p>Untere Pfarrgasse 19</p>
+                        <p>64720 Michelstadt</p>
+                        <p>Germany</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <a href="mailto:Hanno%20Braun%20%3Chb@hannobraun.de%3E">
+                            hb@hannobraun.de
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+49 6061 9797508</td>
+                </tr>
+            </table>
+            <div class="made-in-odenwald">
+                <a href="/made-in-odenwald/0.jpg" target="_blank">
+                    Made in Odenwald ♥
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+// Text colors
+$color-normal: #333333;
+$color-strong: #222222;
+$color-titles: #111111;
+$color-links:  #0880e8;
+
+// Non-text colors
+//
+// I created them using this color calculator:
+// https://www.sessions.edu/color-calculator/
+//
+// The first one is the primary one. The others are calculated using a split
+// complementary in RYB space.
+$color-project: #1003ff;
+$color-snippet: #ffc403;
+$color-update:  #ff4a03;
+
+// Widths
+$content-width: 42em;

@@ -1,0 +1,35 @@
+{% extends "extend/base.html" %}
+
+{% block css -%}
+    <link href="/index.css" rel="stylesheet" type="text/css" media="all" />
+{%- endblock css %}
+
+{% block header %}
+    {% include "include/header.html" %}
+{% endblock header %}
+
+{% block main %}
+    {% for page in section.pages -%}
+        <article>
+            <h1>{{ page.title }}</h1>
+            <p class="updated">
+                <strong>Updated:</strong> {{ page.date }}
+            </p>
+            <a href="{{ page.path }}" class="project">
+                <img
+                    src="{{ resize_image(
+                        path=page.extra.image,
+                        width=600,
+                        op="fit_width"
+                    ) }}"
+                    alt="{{ page.title }}">
+                </img>
+                <p>Go to project...</p>
+            </a>
+        </article>
+    {%- endfor %}
+{% endblock main %}
+
+{% block footer %}
+    {% include "include/newsletter.html" %}
+{% endblock footer %}

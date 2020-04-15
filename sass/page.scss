@@ -1,0 +1,39 @@
+article {
+    > h1 {
+        margin-bottom: 0em;
+    }
+
+    p.published {
+        margin-top: 0em;
+        font-size:  85%;
+    }
+
+    p.summary {
+        font-weight: bold;
+    }
+
+    // for styling alt text
+    img {
+        color:     #666666;
+        font-size: 80%;
+    }
+
+    a.resized-image {
+        // center link/image
+        display: block;
+        margin:  0 auto;
+
+        // center text under image
+        text-align: center;
+
+        p {
+            font-size:  80%;
+            margin-top: 0;
+        }
+    }
+
+    video {
+        display: block;
+        margin:  0 auto;
+    }
+}

@@ -1,0 +1,23 @@
+{% extends "extend/base.html" %}
+
+{% block css -%}
+    <link href="/page.css" rel="stylesheet" type="text/css" media="all" />
+{%- endblock css %}
+
+{% block header %}
+    {% include "include/header.html" %}
+{% endblock header %}
+
+{% block main %}
+    <article>
+        <h1>{{ page.title }}</h1>
+        <p class="published">
+            <strong>Published:</strong> {{ page.date }}
+        </p>
+        {{ page.content | safe }}
+    </article>
+{% endblock main %}
+
+{% block footer %}
+    {% include "include/newsletter.html" %}
+{% endblock footer %}

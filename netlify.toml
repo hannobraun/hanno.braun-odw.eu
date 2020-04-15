@@ -1,0 +1,33 @@
+[build]
+publish = "public"
+command = "zola build"
+
+[build.environment]
+ZOLA_VERSION = "0.11.0"
+
+[context.deploy-preview]
+command = "zola build --base-url $DEPLOY_PRIME_URL"
+
+
+# Page redirects
+
+[[redirects]]
+from   = "/updates"
+to     = "/"
+status = 302
+force  = true
+
+[[redirects]]
+from   = "rss.xml"
+to     = "atom.xml"
+status = 301
+force  = true
+
+
+# Domain redirects
+
+[[redirects]]
+from   = "https://madebyhanno.netlify.app/*"
+to     = "https://madeby.hannobraun.de/:splat"
+status = 301
+force  = true
