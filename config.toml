@@ -1,3 +1,6 @@
+# Required for the Atom feed template
+title = "Made by Hanno"
+
 # The URL the site will be built for
 base_url = "https://madeby.hannobraun.de"
 
