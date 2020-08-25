@@ -25,6 +25,11 @@ img, video {
     height:    auto;
 }
 
+hr {
+    width : 65%;
+    margin: 3em auto;
+}
+
 body {
     max-width: $content-width;
     margin:    0 auto;
@@ -45,11 +50,6 @@ body {
             margin-top: 0em;
             font-size : 100%;
         }
-    }
-
-    > hr {
-        width : 65%;
-        margin: 3em auto;
     }
 
     > footer {
