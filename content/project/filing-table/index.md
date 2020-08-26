@@ -6,7 +6,7 @@ date = 2020-08-25
 image = "project/filing-table/filing-table.jpg"
 +++
 
-When I got my 3D printer, it radically improved my workshop's capabilities. Suddenly I could build things at a previously unimaginable accuracy. It also introduced a disconnect though: While I could form plastic to tenths of millimeters, my aluminium were still crooked.
+When I got my 3D printer, it radically improved my workshop's capabilities. Suddenly I could build things at a previously unimaginable accuracy. It also introduced a disconnect though: While I could form plastic to tenths of millimeters, my aluminium pieces were still crooked.
 
 Since I (currently) have neither the room nor the budget for a CNC mill, this got me thinking: Can I somehow use the accuracy of the printer to improve my accuracy when working with aluminium? I'm sure the last word on this topic isn't spoken yet, but here's my first attempt at an answer.
 
