@@ -31,5 +31,5 @@ Those may well be the worst of their kind, but the second one works:
 <video controls width="600">
     <source src="worst-linear-axis-v2.webm" type="video/webm" />
 
-    A video of the improved version of the world's worst linear actuator. If you're reading this, your browser might not support embedded videos.
+    A video of the improved version of the world's worst linear actuator.
 </video>
