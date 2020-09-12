@@ -19,19 +19,21 @@ Since I (currently) have neither the room nor the budget for a CNC mill, this go
 
 The principle is easy: A file is put in a specially made file holder, which is dimensioned to fit into the notch on the filing table. The file in its holder can then be moved along a defined axis. On the filing table is a guide that is orthogonal to that axis.
 
-<video controls width="600">
-    <source src="filing-table.webm" type="video/webm" />
-
-    Me using the filing table to work on a piece of aluminium, showing some progress on the surface.
-</video>
+{{
+    video(
+        path="filing-table.webm",
+        text="Me using the filing table to work on a piece of aluminium, showing some progress on the surface."
+    )
+}}
 
 The results are pretty good. I can make pieces of aluminium now that have flat faces and right angles, whereas before I could do that only very approximately.
 
-<video controls width="600">
-    <source src="end-result.webm" type="video/webm" />
-
-    The end result of some filing using the filing table. Surfaces are mostly flat, and angles are mostly right, based on some eyeball-based inspection.
-</video>
+{{
+    video(
+        path="end-result.webm",
+        text="The end result of some filing using the filing table. Surfaces are mostly flat, and angles are mostly right, based on some eyeball-based inspection."
+    )
+}}
 
 Granted, the result in that video looks a bit better than actually is in reality. If I had held the piece and the square against a light source, it would have shown the imperfections. Still, this is way better than what I was able to do before.
 

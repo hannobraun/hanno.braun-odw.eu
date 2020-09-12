@@ -28,8 +28,9 @@ Didn't work. Way too flimsly. No matter, on to version 2:
 
 Those may well be the worst of their kind, but the second one works:
 
-<video controls width="600">
-    <source src="worst-linear-axis-v2.webm" type="video/webm" />
-
-    A video of the improved version of the world's worst linear actuator.
-</video>
+{{
+    video(
+        path="worst-linear-axis-v2.webm",
+        text="A video of the improved version of the world's worst linear actuator."
+    )
+}}
