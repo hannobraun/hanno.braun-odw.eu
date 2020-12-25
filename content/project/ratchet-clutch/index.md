@@ -83,8 +83,8 @@ The lid is just pressed on top.
 
 And that's basically it. One thing to note is that the whole thing is not very well designed, as there's too much friction between the rotor and the housing. It didn't work initially, but I was able to save it by applying some silicone-based lubricant to the rotor and housing.
 
-There are a few things that could be improved: There's too much clearance between the parts, the lead screw and nut also fit a bit too loosely, and there's the problem with the friction of course. Another area of investigation would be to try another mechanism altogether. Some untimely YouTube recommendations have tought me about the {{ external_link(url="https://en.wikipedia.org/wiki/Freewheel", text="freewheel") }} and {{ external_link(url="https://en.wikipedia.org/wiki/Sprag_clutch", text="sprag clutch") }} since finishing this, which look promising.
+There are a few things that could be improved: There's too much clearance between the parts, the lead screw and nut also fit a bit too loosely, and there's the problem with the friction of course. Another area of investigation would be to try another mechanism altogether. Some untimely YouTube recommendations have taught me about the {{ external_link(url="https://en.wikipedia.org/wiki/Freewheel", text="freewheel") }} and {{ external_link(url="https://en.wikipedia.org/wiki/Sprag_clutch", text="sprag clutch") }} since finishing this, which look promising.
 
 I have decided to not pursue this further, however. It works well enough as a proof of concept and I don't have a project lined up that would require this mechanism.
 
-If you want to print this youself, you can download [my OpenSCAD model](ratchet-clutch.zip).
+If you want to print this yourself, you can download [my OpenSCAD model](ratchet-clutch.zip).
