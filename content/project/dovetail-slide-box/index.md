@@ -33,7 +33,7 @@ The lid slides onto the box with a dovetail slide mechanism. This works pretty w
     )
 }}
 
-I've uploaded [my OpenSCAD model](dovetail-slide-box.zip). The file contains a file that defines a generic box of customizable size, and another file that uses that to define the dial indicator box.
+I've uploaded [my OpenSCAD model](dovetail-slide-box.zip). The archive contains a file that defines a generic box of customizable size, and another file that uses that to define the dial indicator box.
 
 There are some problems with it. The top of the box came out about 0.5 mm longer than the bottom (and the lid), which prevents the detent that's supposed to lock the lid in place from doing anything. At this size, there's enough friction to hold everything in place, so it ends up working anyway.
 
