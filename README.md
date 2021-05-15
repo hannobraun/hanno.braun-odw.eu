@@ -14,4 +14,3 @@ This repository contains the source code for the website "Made by Hanno" (https:
 ## Services Used
 
 - [Netlify](https://www.netlify.com/) for hosting
-- [sendinblue](https://www.sendinblue.com/) for the newsletter
