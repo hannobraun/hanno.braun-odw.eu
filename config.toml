@@ -1,18 +1,8 @@
-# Required for the Atom feed template
-title = "Made by Hanno"
-
-# The URL the site will be built for
+title    = "Made by Hanno"
 base_url = "https://made-by.braun-odw.eu"
 
 compile_sass  = true
 generate_feed = true
 
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
-
-# Whether to build a search index to be used later on by a JavaScript library
+highlight_code     = false
 build_search_index = false
-
-[extra]
-# Put all your custom variables here
