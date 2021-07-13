@@ -27,7 +27,7 @@ force  = true
 # Domain redirects
 
 [[redirects]]
-from   = "https://madebyhanno.hannobraun.de/*"
+from   = "https://madeby.hannobraun.de/*"
 to     = "https://made-by.braun-odw.eu/:splat"
 status = 301
 force  = true
