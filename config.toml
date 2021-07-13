@@ -2,7 +2,7 @@
 title = "Made by Hanno"
 
 # The URL the site will be built for
-base_url = "https://madeby.hannobraun.de"
+base_url = "https://made-by.braun-odw.eu"
 
 compile_sass  = true
 generate_feed = true
