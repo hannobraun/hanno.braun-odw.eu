@@ -3,14 +3,14 @@ title = "Hinge"
 date = 2020-12-27
 
 [extra]
-image = "project/hinge/hinge.jpg"
+image = "projects/hinge/hinge.jpg"
 +++
 
 This is a 3D-printed hinge. It doesn't serve a purpose in itself, but it can be used as a component of other prints.
 
 {{
     resized_image(
-        path="project/hinge/hinge.jpg",
+        path="projects/hinge/hinge.jpg",
         alt="A 3D-printed hinge."
     )
 }}

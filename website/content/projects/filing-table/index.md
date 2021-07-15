@@ -3,7 +3,7 @@ title = "Filing Table"
 date = 2020-08-25
 
 [extra]
-image = "project/filing-table/filing-table.jpg"
+image = "projects/filing-table/filing-table.jpg"
 +++
 
 When I got my 3D printer, it radically improved my workshop's capabilities. Suddenly I could build things at a previously unimaginable accuracy. It also introduced a disconnect though: While I could form plastic to tenths of millimeters, my aluminium pieces were still crooked.
@@ -12,7 +12,7 @@ Since I (currently) have neither the room nor the budget for a CNC mill, this go
 
 {{
     resized_image(
-        path="project/filing-table/filing-table.jpg",
+        path="projects/filing-table/filing-table.jpg",
         alt="The filing table, on it a piece of aluminium and a file in a file holder."
     )
 }}

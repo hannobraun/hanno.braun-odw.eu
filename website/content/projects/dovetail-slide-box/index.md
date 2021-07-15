@@ -3,14 +3,14 @@ title = "Dovetail Slide Box"
 date = 2020-12-26
 
 [extra]
-image = "project/dovetail-slide-box/box-open.jpg"
+image = "projects/dovetail-slide-box/box-open.jpg"
 +++
 
 Sometimes you need a box to put stuff in.
 
 {{
     resized_image(
-        path="project/dovetail-slide-box/box-open-with-contents.jpg",
+        path="projects/dovetail-slide-box/box-open-with-contents.jpg",
         alt="An open box with a dial indicator inside it."
     )
 }}
@@ -19,7 +19,7 @@ In this case, I needed something to keep my dial indicator in, so I printed a cu
 
 {{
     resized_image(
-        path="project/dovetail-slide-box/box-open.jpg"
+        path="projects/dovetail-slide-box/box-open.jpg"
         alt="An open, empty box. It's made to fit a dial indicator."
     )
 }}
@@ -28,7 +28,7 @@ The lid slides onto the box with a dovetail slide mechanism. This works pretty w
 
 {{
     resized_image(
-        path="project/dovetail-slide-box/box-closed.jpg"
+        path="projects/dovetail-slide-box/box-closed.jpg"
         alt="A closed box."
     )
 }}
