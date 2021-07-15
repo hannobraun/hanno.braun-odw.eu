@@ -23,6 +23,12 @@ status = 307 # temporary redirect
 force  = true
 
 [[redirects]]
+from   = "/project/*"
+to     = "/projects/:splat"
+status = 301 # moved permanently
+force  = true
+
+[[redirects]]
 from   = "rss.xml"
 to     = "atom.xml"
 status = 301 # moved permanently
