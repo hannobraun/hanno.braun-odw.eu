@@ -19,7 +19,7 @@ targetPort = 1111
 [[redirects]]
 from   = "/"
 to     = "/projects"
-status = 307 # temporary redirect
+status = 302 # temporary redirect
 force  = true
 
 [[redirects]]
