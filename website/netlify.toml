@@ -19,13 +19,13 @@ targetPort = 1111
 [[redirects]]
 from   = "/updates"
 to     = "/"
-status = 307
+status = 307 # temporary redirect
 force  = true
 
 [[redirects]]
 from   = "rss.xml"
 to     = "atom.xml"
-status = 301
+status = 301 # moved permanently
 force  = true
 
 
