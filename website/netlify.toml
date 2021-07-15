@@ -19,7 +19,7 @@ targetPort = 1111
 [[redirects]]
 from   = "/updates"
 to     = "/"
-status = 302
+status = 307
 force  = true
 
 [[redirects]]
