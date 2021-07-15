@@ -17,7 +17,7 @@ Here's what I came up with using nothing but aluminium sheet, an aluminium rod, 
     )
 }}
 
-Didn't work. Way too flimsly. No matter, on to version 2:
+Didn't work. Way too flimsy. No matter, on to version 2:
 
 {{
     resized_image(
