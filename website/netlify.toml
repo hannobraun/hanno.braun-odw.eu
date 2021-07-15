@@ -17,6 +17,12 @@ targetPort = 1111
 # Page redirects
 
 [[redirects]]
+from   = "/"
+to     = "/projects"
+status = 307 # temporary redirect
+force  = true
+
+[[redirects]]
 from   = "/updates"
 to     = "/"
 status = 307 # temporary redirect
