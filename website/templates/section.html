@@ -9,26 +9,30 @@
 {% endblock header %}
 
 {% block main %}
-    {% for page in section.pages -%}
-        <article>
-            <a href="{{ page.path }}" class="article">
-                <h2>{{ page.title }}</h2>
-            </a>
-            <p class="updated">
-                <strong>Updated:</strong> {{ page.date }}
-            </p>
-            <a href="{{ page.path }}" class="project">
-                <img
-                    src="{{ resize_image(
-                        path=page.extra.image,
-                        width=600,
-                        op="fit_width"
-                    ) }}"
-                    alt="{{ page.title }}" />
-                <p class="goto">Go to project...</p>
-            </a>
-        </article>
-    {%- endfor %}
+    <ol>
+        {% for page in section.pages -%}
+            <li>
+                <article>
+                    <a href="{{ page.path }}" class="article">
+                        <h2>{{ page.title }}</h2>
+                    </a>
+                    <p class="updated">
+                        <strong>Updated:</strong> {{ page.date }}
+                    </p>
+                    <a href="{{ page.path }}" class="project">
+                        <img
+                            src="{{ resize_image(
+                                path=page.extra.image,
+                                width=600,
+                                op="fit_width"
+                            ) }}"
+                            alt="{{ page.title }}" />
+                        <p class="goto">Go to project...</p>
+                    </a>
+                </article>
+            </li>
+        {%- endfor %}
+    </ol>
 {% endblock main %}
 
 {% block footer %}

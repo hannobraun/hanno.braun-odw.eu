@@ -49,6 +49,15 @@ body {
         }
     }
 
+    > main {
+        > ol {
+            list-style-type: none;
+
+            margin:  0;
+            padding: 0;
+        }
+    }
+
     > footer {
         form {
             max-width: 30em;
