@@ -31,24 +31,6 @@ body {
     max-width: $content-width;
     margin:    0 auto;
 
-    > header {
-        margin-bottom: 3em;
-
-        a.title {
-            text-decoration: none;
-        }
-
-        h1 {
-            margin-bottom: 0em;
-            font-size:     250%;
-        }
-
-        h2 {
-            margin-top: 0em;
-            font-size : 100%;
-        }
-    }
-
     > main {
         > ol {
             list-style-type: none;
