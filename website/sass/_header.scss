@@ -27,9 +27,14 @@ body > header {
         margin: 0;
         padding: 0;
 
-        a {
-            color: $color-strong;
-            text-decoration: none;
+        li {
+            display:     inline;
+            margin-left: 1em;
+
+            a {
+                color: $color-strong;
+                text-decoration: none;
+            }
         }
     }
 }
