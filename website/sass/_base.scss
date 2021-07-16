@@ -1,0 +1,111 @@
+body {
+    font-family:      Helvetica;
+    color:            $color-normal;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-titles;
+}
+
+strong {
+    color: $color-strong;
+}
+
+a {
+    font-weight: bold;
+    color:       $color-links;
+}
+
+img, video {
+    max-width: 100%;
+    height:    auto;
+}
+
+hr {
+    width : 65%;
+    margin: 3em auto;
+}
+
+body {
+    max-width: $content-width;
+    margin:    0 auto;
+
+    > header {
+        margin-bottom: 3em;
+
+        a.title {
+            text-decoration: none;
+        }
+
+        h1 {
+            margin-bottom: 0em;
+            font-size:     250%;
+        }
+
+        h2 {
+            margin-top: 0em;
+            font-size : 100%;
+        }
+    }
+
+    > footer {
+        form {
+            max-width: 30em;
+            margin:    2em auto;
+            padding:   1em;
+
+            border-radius: 0.25em;
+
+            background-color: #f4f4f4;
+
+            input {
+                margin: 0.5em 0;
+            }
+
+            input[type=email] {
+                width:      100%;
+                box-sizing: border-box
+            }
+
+            input[type=submit] {
+                border: 0 none;
+
+                border-radius: 0.25em;
+                padding:       0.5em 1em;
+
+                font-weight: bold;
+
+                color:            #ffffff;
+                background-color: #444444;
+            }
+        }
+
+        table {
+            margin:    0 auto;
+            font-size: 90%;
+
+            * {
+                vertical-align: text-top;
+            }
+
+            th {
+                text-align: right;
+                padding   : 0.35em 1em;
+            }
+
+            td p {
+                margin: 0;
+            }
+        }
+
+        .made-in-odenwald {
+            text-align: center;
+            margin:     3em auto;
+
+            a {
+                color: #000000;
+            }
+        }
+    }
+}
