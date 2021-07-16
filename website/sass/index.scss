@@ -1,12 +1,6 @@
 @import "globals";
 
 ol.projects {
-    a.title {
-        font-weight:     normal;
-        text-decoration: none;
-        color:           $color-normal
-    }
-
     li {
         margin:  1em;
         padding: 1em;
@@ -14,6 +8,12 @@ ol.projects {
         border-width: 1px;
         border-style: solid;
         border-color: $color-strong;
+
+        a.title {
+            font-weight:     normal;
+            text-decoration: none;
+            color:           $color-normal
+        }
 
         h2 {
             margin-top:    0.25em;
