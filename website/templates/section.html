@@ -14,10 +14,10 @@
             <li>
                 <a href="{{ page.path }}" class="title">
                     <h2>{{ page.title }}</h2>
+                    <p class="updated">
+                        <strong>Updated:</strong> {{ page.date }}
+                    </p>
                 </a>
-                <p class="updated">
-                    <strong>Updated:</strong> {{ page.date }}
-                </p>
                 <a href="{{ page.path }}">
                     <img
                         src="{{ resize_image(
