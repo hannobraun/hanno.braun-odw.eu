@@ -1,4 +1,10 @@
 body > header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
     margin-bottom: 3em;
 
     a.title {
@@ -13,5 +19,17 @@ body > header {
     h2 {
         margin-top: 0em;
         font-size : 100%;
+    }
+
+    nav ul {
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: $color-strong;
+            text-decoration: none;
+        }
     }
 }
