@@ -28,7 +28,7 @@ So I started scaling down the {{ external_link(url="https://www.prusaprinters.or
     )
 }}
 
-I scaled the model down in PrusaSlicer, halving all dimensions each time. This resulted in 3 new screw/nut combinations: Half, quarter and one eigth the size of the original, respectively.
+I scaled the model down in PrusaSlicer, halving all dimensions each time. This resulted in 3 new screw/nut combinations: Half, quarter and one eighth the size of the original, respectively.
 
 Unfortunately I didn't take notes or save the 3MF files, so the following is from memory:
 
