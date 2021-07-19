@@ -1,0 +1,6 @@
+[workspace]
+members = ["models/spacer-libfive"]
+
+[patch.crates-io.libfive-sys]
+git    = "https://github.com/hannobraun/libfive-rs.git"
+branch = "libfive-submodule"

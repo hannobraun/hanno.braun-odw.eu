@@ -5,7 +5,3 @@ edition = "2018"
 
 [dependencies]
 libfive = "*"
-
-[patch.crates-io.libfive-sys]
-git    = "https://github.com/hannobraun/libfive-rs.git"
-branch = "libfive-submodule"
