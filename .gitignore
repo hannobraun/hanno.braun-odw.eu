@@ -1,2 +1,5 @@
 # Zola
 /website/public
+
+# Cargo
+/target
