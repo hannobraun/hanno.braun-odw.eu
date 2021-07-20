@@ -41,6 +41,7 @@ body {
     }
 
     > footer {
+        // TASK: Move to newsletter-specific SCSS file.
         form {
             max-width: 30em;
             margin:    2em auto;
@@ -72,6 +73,7 @@ body {
             }
         }
 
+        // TASK: Move to contacts-specific SCSS file.
         table {
             margin:    0 auto;
             font-size: 90%;
