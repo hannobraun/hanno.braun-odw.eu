@@ -41,38 +41,6 @@ body {
     }
 
     > footer {
-        // TASK: Move to newsletter-specific SCSS file.
-        form {
-            max-width: 30em;
-            margin:    2em auto;
-            padding:   1em;
-
-            border-radius: 0.25em;
-
-            background-color: #f4f4f4;
-
-            input {
-                margin: 0.5em 0;
-            }
-
-            input[type=email] {
-                width:      100%;
-                box-sizing: border-box
-            }
-
-            input[type=submit] {
-                border: 0 none;
-
-                border-radius: 0.25em;
-                padding:       0.5em 1em;
-
-                font-weight: bold;
-
-                color:            #ffffff;
-                background-color: #444444;
-            }
-        }
-
         // TASK: Move to contacts-specific SCSS file.
         table {
             margin:    0 auto;
