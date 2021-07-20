@@ -70,3 +70,9 @@ body {
         }
     }
 }
+
+.box {
+    padding:          $box-padding;
+    border-radius:    $box-radius;
+    background-color: $box-color;
+}
