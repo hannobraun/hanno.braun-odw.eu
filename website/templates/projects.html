@@ -11,12 +11,13 @@
                     </p>
                 </a>
                 <a href="{{ page.path }}">
+                    {% set image = resize_image(
+                        path=page.extra.image,
+                        width=600,
+                        op="fit_width"
+                    ) %}
                     <img
-                        src="{{ resize_image(
-                            path=page.extra.image,
-                            width=600,
-                            op="fit_width"
-                        ) }}"
+                        src="{{ image.url }}"
                         alt="{{ page.title }}" />
                     <p class="goto">Go to project...</p>
                 </a>
