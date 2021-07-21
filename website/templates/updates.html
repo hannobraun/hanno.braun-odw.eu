@@ -1,0 +1,16 @@
+{% extends "extend/base.html" %}
+
+{% block main %}
+    <ol class="updates">
+        {% for page in section.pages | reverse -%}
+            <li class="box">
+                <div class="content">
+                    {{ page.content | safe }}
+                </div>
+                <div class="metadata">
+                    Posted on <span class="date">{{ page.date }}</span>
+                </div>
+            </li>
+        {%- endfor %}
+    </ol>
+{% endblock main %}
