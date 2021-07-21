@@ -1,0 +1,16 @@
+.updates li {
+    margin-top:    1em;
+    margin-bottom: 1em;
+
+    .content p {
+        margin: 0;
+    }
+    .metadata {
+        font-size: 85%;
+        font-style: italic;
+
+        .date {
+            font-weight: bold;
+        }
+    }
+}
