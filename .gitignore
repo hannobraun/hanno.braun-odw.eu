@@ -1,2 +1,5 @@
+# Cargo
+/backend/target
+
 # Zola
 /website/public
