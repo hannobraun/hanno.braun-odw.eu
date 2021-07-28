@@ -17,7 +17,7 @@
 
   outputs = { self, nixpkgs, utils, rust-overlay, crate2nix, ... }:
     let
-      name = "made-by.braun-odw.eu";
+      name = "backend";
     in
     utils.lib.eachDefaultSystem
       (system:
