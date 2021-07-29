@@ -1,4 +1,4 @@
-use std::net::Ipv6Addr;
+use std::{net::Ipv6Addr, path::PathBuf};
 
 use clap::Clap;
 use warp::{Filter as _, Reply as _};
@@ -9,8 +9,9 @@ async fn main() {
 
     let args = Args::parse();
     let port = args.port.unwrap_or(8000);
+    let serve_dir = args.serve.unwrap_or("static".into());
 
-    let hello = warp::fs::dir("static")
+    let hello = warp::fs::dir(serve_dir)
         .map(|file: warp::fs::File| {
             if file.path().ends_with("hello") {
                 warp::reply::with_header(file, "Content-Type", "text/plain")
@@ -30,4 +31,8 @@ struct Args {
     /// Port to listen on. Will listen on port 8000, if omitted.
     #[clap(short, long)]
     port: Option<u16>,
+
+    /// Static file directory to serve. Defaults to `static`, if omitted.
+    #[clap(short, long)]
+    serve: Option<PathBuf>,
 }
