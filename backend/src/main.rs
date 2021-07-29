@@ -7,8 +7,8 @@ use warp::Filter as _;
 async fn main() {
     tracing_subscriber::fmt().init();
 
-    Args::parse();
-    let port = 8000;
+    let args = Args::parse();
+    let port = args.port.unwrap_or(8000);
 
     let hello = warp::any()
         .map(|| "Hello, world!")
@@ -18,4 +18,8 @@ async fn main() {
 
 /// Custom backend for made-be.braun-odw.eu
 #[derive(Clap)]
-struct Args;
+struct Args {
+    /// Port to listen on. Will listen on port 8000, if omitted.
+    #[clap(short, long)]
+    port: Option<u16>,
+}
