@@ -9,7 +9,7 @@ cargo build --release
 
 mkdir -p $UNIT_DIR
 
-cp target/release/backend /usr/local/bin
+cp -f target/release/backend /usr/local/bin
 cp backend.service $UNIT_DIR
 cp -r static $SERVE_DIR
 
