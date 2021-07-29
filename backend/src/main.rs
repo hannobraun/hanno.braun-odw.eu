@@ -16,7 +16,7 @@ async fn main() {
     warp::serve(hello).run((Ipv6Addr::UNSPECIFIED, port)).await;
 }
 
-/// Custom backend for made-be.braun-odw.eu
+/// Custom backend for made-by.braun-odw.eu
 #[derive(Clap)]
 struct Args {
     /// Port to listen on. Will listen on port 8000, if omitted.
