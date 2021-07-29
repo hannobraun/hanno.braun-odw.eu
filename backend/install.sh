@@ -14,4 +14,4 @@ cp backend.service $UNIT_DIR
 cp -r static $SERVE_DIR
 
 systemctl enable backend.service
-systemctl start backend.service
+systemctl restart backend.service
