@@ -5,7 +5,9 @@ edition = "2018"
 
 
 [dependencies]
-warp  = "*"
+tracing            = "*"
+tracing-subscriber = "*"
+warp               = "*"
 
 [dependencies.tokio]
 version  = "*"
