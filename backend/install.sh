@@ -6,6 +6,8 @@ UNIT_DIR=/usr/local/lib/systemd/system
 
 cargo build --release
 
+mkdir -p $UNIT_DIR
+
 cp target/release/backend /usr/local/bin
 cp backend.service $UNIT_DIR
 
