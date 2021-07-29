@@ -1,7 +1,7 @@
 use std::net::Ipv6Addr;
 
 use clap::Clap;
-use warp::Filter as _;
+use warp::{Filter as _, Reply as _};
 
 #[tokio::main]
 async fn main() {
@@ -10,9 +10,17 @@ async fn main() {
     let args = Args::parse();
     let port = args.port.unwrap_or(8000);
 
-    let hello = warp::any()
-        .map(|| "Hello, world!")
+    let hello = warp::fs::dir("static")
+        .map(|file: warp::fs::File| {
+            if file.path().ends_with("hello") {
+                warp::reply::with_header(file, "Content-Type", "text/plain")
+                    .into_response()
+            } else {
+                file.into_response()
+            }
+        })
         .with(warp::trace::request());
+
     warp::serve(hello).run((Ipv6Addr::UNSPECIFIED, port)).await;
 }
 
