@@ -8,11 +8,12 @@ async fn main() {
     tracing_subscriber::fmt().init();
 
     Args::parse();
+    let port = 8000;
 
     let hello = warp::any()
         .map(|| "Hello, world!")
         .with(warp::trace::request());
-    warp::serve(hello).run((Ipv6Addr::UNSPECIFIED, 8000)).await;
+    warp::serve(hello).run((Ipv6Addr::UNSPECIFIED, port)).await;
 }
 
 /// Custom backend for made-be.braun-odw.eu
