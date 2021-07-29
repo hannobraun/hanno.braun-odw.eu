@@ -22,7 +22,12 @@ async fn main() {
         })
         .with(warp::trace::request());
 
-    warp::serve(hello).run((Ipv6Addr::UNSPECIFIED, port)).await;
+    warp::serve(hello)
+        .tls()
+        .key_path("tls/localhost.key.pem")
+        .cert_path("tls/localhost.cert.pem")
+        .run((Ipv6Addr::UNSPECIFIED, port))
+        .await;
 }
 
 /// Custom backend for made-by.braun-odw.eu
