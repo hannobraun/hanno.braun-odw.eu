@@ -8,7 +8,7 @@ async fn main() {
     tracing_subscriber::fmt().init();
 
     let args = Args::parse();
-    let https_port = args.port.unwrap_or(8000);
+    let https_port = args.https_port.unwrap_or(8000);
     let serve_dir = args.serve.unwrap_or("static".into());
 
     let hello = warp::fs::dir(serve_dir)
@@ -35,7 +35,7 @@ async fn main() {
 struct Args {
     /// Port to listen on. Will listen on port 8000, if omitted.
     #[clap(short, long)]
-    port: Option<u16>,
+    https_port: Option<u16>,
 
     /// Static file directory to serve. Defaults to `static`, if omitted.
     #[clap(short, long)]
