@@ -8,8 +8,11 @@ edition = "2018"
 clap               = "3.0.0-beta.2"
 tracing            = "*"
 tracing-subscriber = "*"
-warp               = "*"
 
 [dependencies.tokio]
 version  = "*"
 features = ["full"]
+
+[dependencies.warp]
+version  = "*"
+features = ["tls"]
