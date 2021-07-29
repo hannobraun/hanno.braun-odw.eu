@@ -8,7 +8,7 @@ async fn main() {
     tracing_subscriber::fmt().init();
 
     let args = Args::parse();
-    let port = args.port.unwrap_or(8000);
+    let https_port = args.port.unwrap_or(8000);
     let serve_dir = args.serve.unwrap_or("static".into());
 
     let hello = warp::fs::dir(serve_dir)
@@ -26,7 +26,7 @@ async fn main() {
         .tls()
         .key_path("tls/localhost.key.pem")
         .cert_path("tls/localhost.cert.pem")
-        .run((Ipv6Addr::UNSPECIFIED, port))
+        .run((Ipv6Addr::UNSPECIFIED, https_port))
         .await;
 }
 
