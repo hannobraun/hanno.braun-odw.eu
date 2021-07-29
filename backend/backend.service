@@ -1,0 +1,8 @@
+[Unit]
+Description=Custom backend for made-by.braun-odw.eu
+
+[Service]
+ExecStart=/usr/local/bin/backend --port=80
+
+[Install]
+WantedBy=multi-user.target
