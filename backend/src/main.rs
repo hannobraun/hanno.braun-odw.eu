@@ -1,15 +1,18 @@
+mod args;
+
 use std::{
     net::Ipv6Addr,
     path::{Path, PathBuf},
 };
 
-use clap::Clap;
 use warp::{
     host::Authority,
     http::{StatusCode, Uri},
     path::FullPath,
     Filter as _, Future, Reply as _,
 };
+
+use crate::args::Args;
 
 #[tokio::main]
 async fn main() {
@@ -26,53 +29,6 @@ async fn main() {
     );
 
     tokio::join!(https_server, http_server);
-}
-
-pub struct Args {
-    pub http_port: u16,
-    pub https_port: u16,
-    pub tls_key: PathBuf,
-    pub tls_cert: PathBuf,
-    pub serve_dir: PathBuf,
-}
-
-impl Args {
-    pub fn parse() -> Self {
-        let args = CliArgs::parse();
-
-        Self {
-            http_port: args.http_port.unwrap_or(8080),
-            https_port: args.https_port.unwrap_or(8443),
-            tls_key: args.tls_key.unwrap_or("tls/localhost.key.pem".into()),
-            tls_cert: args.tls_cert.unwrap_or("tls/localhost.cert.pem".into()),
-            serve_dir: args.serve.unwrap_or("static".into()),
-        }
-    }
-}
-
-/// Custom backend for made-by.braun-odw.eu
-#[derive(Clap)]
-struct CliArgs {
-    /// HTTP port to listen on. Defaults to 8080, if omitted.
-    #[clap(long)]
-    http_port: Option<u16>,
-
-    /// HTTPS port to listen on. Defaults to 8443, if omitted.
-    #[clap(long)]
-    https_port: Option<u16>,
-
-    /// Path to TLS key file. Defaults to `tls/localhost.key.pem`, if omitted.
-    #[clap(long)]
-    tls_key: Option<PathBuf>,
-
-    /// Path to TLS certificate file. Defaults to `tls/localhost.cert.pem`, if
-    /// omitted.
-    #[clap(long)]
-    tls_cert: Option<PathBuf>,
-
-    /// Static file directory to serve. Defaults to `static`, if omitted.
-    #[clap(long)]
-    serve: Option<PathBuf>,
 }
 
 fn http_server(http_port: u16, https_port: u16) -> impl Future {
