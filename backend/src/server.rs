@@ -68,7 +68,7 @@ fn https_server(
     https_port: u16,
 ) -> impl Future {
     let redirect = warp::path::end()
-        .map(|| warp::redirect::temporary(Uri::from_static("/hello")));
+        .map(|| warp::redirect::temporary(Uri::from_static("/updates")));
 
     let hello = warp::fs::dir(serve_dir)
         .map(|file: warp::fs::File| {
