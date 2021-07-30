@@ -1,4 +1,7 @@
-use std::{net::Ipv6Addr, path::PathBuf};
+use std::{
+    net::Ipv6Addr,
+    path::{Path, PathBuf},
+};
 
 use clap::Clap;
 use warp::{
@@ -15,10 +18,12 @@ async fn main() {
     let args = Args::parse();
     let http_port = args.http_port.unwrap_or(8080);
     let https_port = args.https_port.unwrap_or(8443);
+    let tls_key = args.tls_key.unwrap_or("tls/localhost.key.pem".into());
+    let tls_cert = args.tls_cert.unwrap_or("tls/localhost.cert.pem".into());
     let serve_dir = args.serve.unwrap_or("static".into());
 
     let http_server = http_server(http_port, https_port);
-    let https_server = https_server(serve_dir, https_port);
+    let https_server = https_server(serve_dir, tls_key, tls_cert, https_port);
 
     tokio::join!(https_server, http_server);
 }
@@ -33,6 +38,15 @@ struct Args {
     /// HTTPS port to listen on. Defaults to 8443, if omitted.
     #[clap(long)]
     https_port: Option<u16>,
+
+    /// Path to TLS key file. Defaults to `tls/localhost.key.pem`, if omitted.
+    #[clap(long)]
+    tls_key: Option<PathBuf>,
+
+    /// Path to TLS certificate file. Defaults to `tls/localhost.cert.pem`, if
+    /// omitted.
+    #[clap(long)]
+    tls_cert: Option<PathBuf>,
 
     /// Static file directory to serve. Defaults to `static`, if omitted.
     #[clap(long)]
@@ -78,6 +92,8 @@ fn http_server(http_port: u16, https_port: u16) -> impl Future {
 
 fn https_server(
     serve_dir: impl Into<PathBuf> + 'static,
+    tls_key: impl AsRef<Path>,
+    tls_cert: impl AsRef<Path>,
     https_port: u16,
 ) -> impl Future {
     let hello = warp::fs::dir(serve_dir)
@@ -93,7 +109,7 @@ fn https_server(
 
     warp::serve(hello)
         .tls()
-        .key_path("tls/localhost.key.pem")
-        .cert_path("tls/localhost.cert.pem")
+        .key_path(tls_key)
+        .cert_path(tls_cert)
         .run((Ipv6Addr::UNSPECIFIED, https_port))
 }
