@@ -13,10 +13,11 @@ async fn main() {
     tracing_subscriber::fmt().init();
 
     let args = Args::parse();
+    let http_port = args.http_port.unwrap_or(8080);
     let https_port = args.https_port.unwrap_or(8443);
     let serve_dir = args.serve.unwrap_or("static".into());
 
-    let http_server = http_server(https_port);
+    let http_server = http_server(http_port, https_port);
     let https_server = https_server(serve_dir, https_port);
 
     tokio::join!(https_server, http_server);
@@ -25,6 +26,10 @@ async fn main() {
 /// Custom backend for made-by.braun-odw.eu
 #[derive(Clap)]
 struct Args {
+    /// HTTP port to listen on. Defaults to 8080, if omitted.
+    #[clap(long)]
+    http_port: Option<u16>,
+
     /// HTTPS port to listen on. Defaults to 8443, if omitted.
     #[clap(long)]
     https_port: Option<u16>,
@@ -34,7 +39,7 @@ struct Args {
     serve: Option<PathBuf>,
 }
 
-fn http_server(https_port: u16) -> impl Future {
+fn http_server(http_port: u16, https_port: u16) -> impl Future {
     let redirect_to_https = warp::host::optional().and(warp::path::full()).map(
         move |authority: Option<Authority>, path: FullPath| {
             let authority = match authority {
@@ -68,7 +73,7 @@ fn http_server(https_port: u16) -> impl Future {
         },
     );
 
-    warp::serve(redirect_to_https).run((Ipv6Addr::UNSPECIFIED, 8080))
+    warp::serve(redirect_to_https).run((Ipv6Addr::UNSPECIFIED, http_port))
 }
 
 fn https_server(
