@@ -25,7 +25,7 @@ async fn main() {
 /// Custom backend for made-by.braun-odw.eu
 #[derive(Clap)]
 struct Args {
-    /// Port to listen on. Will listen on port 8443, if omitted.
+    /// HTTPS port to listen on. Defaults to 8443, if omitted.
     #[clap(short, long)]
     https_port: Option<u16>,
 
