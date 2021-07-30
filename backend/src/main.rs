@@ -15,7 +15,7 @@ use warp::{
 async fn main() {
     tracing_subscriber::fmt().init();
 
-    let args = Args::parse();
+    let args = CliArgs::parse();
     let http_port = args.http_port.unwrap_or(8080);
     let https_port = args.https_port.unwrap_or(8443);
     let tls_key = args.tls_key.unwrap_or("tls/localhost.key.pem".into());
@@ -30,7 +30,7 @@ async fn main() {
 
 /// Custom backend for made-by.braun-odw.eu
 #[derive(Clap)]
-struct Args {
+struct CliArgs {
     /// HTTP port to listen on. Defaults to 8080, if omitted.
     #[clap(long)]
     http_port: Option<u16>,
