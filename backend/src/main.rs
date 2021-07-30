@@ -15,17 +15,39 @@ use warp::{
 async fn main() {
     tracing_subscriber::fmt().init();
 
-    let args = CliArgs::parse();
-    let http_port = args.http_port.unwrap_or(8080);
-    let https_port = args.https_port.unwrap_or(8443);
-    let tls_key = args.tls_key.unwrap_or("tls/localhost.key.pem".into());
-    let tls_cert = args.tls_cert.unwrap_or("tls/localhost.cert.pem".into());
-    let serve_dir = args.serve.unwrap_or("static".into());
+    let args = Args::parse();
 
-    let http_server = http_server(http_port, https_port);
-    let https_server = https_server(serve_dir, tls_key, tls_cert, https_port);
+    let http_server = http_server(args.http_port, args.https_port);
+    let https_server = https_server(
+        args.serve_dir,
+        args.tls_key,
+        args.tls_cert,
+        args.https_port,
+    );
 
     tokio::join!(https_server, http_server);
+}
+
+pub struct Args {
+    pub http_port: u16,
+    pub https_port: u16,
+    pub tls_key: PathBuf,
+    pub tls_cert: PathBuf,
+    pub serve_dir: PathBuf,
+}
+
+impl Args {
+    pub fn parse() -> Self {
+        let args = CliArgs::parse();
+
+        Self {
+            http_port: args.http_port.unwrap_or(8080),
+            https_port: args.https_port.unwrap_or(8443),
+            tls_key: args.tls_key.unwrap_or("tls/localhost.key.pem".into()),
+            tls_cert: args.tls_cert.unwrap_or("tls/localhost.cert.pem".into()),
+            serve_dir: args.serve.unwrap_or("static".into()),
+        }
+    }
 }
 
 /// Custom backend for made-by.braun-odw.eu
