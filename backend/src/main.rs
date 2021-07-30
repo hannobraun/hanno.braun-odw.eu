@@ -26,11 +26,11 @@ async fn main() {
 #[derive(Clap)]
 struct Args {
     /// HTTPS port to listen on. Defaults to 8443, if omitted.
-    #[clap(short, long)]
+    #[clap(long)]
     https_port: Option<u16>,
 
     /// Static file directory to serve. Defaults to `static`, if omitted.
-    #[clap(short, long)]
+    #[clap(long)]
     serve: Option<PathBuf>,
 }
 
