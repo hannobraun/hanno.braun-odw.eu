@@ -70,16 +70,7 @@ fn https_server(
     let redirect = warp::path::end()
         .map(|| warp::redirect::temporary(Uri::from_static("/updates")));
 
-    let hello = warp::fs::dir(serve_dir)
-        .map(|file: warp::fs::File| {
-            if file.path().ends_with("hello") {
-                warp::reply::with_header(file, "Content-Type", "text/plain")
-                    .into_response()
-            } else {
-                file.into_response()
-            }
-        })
-        .with(warp::trace::request());
+    let hello = warp::fs::dir(serve_dir).with(warp::trace::request());
 
     warp::serve(redirect.or(hello))
         .tls()
