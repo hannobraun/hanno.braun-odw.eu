@@ -67,6 +67,9 @@ fn https_server(
     tls_cert: impl AsRef<Path>,
     https_port: u16,
 ) -> impl Future {
+    let redirect = warp::path::end()
+        .map(|| warp::redirect::temporary(Uri::from_static("/hello")));
+
     let hello = warp::fs::dir(serve_dir)
         .map(|file: warp::fs::File| {
             if file.path().ends_with("hello") {
@@ -78,7 +81,7 @@ fn https_server(
         })
         .with(warp::trace::request());
 
-    warp::serve(hello)
+    warp::serve(redirect.or(hello))
         .tls()
         .key_path(tls_key)
         .cert_path(tls_cert)
