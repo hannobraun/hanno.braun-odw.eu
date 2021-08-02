@@ -14,6 +14,6 @@ systemctl enable backend.service
 systemctl restart backend.service
 
 (cd zola; zola build)
-rm -r $SERVE_DIR
+rm -rf $SERVE_DIR
 mkdir -p $SERVE_DIR
 cp -r zola/public/* static/* -t $SERVE_DIR
