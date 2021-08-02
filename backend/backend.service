@@ -2,7 +2,11 @@
 Description=Custom backend for made-by.braun-odw.eu
 
 [Service]
-ExecStart=/usr/local/bin/backend --http-port=80 --https-port=443 --tls-key=/etc/letsencrypt/live/reineke.nodes.braun-odw.eu/privkey.pem --tls-cert=/etc/letsencrypt/live/reineke.nodes.braun-odw.eu/fullchain.pem --serve=/srv/made-by.braun-odw.eu
+ExecStart=/usr/local/bin/backend \
+	--http-port=80 --https-port=443 \
+	--tls-key=/etc/letsencrypt/live/reineke.nodes.braun-odw.eu/privkey.pem \
+	--tls-cert=/etc/letsencrypt/live/reineke.nodes.braun-odw.eu/fullchain.pem \
+	--serve=/srv/made-by.braun-odw.eu
 
 [Install]
 WantedBy=multi-user.target
