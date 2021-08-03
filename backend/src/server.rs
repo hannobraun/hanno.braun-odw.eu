@@ -70,11 +70,11 @@ fn https_server(
     let redirect = warp::path::end()
         .map(|| warp::redirect::temporary(Uri::from_static("/updates")));
 
-    let hello = warp::fs::dir(serve_dir)
+    let serve_static = warp::fs::dir(serve_dir)
         .recover(handle_not_found)
         .with(warp::trace::request());
 
-    warp::serve(redirect.or(hello))
+    warp::serve(redirect.or(serve_static))
         .tls()
         .key_path(tls_key)
         .cert_path(tls_cert)
