@@ -6,14 +6,14 @@ UNIT_DIR=/usr/local/lib/systemd/system
 SERVE_DIR=/srv/made-by.braun-odw.eu
 
 cargo build --release
-cp -f target/release/backend /usr/local/bin
+sudo cp -f target/release/backend /usr/local/bin
 
-mkdir -p $UNIT_DIR
-cp backend.service $UNIT_DIR
-systemctl enable backend.service
-systemctl restart backend.service
+sudo mkdir -p $UNIT_DIR
+sudo cp backend.service $UNIT_DIR
+sudo systemctl enable backend.service
+sudo systemctl restart backend.service
 
 (cd zola; zola build)
-rm -rf $SERVE_DIR
-mkdir -p $SERVE_DIR
-cp -r zola/public/* static/* -t $SERVE_DIR
+sudo rm -rf $SERVE_DIR
+sudo mkdir -p $SERVE_DIR
+sudo cp -r zola/public/* static/* -t $SERVE_DIR
