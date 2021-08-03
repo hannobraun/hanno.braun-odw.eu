@@ -5,9 +5,7 @@ edition = "2018"
 
 
 [dependencies]
-axum               = "*"
 clap               = "3.0.0-beta.2"
-hyper              = "*"
 tracing            = "*"
 tracing-subscriber = "*"
 
