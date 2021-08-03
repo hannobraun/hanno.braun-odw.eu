@@ -7,7 +7,7 @@ use warp::{
     host::Authority,
     http::{StatusCode, Uri},
     path::FullPath,
-    Filter as _, Future, Reply as _,
+    reply, Filter as _, Future, Rejection, Reply,
 };
 
 use crate::args::Args;
@@ -70,11 +70,23 @@ fn https_server(
     let redirect = warp::path::end()
         .map(|| warp::redirect::temporary(Uri::from_static("/updates")));
 
-    let hello = warp::fs::dir(serve_dir).with(warp::trace::request());
+    let hello = warp::fs::dir(serve_dir)
+        .recover(handle_not_found)
+        .with(warp::trace::request());
 
     warp::serve(redirect.or(hello))
         .tls()
         .key_path(tls_key)
         .cert_path(tls_cert)
         .run((Ipv6Addr::UNSPECIFIED, https_port))
+}
+
+async fn handle_not_found(
+    rejection: Rejection,
+) -> Result<impl Reply, Rejection> {
+    if rejection.is_not_found() {
+        return Ok(reply::with_status("not found", StatusCode::NOT_FOUND));
+    }
+
+    Err(rejection)
 }
