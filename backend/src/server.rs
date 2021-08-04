@@ -69,7 +69,7 @@ fn https_server(
     tls_cert: impl AsRef<Path>,
     https_port: u16,
 ) -> impl Future {
-    let redirect_to_updates = warp::path::end()
+    let redirect_home = warp::path::end()
         .map(|| warp::redirect::temporary(Uri::from_static("/updates")));
 
     let serve_static = warp::fs::dir(static_dir)
@@ -77,7 +77,7 @@ fn https_server(
         .recover(handle_not_found)
         .with(warp::trace::request());
 
-    let server = redirect_to_updates.or(serve_static);
+    let server = redirect_home.or(serve_static);
 
     warp::serve(server)
         .tls()
