@@ -7,7 +7,7 @@ pub struct Args {
     pub https_port: u16,
     pub tls_key: PathBuf,
     pub tls_cert: PathBuf,
-    pub serve_dir: PathBuf,
+    pub static_dir: PathBuf,
 }
 
 impl Args {
@@ -19,7 +19,7 @@ impl Args {
             https_port: args.https_port.unwrap_or(8443),
             tls_key: args.tls_key.unwrap_or("tls/localhost.key.pem".into()),
             tls_cert: args.tls_cert.unwrap_or("tls/localhost.cert.pem".into()),
-            serve_dir: args.serve.unwrap_or("static".into()),
+            static_dir: args.serve.unwrap_or("static".into()),
         }
     }
 }

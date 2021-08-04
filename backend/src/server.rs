@@ -15,7 +15,7 @@ use crate::args::Args;
 pub async fn server(args: Args) {
     let http_server = http_server(args.http_port, args.https_port);
     let https_server = https_server(
-        args.serve_dir,
+        args.static_dir,
         args.tls_key,
         args.tls_cert,
         args.https_port,
