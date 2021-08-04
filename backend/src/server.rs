@@ -62,7 +62,7 @@ fn http_server(http_port: u16, https_port: u16) -> impl Future {
 }
 
 fn https_server(
-    serve_dir: impl Into<PathBuf> + 'static,
+    static_dir: impl Into<PathBuf> + 'static,
     tls_key: impl AsRef<Path>,
     tls_cert: impl AsRef<Path>,
     https_port: u16,
@@ -70,7 +70,7 @@ fn https_server(
     let redirect = warp::path::end()
         .map(|| warp::redirect::temporary(Uri::from_static("/updates")));
 
-    let serve_static = warp::fs::dir(serve_dir)
+    let serve_static = warp::fs::dir(static_dir)
         .recover(handle_not_found)
         .with(warp::trace::request());
 
