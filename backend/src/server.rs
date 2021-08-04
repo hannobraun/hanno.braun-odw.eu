@@ -77,7 +77,9 @@ fn https_server(
         .recover(handle_not_found)
         .with(warp::trace::request());
 
-    warp::serve(redirect_to_updates.or(serve_static))
+    let server = redirect_to_updates.or(serve_static);
+
+    warp::serve(server)
         .tls()
         .key_path(tls_key)
         .cert_path(tls_cert)
