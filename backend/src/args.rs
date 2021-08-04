@@ -19,7 +19,7 @@ impl Args {
             https_port: args.https_port.unwrap_or(8443),
             tls_key: args.tls_key.unwrap_or("tls/localhost.key.pem".into()),
             tls_cert: args.tls_cert.unwrap_or("tls/localhost.cert.pem".into()),
-            static_dir: args.serve.unwrap_or("static".into()),
+            static_dir: args.static_dir.unwrap_or("static".into()),
         }
     }
 }
@@ -46,5 +46,5 @@ struct CliArgs {
 
     /// Static file directory to serve. Defaults to `static`, if omitted.
     #[clap(long)]
-    serve: Option<PathBuf>,
+    static_dir: Option<PathBuf>,
 }
