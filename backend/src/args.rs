@@ -44,7 +44,7 @@ struct CliArgs {
     #[clap(long)]
     tls_cert: Option<PathBuf>,
 
-    /// Static file directory to serve. Defaults to `static`, if omitted.
+    /// Path to static files. Defaults to `static`, if omitted.
     #[clap(long)]
     static_dir: Option<PathBuf>,
 }
