@@ -26,7 +26,7 @@ impl Args {
 
 /// Custom backend for made-by.braun-odw.eu
 #[derive(Clap)]
-struct CliArgs {
+pub struct CliArgs {
     /// HTTP port to listen on
     #[clap(long, default_value = "8080")]
     pub http_port: u16,
