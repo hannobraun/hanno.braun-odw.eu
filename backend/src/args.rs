@@ -29,21 +29,21 @@ impl Args {
 struct CliArgs {
     /// HTTP port to listen on
     #[clap(long, default_value = "8080")]
-    http_port: u16,
+    pub http_port: u16,
 
     /// HTTPS port to listen on
     #[clap(long, default_value = "8443")]
-    https_port: u16,
+    pub https_port: u16,
 
     /// Path to TLS key file
     #[clap(long, default_value = "tls/localhost.key.pem")]
-    tls_key: PathBuf,
+    pub tls_key: PathBuf,
 
     /// Path to TLS certificate file
     #[clap(long, default_value = "tls/localhost.cert.pem")]
-    tls_cert: PathBuf,
+    pub tls_cert: PathBuf,
 
     /// Path to static files
     #[clap(long, default_value = "static")]
-    static_dir: PathBuf,
+    pub static_dir: PathBuf,
 }
