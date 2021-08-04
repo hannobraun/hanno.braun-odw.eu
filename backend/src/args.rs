@@ -15,11 +15,11 @@ impl Args {
         let args = CliArgs::parse();
 
         Self {
-            http_port: args.http_port.unwrap_or(8080),
-            https_port: args.https_port.unwrap_or(8443),
-            tls_key: args.tls_key.unwrap_or("tls/localhost.key.pem".into()),
-            tls_cert: args.tls_cert.unwrap_or("tls/localhost.cert.pem".into()),
-            static_dir: args.static_dir.unwrap_or("static".into()),
+            http_port: args.http_port,
+            https_port: args.https_port,
+            tls_key: args.tls_key,
+            tls_cert: args.tls_cert,
+            static_dir: args.static_dir,
         }
     }
 }
@@ -28,23 +28,23 @@ impl Args {
 #[derive(Clap)]
 struct CliArgs {
     /// HTTP port to listen on. Defaults to 8080, if omitted.
-    #[clap(long)]
-    http_port: Option<u16>,
+    #[clap(long, default_value = "8080")]
+    http_port: u16,
 
     /// HTTPS port to listen on. Defaults to 8443, if omitted.
-    #[clap(long)]
-    https_port: Option<u16>,
+    #[clap(long, default_value = "8443")]
+    https_port: u16,
 
     /// Path to TLS key file. Defaults to `tls/localhost.key.pem`, if omitted.
-    #[clap(long)]
-    tls_key: Option<PathBuf>,
+    #[clap(long, default_value = "tls/localhost.key.pem")]
+    tls_key: PathBuf,
 
     /// Path to TLS certificate file. Defaults to `tls/localhost.cert.pem`, if
     /// omitted.
-    #[clap(long)]
-    tls_cert: Option<PathBuf>,
+    #[clap(long, default_value = "tls/localhost.cert.pem")]
+    tls_cert: PathBuf,
 
     /// Path to static files. Defaults to `static`, if omitted.
-    #[clap(long)]
-    static_dir: Option<PathBuf>,
+    #[clap(long, default_value = "static")]
+    static_dir: PathBuf,
 }
