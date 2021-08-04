@@ -3,7 +3,7 @@
 set -e
 
 UNIT_DIR=/usr/local/lib/systemd/system
-SERVE_DIR=/srv/made-by.braun-odw.eu
+SERVE_DIR=/srv/made-by.braun-odw.eu/static
 
 cargo build --release
 sudo cp -f target/release/backend /usr/local/bin

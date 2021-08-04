@@ -6,7 +6,7 @@ ExecStart=/usr/local/bin/backend \
 	--http-port=80 --https-port=443 \
 	--tls-key=/etc/letsencrypt/live/%H.nodes.braun-odw.eu/privkey.pem \
 	--tls-cert=/etc/letsencrypt/live/%H.nodes.braun-odw.eu/fullchain.pem \
-	--static-dir=/srv/made-by.braun-odw.eu
+	--static-dir=/srv/made-by.braun-odw.eu/static
 
 [Install]
 WantedBy=multi-user.target
