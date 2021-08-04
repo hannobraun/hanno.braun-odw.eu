@@ -24,6 +24,10 @@ pub struct Args {
     /// Path to static files
     #[clap(long, default_value = "static")]
     pub static_dir: PathBuf,
+
+    /// Path to Zola-generated files
+    #[clap(long, default_value = "zola/public")]
+    pub zola_dir: PathBuf,
 }
 
 impl Args {
