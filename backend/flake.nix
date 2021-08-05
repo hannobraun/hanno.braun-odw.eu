@@ -24,6 +24,7 @@
         { pkgs = pkgs; };
     in
     {
+      # `nix build`
       defaultPackage.${system} = cargoPackage.rootCrate.build;
 
       # TASK: Add support for `nix run`.
