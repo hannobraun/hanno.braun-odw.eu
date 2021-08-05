@@ -18,9 +18,10 @@
       pkgs = import nixpkgs {
         system = system;
       };
+      name = "backend";
       crate = import "${crate2nix}/tools.nix" { pkgs = pkgs; };
       cargoPackage = import
-        (crate.generatedCargoNix { name = "backend"; src = ./.; })
+        (crate.generatedCargoNix { name = name; src = ./.; })
         { pkgs = pkgs; };
     in
     {
