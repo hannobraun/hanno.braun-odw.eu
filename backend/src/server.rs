@@ -5,9 +5,10 @@ use std::{
 
 use warp::{
     host::Authority,
-    http::{StatusCode, Uri},
+    http::{uri::Scheme, StatusCode, Uri},
     path::FullPath,
-    reply, Filter as _, Future, Rejection, Reply,
+    reject::Reject,
+    reply, Filter, Future, Rejection, Reply,
 };
 
 use crate::args::Args;
@@ -77,7 +78,7 @@ fn https_server(
         .recover(handle_not_found)
         .with(warp::trace::request());
 
-    let server = redirect_home.or(serve_static);
+    let server = redirect_legacy_domain().or(redirect_home).or(serve_static);
 
     warp::serve(server)
         .tls()
@@ -85,6 +86,39 @@ fn https_server(
         .cert_path(tls_cert)
         .run((Ipv6Addr::UNSPECIFIED, https_port))
 }
+
+fn redirect_legacy_domain(
+) -> impl Filter<Extract = impl Reply, Error = Rejection> + Clone {
+    warp::host::optional().and(warp::path::full()).and_then(
+        |authority: Option<Authority>, path: FullPath| async move {
+            if let Some("madeby.hannobraun.de") =
+                authority.as_ref().map(|a| a.host())
+            {
+                return Ok(warp::redirect::permanent(
+                    Uri::builder()
+                        .scheme(Scheme::HTTPS)
+                        .authority(Authority::from_static(
+                            "made-by.braun-odw.eu",
+                        ))
+                        .path_and_query(path.as_str())
+                        .build()
+                        // Shouldn't happen, unless the parameters above are
+                        // invalid.
+                        .expect("invalid URI"),
+                ));
+            }
+
+            // This is not the legacy domain. This filter isn't responsible for
+            // this request.
+            Err(warp::reject::custom(FilterNotApplicable))
+        },
+    )
+}
+
+#[derive(Debug)]
+struct FilterNotApplicable;
+
+impl Reject for FilterNotApplicable {}
 
 async fn handle_not_found(
     rejection: Rejection,
