@@ -19,13 +19,9 @@
         system = system;
       };
       crate = import "${crate2nix}/tools.nix" { pkgs = pkgs; };
-      # TASK: I'm getting a warning about `buildRustCrate` being deprecated.
-      #       According to crate2nix's FAQ, this should be solvable by replacing
-      #       `callPackage` here with `import`. See crate2nix README for more
-      #       information.
-      cargoPackage = pkgs.callPackage
+      cargoPackage = import
         (crate.generatedCargoNix { name = "backend"; src = ./.; })
-        {};
+        { pkgs = pkgs; };
     in
     {
       defaultPackage.${system} = cargoPackage.rootCrate.build;
