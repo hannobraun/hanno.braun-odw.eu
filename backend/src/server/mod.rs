@@ -46,7 +46,7 @@ fn https_server(
     warp::serve(
         redirect_legacy_domain()
             .or(redirect_home())
-            .or(redirect_legacy_path())
+            .or(redirect_legacy_path("project", "projects"))
             .or(serve_static(static_dir, zola_dir)),
     )
     .tls()
