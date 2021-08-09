@@ -13,6 +13,11 @@ pub fn permanent(uri: Uri) -> impl warp::Reply {
     )
 }
 
+/// Adds a `Cache-Control` header to the given response
+///
+/// # Panics
+///
+/// Panics, if `max_age` is negative.
 fn with_cache_control_header(
     reply: impl warp::Reply,
     max_age: time::Duration,
