@@ -1,3 +1,5 @@
+mod redirect;
+
 use std::{
     net::Ipv6Addr,
     path::{Path, PathBuf},
@@ -56,7 +58,7 @@ fn http_server(http_port: u16, https_port: u16) -> impl Future {
                 // the builder methods above, which would be a bug.
                 .expect("Failed to build URI");
 
-            warp::redirect(uri).into_response()
+            redirect::permanent(uri).into_response()
         },
     );
 
@@ -71,7 +73,7 @@ fn https_server(
     https_port: u16,
 ) -> impl Future {
     let redirect_home = warp::path::end()
-        .map(|| warp::redirect::temporary(Uri::from_static("/updates")));
+        .map(|| redirect::temporary(Uri::from_static("/updates")));
 
     let serve_static = warp::fs::dir(static_dir)
         .or(warp::fs::dir(zola_dir))
@@ -94,7 +96,7 @@ fn redirect_legacy_domain(
             if let Some("madeby.hannobraun.de") =
                 authority.as_ref().map(|a| a.host())
             {
-                return Ok(warp::redirect::permanent(
+                return Ok(redirect::permanent(
                     Uri::builder()
                         .scheme(Scheme::HTTPS)
                         .authority(Authority::from_static(
