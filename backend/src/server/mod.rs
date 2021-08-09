@@ -13,7 +13,8 @@ use crate::args::Args;
 use self::{
     services::{
         redirect_home, redirect_legacy_domain, redirect_path,
-        redirect_path_prefix, redirect_to_https, serve_static,
+        redirect_path_prefix, redirect_to_https, remove_trailing_slash,
+        serve_static,
     },
     util::redirect,
 };
@@ -48,6 +49,7 @@ fn https_server(
             .or(redirect_home())
             .or(redirect_path("rss.xml", "/atom.xml"))
             .or(redirect_path_prefix("project", "projects"))
+            .or(remove_trailing_slash())
             .or(serve_static(static_dir, zola_dir)),
     )
     .tls()
