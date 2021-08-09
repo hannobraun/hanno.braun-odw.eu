@@ -9,13 +9,12 @@ use warp::{
     host::Authority,
     http::{uri::Scheme, StatusCode, Uri},
     path::FullPath,
-    reject::Reject,
     reply, Filter, Future, Rejection, Reply,
 };
 
 use crate::args::Args;
 
-use self::util::redirect;
+use self::util::{redirect, FilterNotApplicable};
 
 pub async fn server(args: Args) {
     let http_server = http_server(args.http_port, args.https_port);
@@ -118,11 +117,6 @@ fn redirect_legacy_domain(
         },
     )
 }
-
-#[derive(Debug)]
-struct FilterNotApplicable;
-
-impl Reject for FilterNotApplicable {}
 
 async fn handle_not_found(
     rejection: Rejection,
