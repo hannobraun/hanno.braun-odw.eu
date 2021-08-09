@@ -12,4 +12,4 @@ date  = "2021-08-09"
 
 When you need semi-finished material for a woodworking project, but can't really cut or sand wood in your workshop: Cutting boards!
 
-They're pretty cheap and seemingly not made from the best wood (not that I know a lot about wood), but they'll do.
+Those are pretty cheap and seemingly not made from the best wood (not that I know a lot about wood), but they'll do.
