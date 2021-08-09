@@ -6,7 +6,7 @@ use std::{
     path::{Path, PathBuf},
 };
 
-use warp::{Filter, Future};
+use warp::Filter;
 
 use crate::args::Args;
 
@@ -30,7 +30,7 @@ pub async fn server(args: Args) {
     tokio::join!(https_server, http_server);
 }
 
-fn http_server(http_port: u16, https_port: u16) -> impl Future {
+fn http_server(http_port: u16, https_port: u16) -> impl warp::Future {
     warp::serve(redirect_to_https(https_port))
         .run((Ipv6Addr::UNSPECIFIED, http_port))
 }
@@ -41,7 +41,7 @@ fn https_server(
     tls_key: impl AsRef<Path>,
     tls_cert: impl AsRef<Path>,
     https_port: u16,
-) -> impl Future {
+) -> impl warp::Future {
     let server = redirect_legacy_domain()
         .or(redirect_home())
         .or(serve_static(static_dir, zola_dir));
