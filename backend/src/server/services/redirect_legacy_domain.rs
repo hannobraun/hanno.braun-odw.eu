@@ -2,14 +2,13 @@ use warp::{
     host::Authority,
     http::{uri::Scheme, Uri},
     path::FullPath,
-    Filter as _,
+    Filter, Rejection, Reply,
 };
 
 use crate::server::{redirect, util::FilterNotApplicable};
 
 pub fn redirect_legacy_domain(
-) -> impl warp::Filter<Extract = impl warp::Reply, Error = warp::Rejection> + Clone
-{
+) -> impl Filter<Extract = impl Reply, Error = Rejection> + Clone {
     warp::host::optional().and(warp::path::full()).and_then(
         |authority: Option<Authority>, path: FullPath| async move {
             if let Some("madeby.hannobraun.de") =
