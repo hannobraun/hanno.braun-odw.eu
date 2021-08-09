@@ -7,5 +7,9 @@ pub fn temporary(uri: Uri) -> impl warp::Reply {
 
 /// Permanent redirect using a 308 response code
 pub fn permanent(uri: Uri) -> impl warp::Reply {
-    warp::redirect::permanent(uri)
+    warp::reply::with_header(
+        warp::redirect::permanent(uri),
+        "Cache-Control",
+        format!("max-age={}", 60 * 60 * 24 * 7 * 4), // 4 weeks
+    )
 }
