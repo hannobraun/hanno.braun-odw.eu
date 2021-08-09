@@ -1,4 +1,4 @@
-mod redirect;
+mod util;
 
 use std::{
     net::Ipv6Addr,
@@ -14,6 +14,8 @@ use warp::{
 };
 
 use crate::args::Args;
+
+use self::util::redirect;
 
 pub async fn server(args: Args) {
     let http_server = http_server(args.http_port, args.https_port);
