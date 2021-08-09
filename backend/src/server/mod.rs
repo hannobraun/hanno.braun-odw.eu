@@ -6,17 +6,14 @@ use std::{
     path::{Path, PathBuf},
 };
 
-use warp::{
-    host::Authority,
-    http::{StatusCode, Uri},
-    path::FullPath,
-    Filter, Future, Reply,
-};
+use warp::{Filter, Future};
 
 use crate::args::Args;
 
 use self::{
-    services::{redirect_home, redirect_legacy_domain, serve_static},
+    services::{
+        redirect_home, redirect_legacy_domain, redirect_to_https, serve_static,
+    },
     util::redirect,
 };
 
@@ -34,40 +31,8 @@ pub async fn server(args: Args) {
 }
 
 fn http_server(http_port: u16, https_port: u16) -> impl Future {
-    let redirect_to_https = warp::host::optional().and(warp::path::full()).map(
-        move |authority: Option<Authority>, path: FullPath| {
-            let authority = match authority {
-                Some(authority) => authority,
-                None => {
-                    return warp::reply::with_status(
-                        "Could not extract authority from request.",
-                        StatusCode::BAD_REQUEST,
-                    )
-                    .into_response()
-                }
-            };
-
-            let authority: Authority =
-                format!("{}:{}", authority.host(), https_port)
-                    .parse()
-                    // Should never happen, unless the `format!` call above is
-                    // buggy.
-                    .expect("Failed to parse authority.");
-
-            let uri = Uri::builder()
-                .scheme("https")
-                .authority(authority)
-                .path_and_query(path.as_str())
-                .build()
-                // Should never happen, unless invalid arguments are passed to
-                // the builder methods above, which would be a bug.
-                .expect("Failed to build URI");
-
-            redirect::permanent(uri).into_response()
-        },
-    );
-
-    warp::serve(redirect_to_https).run((Ipv6Addr::UNSPECIFIED, http_port))
+    warp::serve(redirect_to_https(https_port))
+        .run((Ipv6Addr::UNSPECIFIED, http_port))
 }
 
 fn https_server(
