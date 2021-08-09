@@ -16,7 +16,7 @@ use warp::{
 use crate::args::Args;
 
 use self::{
-    services::redirect_legacy_domain,
+    services::{redirect_home, redirect_legacy_domain},
     util::{handle_not_found, redirect},
 };
 
@@ -77,15 +77,14 @@ fn https_server(
     tls_cert: impl AsRef<Path>,
     https_port: u16,
 ) -> impl Future {
-    let redirect_home = warp::path::end()
-        .map(|| redirect::temporary(Uri::from_static("/updates")));
-
     let serve_static = warp::fs::dir(static_dir)
         .or(warp::fs::dir(zola_dir))
         .recover(handle_not_found)
         .with(warp::trace::request());
 
-    let server = redirect_legacy_domain().or(redirect_home).or(serve_static);
+    let server = redirect_legacy_domain()
+        .or(redirect_home())
+        .or(serve_static);
 
     warp::serve(server)
         .tls()
