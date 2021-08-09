@@ -6,7 +6,7 @@ use std::{
     path::{Path, PathBuf},
 };
 
-use warp::Filter;
+use warp::Filter as _;
 
 use crate::args::Args;
 
