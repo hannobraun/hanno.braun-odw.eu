@@ -12,7 +12,8 @@ use crate::args::Args;
 
 use self::{
     services::{
-        redirect_home, redirect_legacy_domain, redirect_to_https, serve_static,
+        redirect_home, redirect_legacy_domain, redirect_legacy_path,
+        redirect_to_https, serve_static,
     },
     util::redirect,
 };
@@ -45,6 +46,7 @@ fn https_server(
     warp::serve(
         redirect_legacy_domain()
             .or(redirect_home())
+            .or(redirect_legacy_path())
             .or(serve_static(static_dir, zola_dir)),
     )
     .tls()
