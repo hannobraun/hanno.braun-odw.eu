@@ -16,8 +16,8 @@ use warp::{
 use crate::args::Args;
 
 use self::{
-    services::{redirect_home, redirect_legacy_domain},
-    util::{handle_not_found, redirect},
+    services::{redirect_home, redirect_legacy_domain, serve_static},
+    util::redirect,
 };
 
 pub async fn server(args: Args) {
@@ -77,14 +77,9 @@ fn https_server(
     tls_cert: impl AsRef<Path>,
     https_port: u16,
 ) -> impl Future {
-    let serve_static = warp::fs::dir(static_dir)
-        .or(warp::fs::dir(zola_dir))
-        .recover(handle_not_found)
-        .with(warp::trace::request());
-
     let server = redirect_legacy_domain()
         .or(redirect_home())
-        .or(serve_static);
+        .or(serve_static(static_dir, zola_dir));
 
     warp::serve(server)
         .tls()
