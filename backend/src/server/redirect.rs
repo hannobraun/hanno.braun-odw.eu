@@ -17,6 +17,8 @@ fn with_cache_control_header(
     reply: impl warp::Reply,
     max_age: time::Duration,
 ) -> impl warp::Reply {
+    assert!(max_age.is_positive());
+
     warp::reply::with_header(
         reply,
         "Cache-Control",
