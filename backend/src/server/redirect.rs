@@ -9,17 +9,17 @@ pub fn temporary(uri: Uri) -> impl warp::Reply {
 pub fn permanent(uri: Uri) -> impl warp::Reply {
     with_cache_control_header(
         warp::redirect::permanent(uri),
-        60 * 60 * 24 * 7 * 4, // 4 weeks
+        time::Duration::weeks(4),
     )
 }
 
 fn with_cache_control_header(
     reply: impl warp::Reply,
-    max_age: u32,
+    max_age: time::Duration,
 ) -> impl warp::Reply {
     warp::reply::with_header(
         reply,
         "Cache-Control",
-        format!("max-age={}", max_age),
+        format!("max-age={}", max_age.whole_seconds()),
     )
 }
