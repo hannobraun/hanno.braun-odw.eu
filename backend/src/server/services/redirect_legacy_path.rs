@@ -2,7 +2,7 @@ use warp::{path::FullPath, Filter, Rejection, Reply};
 
 use crate::server::util::redirect;
 
-pub fn redirect_legacy_path(
+pub fn redirect_path_prefix(
     old_prefix: &'static str,
     new_prefix: &'static str,
 ) -> impl Filter<Extract = impl Reply, Error = Rejection> + Clone {
