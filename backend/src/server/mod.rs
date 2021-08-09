@@ -18,16 +18,16 @@ use self::{
 };
 
 pub async fn server(args: Args) {
-    let http_server = http_server(args.http_port, args.https_port);
-    let https_server = https_server(
-        args.static_dir,
-        args.zola_dir,
-        args.tls_key,
-        args.tls_cert,
-        args.https_port,
+    tokio::join!(
+        http_server(args.http_port, args.https_port),
+        https_server(
+            args.static_dir,
+            args.zola_dir,
+            args.tls_key,
+            args.tls_cert,
+            args.https_port,
+        )
     );
-
-    tokio::join!(https_server, http_server);
 }
 
 fn http_server(http_port: u16, https_port: u16) -> impl warp::Future {
