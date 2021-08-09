@@ -7,6 +7,7 @@ pub fn redirect_path_prefix(
     new_prefix: &'static str,
 ) -> impl Filter<Extract = impl Reply, Error = Rejection> + Clone {
     warp::path(old_prefix)
+        // TASK: This should be possible in a more elegant way using `peek`.
         .and(warp::path::full())
         .map(move |path: FullPath| {
             let suffix = path
