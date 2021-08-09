@@ -42,13 +42,13 @@ fn https_server(
     tls_cert: impl AsRef<Path>,
     https_port: u16,
 ) -> impl warp::Future {
-    let server = redirect_legacy_domain()
-        .or(redirect_home())
-        .or(serve_static(static_dir, zola_dir));
-
-    warp::serve(server)
-        .tls()
-        .key_path(tls_key)
-        .cert_path(tls_cert)
-        .run((Ipv6Addr::UNSPECIFIED, https_port))
+    warp::serve(
+        redirect_legacy_domain()
+            .or(redirect_home())
+            .or(serve_static(static_dir, zola_dir)),
+    )
+    .tls()
+    .key_path(tls_key)
+    .cert_path(tls_cert)
+    .run((Ipv6Addr::UNSPECIFIED, https_port))
 }
