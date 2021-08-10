@@ -12,7 +12,7 @@ Of course, the pumping motion should _only_ accelerate the rotating mass. It sho
 
 {{
     video(
-        path="ratchet-clutch.webm",
+        path="/projects/ratchet-clutch/ratchet-clutch.webm",
         text="The ratchet clutch mechanism in action."
     )
 }}

@@ -30,7 +30,7 @@ Those may well be the worst of their kind, but the second one works:
 
 {{
     video(
-        path="worst-linear-axis-v2.webm",
+        path="/projects/worst-linear-axis/worst-linear-axis-v2.webm",
         text="A video of the improved version of the world's worst linear actuator."
     )
 }}

@@ -19,7 +19,7 @@ It's printed in-place, meaning the moving parts come off the printer fully assem
 
 {{
     video(
-        path="hinge.webm",
+        path="/projects/hinge/hinge.webm",
         text="The hinge in action."
     )
 }}

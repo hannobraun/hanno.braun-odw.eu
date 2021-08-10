@@ -21,7 +21,7 @@ The principle is easy: A file is put in a specially made file holder, which is d
 
 {{
     video(
-        path="filing-table.webm",
+        path="/projects/filing-table/filing-table.webm",
         text="Me using the filing table to work on a piece of aluminium, showing some progress on the surface."
     )
 }}
@@ -30,7 +30,7 @@ The results are pretty good. I can make pieces of aluminium now that have flat f
 
 {{
     video(
-        path="end-result.webm",
+        path="/projects/filing-table/end-result.webm",
         text="The end result of some filing using the filing table. Surfaces are mostly flat, and angles are mostly right, based on some eyeball-based inspection."
     )
 }}

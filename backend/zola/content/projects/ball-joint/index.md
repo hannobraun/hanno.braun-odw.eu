@@ -19,7 +19,7 @@ Not much to it. Works pretty well, but could be a bit tighter, maybe (I followed
 
 {{
     video(
-        path="ball-joint.webm",
+        path="/projects/ball-joint/ball-joint.webm",
         text="The ball joint in action."
     )
 }}
