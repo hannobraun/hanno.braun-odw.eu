@@ -6,3 +6,6 @@ generate_feed = true
 
 highlight_code     = false
 build_search_index = false
+
+[slugify]
+paths = "safe"
