@@ -10,6 +10,10 @@ time               = "*"
 tracing            = "*"
 tracing-subscriber = "*"
 
+[dependencies.serde]
+version  = "*"
+features = ["derive"]
+
 [dependencies.tokio]
 version  = "*"
 features = ["full"]
