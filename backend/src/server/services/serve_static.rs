@@ -11,5 +11,4 @@ pub fn serve_static(
     warp::fs::dir(static_dir)
         .or(warp::fs::dir(zola_dir))
         .recover(handle_not_found)
-        .with(warp::trace::request())
 }

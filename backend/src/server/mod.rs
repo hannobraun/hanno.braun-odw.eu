@@ -33,7 +33,7 @@ pub async fn server(args: Args) {
 }
 
 fn http_server(http_port: u16, https_port: u16) -> impl warp::Future {
-    warp::serve(redirect_to_https(https_port))
+    warp::serve(redirect_to_https(https_port).with(warp::trace::request()))
         .run((Ipv6Addr::UNSPECIFIED, http_port))
 }
 
@@ -50,7 +50,8 @@ fn https_server(
             .or(redirect_path("rss.xml", "/atom.xml"))
             .or(redirect_path_prefix("project", "projects"))
             .or(remove_trailing_slash())
-            .or(serve_static(static_dir, zola_dir)),
+            .or(serve_static(static_dir, zola_dir))
+            .with(warp::trace::request()),
     )
     .tls()
     .key_path(tls_key)
