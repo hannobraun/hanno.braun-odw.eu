@@ -9,7 +9,9 @@ async fn main() {
     tracing_subscriber::fmt::init();
 
     let app = route("/", get(hello_world));
-    axum::Server::bind(&SocketAddr::from((Ipv6Addr::UNSPECIFIED, 8080)))
+
+    let addr = SocketAddr::from((Ipv6Addr::UNSPECIFIED, 8080));
+    axum::Server::bind(&addr)
         .serve(app.into_make_service())
         .await
         // TASK: Improve error handling.
