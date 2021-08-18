@@ -12,6 +12,7 @@ async fn main() {
     let app = route("/", get(hello_world));
 
     let addr = SocketAddr::from((Ipv6Addr::UNSPECIFIED, 8080));
+    info!("Listening on {}", addr);
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
         .await
