@@ -1,4 +1,4 @@
-use std::net::Ipv6Addr;
+use std::net::{Ipv6Addr, SocketAddr};
 
 use axum::{
     handler::get, response::IntoResponse, route, routing::RoutingDsl as _,
@@ -9,7 +9,7 @@ async fn main() {
     tracing_subscriber::fmt::init();
 
     let app = route("/", get(hello_world));
-    axum::Server::bind(&(Ipv6Addr::UNSPECIFIED, 8080).into())
+    axum::Server::bind(&SocketAddr::from((Ipv6Addr::UNSPECIFIED, 8080)))
         .serve(app.into_make_service())
         .await
         // TASK: Improve error handling.
