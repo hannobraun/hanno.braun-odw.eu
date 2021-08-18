@@ -6,6 +6,8 @@ use axum::{
 
 #[tokio::main]
 async fn main() {
+    tracing_subscriber::fmt::init();
+
     let app = route("/", get(hello_world));
     axum::Server::bind(&(Ipv6Addr::UNSPECIFIED, 8080).into())
         .serve(app.into_make_service())
