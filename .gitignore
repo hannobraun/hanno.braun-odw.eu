@@ -3,6 +3,3 @@
 
 # Vim
 *.swp
-
-# Zola
-/website/zola/public
