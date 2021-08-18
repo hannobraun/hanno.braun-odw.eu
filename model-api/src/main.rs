@@ -3,10 +3,11 @@ use std::net::{Ipv6Addr, SocketAddr};
 use axum::{
     handler::get, response::IntoResponse, route, routing::RoutingDsl as _,
 };
+use tracing::info;
 
 #[tokio::main]
 async fn main() {
-    tracing_subscriber::fmt::init();
+    tracing_subscriber::fmt::fmt().init();
 
     let app = route("/", get(hello_world));
 
