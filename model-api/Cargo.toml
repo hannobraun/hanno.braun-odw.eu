@@ -3,6 +3,10 @@ name    = "model-api"
 version = "0.1.0"
 edition = "2018"
 
+
+[dependencies]
+axum = "*"
+
 [dependencies.tokio]
 version  = "*"
 features = ["full"]
