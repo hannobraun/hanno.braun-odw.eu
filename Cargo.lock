@@ -711,6 +711,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "model-api"
+version = "0.1.0"
+
+[[package]]
 name = "multipart"
 version = "0.17.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
