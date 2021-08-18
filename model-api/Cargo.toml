@@ -5,7 +5,9 @@ edition = "2018"
 
 
 [dependencies]
-axum = "*"
+axum               = "*"
+tracing            = "*"
+tracing-subscriber = "*"
 
 [dependencies.tokio]
 version  = "*"
