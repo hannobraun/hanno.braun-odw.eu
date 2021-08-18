@@ -1,8 +1,8 @@
 # Cargo
-/backend/target
+/website/target
 
 # Vim
 *.swp
 
 # Zola
-/backend/zola/public
+/website/zola/public
