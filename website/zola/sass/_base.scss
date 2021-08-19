@@ -71,7 +71,7 @@ body {
     }
 }
 
-.box {
+@mixin box {
     padding:          1em;
     border-radius:    0.25em;
     background-color: #f4f4f4;
