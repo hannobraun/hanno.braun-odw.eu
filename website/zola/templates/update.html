@@ -1,0 +1,7 @@
+{% import "include/macros.html" as macros %}
+
+{% extends "extend/base.html" %}
+
+{% block main %}
+    {{ macros::update(page=page) }}
+{% endblock main %}
