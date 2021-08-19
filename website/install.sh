@@ -8,7 +8,7 @@ STATIC_DIR=$SERVE_DIR/static
 ZOLA_DIR=$SERVE_DIR/zola
 
 cargo build --release
-sudo cp -f target/release/backend /usr/local/bin
+sudo cp -f ../target/release/website /usr/local/bin
 
 sudo mkdir -p $UNIT_DIR
 sudo cp backend.service $UNIT_DIR
