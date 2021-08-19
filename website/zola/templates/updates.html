@@ -1,17 +1,12 @@
+{% import "include/macros.html" as macros %}
+
 {% extends "extend/base.html" %}
 
 {% block main %}
     <ol>
         {% for page in section.pages | reverse -%}
             <li>
-                <article class="update">
-                    <div class="content">
-                        {{ page.content | safe }}
-                    </div>
-                    <div class="metadata">
-                        Posted on <span class="date">{{ page.date }}</span>
-                    </div>
-                </article>
+                {{ macros::update(page=page) }}
             </li>
         {%- endfor %}
     </ol>

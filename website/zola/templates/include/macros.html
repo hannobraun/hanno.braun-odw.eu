@@ -1,0 +1,11 @@
+{% macro update(page) %}
+    <article class="update">
+        <div class="content">
+            {{ page.content | safe }}
+        </div>
+        <div class="metadata">
+            Posted on <span class="date">{{ page.date }}</span>
+        </div>
+    </article>
+    </label>
+{% endmacro input %}
