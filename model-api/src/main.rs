@@ -5,10 +5,13 @@ use axum::{
 };
 use tower_http::trace::{self, TraceLayer};
 use tracing::{info, Level};
+use tracing_subscriber::EnvFilter;
 
 #[tokio::main]
 async fn main() {
-    tracing_subscriber::fmt::fmt().init();
+    tracing_subscriber::fmt::fmt()
+        .with_env_filter(EnvFilter::from_default_env())
+        .init();
 
     let app = route("/", get(hello_world)).layer(
         TraceLayer::new_for_http()
