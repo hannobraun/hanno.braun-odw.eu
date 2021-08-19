@@ -2,7 +2,7 @@
 Description=Custom backend for made-by.braun-odw.eu
 
 [Service]
-ExecStart=/usr/local/bin/backend \
+ExecStart=/usr/local/bin/website \
 	--http-port=80 --https-port=443 \
 	--tls-key=/etc/letsencrypt/live/%H.nodes.braun-odw.eu/privkey.pem \
 	--tls-cert=/etc/letsencrypt/live/%H.nodes.braun-odw.eu/fullchain.pem \
