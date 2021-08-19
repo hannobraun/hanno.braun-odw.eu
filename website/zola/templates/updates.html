@@ -1,10 +1,10 @@
 {% extends "extend/base.html" %}
 
 {% block main %}
-    <ol class="updates">
+    <ol>
         {% for page in section.pages | reverse -%}
             <li>
-                <article class="box">
+                <article class="box update">
                     <div class="content">
                         {{ page.content | safe }}
                     </div>
