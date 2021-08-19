@@ -3,8 +3,8 @@
 {% block main %}
     <ol class="updates">
         {% for page in section.pages | reverse -%}
-            <li class="box">
-                <article>
+            <li>
+                <article class="box">
                     <div class="content">
                         {{ page.content | safe }}
                     </div>
