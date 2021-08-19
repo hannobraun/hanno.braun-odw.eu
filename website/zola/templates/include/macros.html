@@ -1,10 +1,13 @@
-{% macro update(page) %}
+{% macro update(page, permalink) %}
     <article class="update">
         <div class="content">
             {{ page.content | safe }}
         </div>
         <div class="metadata">
             Posted on <span class="date">{{ page.date }}</span>
+            {% if permalink == true %}
+                - <a href="{{ page.path }}">permalink</a>
+            {% endif %}
         </div>
     </article>
     </label>
