@@ -7,7 +7,19 @@
 {% endmacro input %}
 
 {% macro nav_entry(title, path) %}
-    <li><a href="{{ path }}">{{ title }}</a></li>
+    {% if page %}
+        {% set current_path = page.path %}
+    {% elif section %}
+        {% set current_path = section.path %}
+    {% endif %}
+
+    {% if current_path is starting_with(path) %}
+        {% set class = "active" %}
+    {% else %}
+        {% set class = "" %}
+    {% endif %}
+
+    <li><a class="{{ class }}" href="{{ path }}">{{ title }}</a></li>
 {% endmacro input %}
 
 {% macro update(page, show_permalink) %}
