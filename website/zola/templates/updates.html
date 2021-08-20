@@ -6,7 +6,7 @@
     <ol>
         {% for page in section.pages | reverse -%}
             <li>
-                {{ macros::update(page=page, permalink=true) }}
+                {{ macros::update(page=page, show_permalink=true) }}
             </li>
         {%- endfor %}
     </ol>
