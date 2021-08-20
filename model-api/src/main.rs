@@ -4,7 +4,8 @@ use std::{
 };
 
 use axum::{
-    handler::get, response::IntoResponse, route, routing::RoutingDsl as _,
+    body::Body, handler::get, http::Request, response::IntoResponse, route,
+    routing::RoutingDsl as _,
 };
 use tower_http::trace::{self, TraceLayer};
 use tracing::{info, Level};
@@ -31,7 +32,15 @@ async fn main() {
 
     let app = route("/", get(hello_world)).layer(
         TraceLayer::new_for_http()
-            // TASK: Log request path.
+            // Required to make request parameters visible in log message when
+            // logging on INFO level.
+            .make_span_with(|request: &Request<Body>| {
+                tracing::info_span!(
+                    "http-request",
+                    method = %request.method(),
+                    uri = %request.uri(),
+                )
+            })
             .on_request(trace::DefaultOnRequest::new().level(Level::INFO))
             .on_response(trace::DefaultOnResponse::new().level(Level::INFO)),
     );
