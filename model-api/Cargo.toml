@@ -3,18 +3,5 @@ name    = "model-api"
 version = "0.1.0"
 edition = "2018"
 
-
 [dependencies]
-anyhow             = "*"
-axum               = "*"
-rocket             = "0.5.0-rc.1"
-tracing            = "*"
-tracing-subscriber = "*"
-
-[dependencies.tokio]
-version  = "*"
-features = ["full"]
-
-[dependencies.tower-http]
-version  = "*"
-features = ["trace"]
+rocket = "0.5.0-rc.1"
