@@ -5,7 +5,7 @@ fn rocket() -> _ {
     rocket::build().mount("/", routes![hello])
 }
 
-#[get("/")]
+#[get("/hello")]
 fn hello() -> &'static str {
     "Hello, world!"
 }
