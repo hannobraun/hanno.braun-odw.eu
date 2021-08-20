@@ -4,11 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {% if page and page.title != "" %}
-            <title>{{ page.title }} - Made by Hanno</title>
-        {% else %}
-            <title>Made by Hanno</title>
-        {% endif %}
+        {% block title %}
+            {% if page and page.title != "" %}
+                <title>{{ page.title }} - Made by Hanno</title>
+            {% else %}
+                <title>Made by Hanno</title>
+            {% endif %}
+        {% endblock title %}
 
         <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
 
