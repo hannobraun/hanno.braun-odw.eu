@@ -9,6 +9,8 @@
         {% block title %}
             {% if page %}
                 {{ macros::title(word=page.title) }}
+            {% elif section %}
+                {{ macros::title(word=section.title) }}
             {% else %}
                 {{ macros::title() }}
             {% endif %}
