@@ -1,3 +1,5 @@
+{% import "include/macros.html" as macros %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,9 +8,9 @@
 
         {% block title %}
             {% if page %}
-                <title>{{ page.title }} - Made by Hanno</title>
+                {{ macros::title(word=page.title) }}
             {% else %}
-                <title>Made by Hanno</title>
+                {{ macros::title() }}
             {% endif %}
         {% endblock title %}
 

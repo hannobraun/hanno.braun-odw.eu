@@ -1,3 +1,11 @@
+{% macro title(word="") %}
+    {% if word != "" %}
+        <title>{{ word }} - Made by Hanno</title>
+    {% else %}
+        <title>Made by Hanno</title>
+    {% endif %}
+{% endmacro input %}
+
 {% macro update(page, permalink) %}
     <article class="update">
         <div class="content">
