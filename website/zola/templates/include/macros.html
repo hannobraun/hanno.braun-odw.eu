@@ -6,6 +6,10 @@
     {% endif %}
 {% endmacro input %}
 
+{% macro nav_entry(title, path) %}
+    <li><a href="{{ path }}">{{ title }}</a></li>
+{% endmacro input %}
+
 {% macro update(page, show_permalink) %}
     <article class="update">
         <div class="content">

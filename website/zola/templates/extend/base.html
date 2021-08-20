@@ -28,8 +28,8 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="/updates">Updates</a></li>
-                    <li><a href="/projects">Projects</a></li>
+                    {{ macros::nav_entry(title="Updates", path="/updates") }}
+                    {{ macros::nav_entry(title="Projects", path="/projects") }}
                 </ul>
             </nav>
         </header>
