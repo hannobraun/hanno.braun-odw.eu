@@ -12,7 +12,7 @@ use tracing::{info, Level};
 use tracing_subscriber::EnvFilter;
 
 #[tokio::main]
-async fn main() {
+async fn main() -> anyhow::Result<()> {
     // Create a filter that defaults to INFO, but can be overridden by a user-
     // supplied `RUST_LOG` env variable. Workaround for:
     // https://github.com/tokio-rs/tracing/issues/1466
@@ -49,9 +49,9 @@ async fn main() {
     info!("Listening on {}", addr);
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
-        .await
-        // TASK: Improve error handling.
-        .unwrap()
+        .await?;
+
+    Ok(())
 }
 
 async fn hello_world() -> impl IntoResponse {
