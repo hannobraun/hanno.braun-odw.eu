@@ -1,5 +1,6 @@
 +++
-sort_by       = "date"
+sort_by = "date"
+
 template      = "projects.html"
 page_template = "project.html"
 +++
