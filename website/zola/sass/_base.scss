@@ -41,25 +41,6 @@ body {
     }
 
     > footer {
-        // TASK: Move to contacts-specific SCSS file.
-        table {
-            margin:    0 auto;
-            font-size: 90%;
-
-            * {
-                vertical-align: text-top;
-            }
-
-            th {
-                text-align: right;
-                padding   : 0.35em 1em;
-            }
-
-            td p {
-                margin: 0;
-            }
-        }
-
         .made-in-odenwald {
             text-align: center;
             margin:     3em auto;
