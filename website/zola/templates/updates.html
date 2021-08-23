@@ -3,6 +3,7 @@
 {% extends "extend/base.html" %}
 
 {% block main %}
+    <h2>{{ section.title }}</h2>
     <ol>
         {% for page in section.pages | reverse -%}
             <li>
