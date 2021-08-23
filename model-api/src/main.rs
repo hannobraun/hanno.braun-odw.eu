@@ -1,4 +1,5 @@
 use rocket::{get, routes};
+use tokio::{io, process::Command};
 
 #[rocket::launch]
 fn rocket() -> _ {
@@ -6,6 +7,23 @@ fn rocket() -> _ {
 }
 
 #[get("/model/spacer?<outer>&<inner>&<height>")]
-async fn spacer(outer: f64, inner: f64, height: f64) -> String {
-    format!("outer: {}, inner: {}, height: {}", outer, inner, height)
+async fn spacer(
+    outer: f64,
+    inner: f64,
+    height: f64,
+) -> Result<String, io::Error> {
+    // TASK: Check status code.
+    Command::new("openscad")
+        .arg(format!("-Douter={}", outer))
+        .arg(format!("-Dinner={}", inner))
+        .arg(format!("-Dheight={}", height))
+        // TASK: Store file in temporary directory.
+        .args(["-o", "spacer.3mf"])
+        .arg("api.scad")
+        .current_dir("models/spacer")
+        .status()
+        .await?;
+
+    // TASK: Serve generated file.
+    Ok(format!("Call to OpenSCAD succeeded"))
 }
