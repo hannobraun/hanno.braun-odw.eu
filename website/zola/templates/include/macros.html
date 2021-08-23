@@ -4,7 +4,7 @@
     {% else %}
         <title>Made by Hanno</title>
     {% endif %}
-{% endmacro input %}
+{% endmacro %}
 
 {% macro nav_entry(title, path) %}
     {% if page %}
@@ -20,7 +20,7 @@
     {% endif %}
 
     <li><a class="{{ class }}" href="{{ path }}">{{ title }}</a></li>
-{% endmacro nav_entry %}
+{% endmacro %}
 
 {% macro update(page, show_permalink) %}
     <article class="update">
@@ -34,4 +34,4 @@
             {% endif %}
         </div>
     </article>
-{% endmacro input %}
+{% endmacro %}
