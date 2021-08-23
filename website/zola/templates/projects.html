@@ -1,7 +1,9 @@
+{% import "include/macros.html" as macros %}
+
 {% extends "extend/base.html" %}
 
 {% block main %}
-    <h2>{{ section.title }}</h2>
+    {{ macros::section_title() }}
     <ol class="projects">
         {% for page in section.pages -%}
             <li>

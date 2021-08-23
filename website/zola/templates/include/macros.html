@@ -22,6 +22,10 @@
     <li><a class="{{ class }}" href="{{ path }}">{{ title }}</a></li>
 {% endmacro %}
 
+{% macro section_title() %}
+    <h2>{{ section.title }}</h2>
+{% endmacro %}
+
 {% macro update(page, show_permalink) %}
     <article class="update">
         <div class="content">

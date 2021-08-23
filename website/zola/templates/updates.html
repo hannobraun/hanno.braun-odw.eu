@@ -3,7 +3,7 @@
 {% extends "extend/base.html" %}
 
 {% block main %}
-    <h2>{{ section.title }}</h2>
+    {{ macros::section_title() }}
     <ol>
         {% for page in section.pages | reverse -%}
             <li>
