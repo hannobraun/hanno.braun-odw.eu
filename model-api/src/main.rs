@@ -4,15 +4,16 @@ use rocket::{
 };
 use tempfile::tempdir;
 use thiserror::Error;
-use tokio::{io, process::Command};
+use tokio::{fs::File, io, process::Command};
 
 #[rocket::launch]
 fn rocket() -> _ {
     rocket::build().mount("/", routes![spacer])
 }
 
+// TASK: Make sure downloaded file has correct file ending.
 #[get("/model/spacer?<outer>&<inner>&<height>")]
-async fn spacer(outer: f64, inner: f64, height: f64) -> Result<String, Error> {
+async fn spacer(outer: f64, inner: f64, height: f64) -> Result<File, Error> {
     let tmp = tempdir()?;
     let path = tmp.path().join("model.3mf");
     let path_str = path.as_os_str().to_str().ok_or(TempDirNotValidUtf8Error)?;
@@ -35,8 +36,8 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<String, Error> {
         }));
     }
 
-    // TASK: Serve generated file.
-    Ok(format!("Call to OpenSCAD succeeded"))
+    let file = File::open(path).await?;
+    Ok(file)
 }
 
 #[derive(Debug, Error, Responder)]
