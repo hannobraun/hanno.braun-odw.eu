@@ -1,4 +1,5 @@
-use rocket::{get, routes};
+use rocket::{get, routes, Responder};
+use thiserror::Error;
 use tokio::{io, process::Command};
 
 #[rocket::launch]
@@ -7,11 +8,7 @@ fn rocket() -> _ {
 }
 
 #[get("/model/spacer?<outer>&<inner>&<height>")]
-async fn spacer(
-    outer: f64,
-    inner: f64,
-    height: f64,
-) -> Result<String, io::Error> {
+async fn spacer(outer: f64, inner: f64, height: f64) -> Result<String, Error> {
     // TASK: Check status code.
     Command::new("openscad")
         .arg(format!("-Douter={}", outer))
@@ -26,4 +23,10 @@ async fn spacer(
 
     // TASK: Serve generated file.
     Ok(format!("Call to OpenSCAD succeeded"))
+}
+
+#[derive(Debug, Error, Responder)]
+enum Error {
+    #[error("I/O error")]
+    Io(#[from] io::Error),
 }
