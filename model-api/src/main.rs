@@ -12,7 +12,7 @@ fn rocket() -> _ {
 
 #[get("/model/spacer?<outer>&<inner>&<height>")]
 async fn spacer(outer: f64, inner: f64, height: f64) -> Result<String, Error> {
-    let status = Command::new("openscad")
+    let output = Command::new("openscad")
         .arg(format!("-Douter={}", outer))
         .arg(format!("-Dinner={}", inner))
         .arg(format!("-Dheight={}", height))
@@ -20,13 +20,15 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<String, Error> {
         .args(["-o", "spacer.3mf"])
         .arg("api.scad")
         .current_dir("models/spacer")
-        .status()
+        .output()
         .await?;
 
     // This can use `ExitStatus::exit_ok`, once that is stabilized.
-    if !status.success() {
-        // TASK: Add OpenSCAD output to error.
-        return Err(Error::OpenScad(OpenScadError));
+    if !output.status.success() {
+        return Err(Error::OpenScad(OpenScadError {
+            stdout: output.stdout,
+            stderr: output.stderr,
+        }));
     }
 
     // TASK: Serve generated file.
@@ -43,14 +45,26 @@ enum Error {
 }
 
 #[derive(Debug)]
-struct OpenScadError;
+struct OpenScadError {
+    stdout: Vec<u8>,
+    stderr: Vec<u8>,
+}
 
 impl<'r> RocketResponder<'r, 'static> for OpenScadError {
     fn respond_to(
         self,
         _: &'r rocket::Request,
     ) -> rocket::response::Result<'static> {
-        error!("Error calling OpenSCAD");
+        let stdout = String::from_utf8(self.stdout)
+            .unwrap_or_else(|err| format!("Error decoding stdout: {}", err));
+        let stderr = String::from_utf8(self.stderr)
+            .unwrap_or_else(|err| format!("Error decoding stderr: {}", err));
+
+        error!(
+            "Error calling OpenSCAD.\nstdout:\n{}\nstderr:\n{}",
+            stdout, stderr
+        );
+
         Err(Status::InternalServerError)
     }
 }
