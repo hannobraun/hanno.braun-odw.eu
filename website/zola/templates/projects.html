@@ -10,7 +10,7 @@
                         <strong>Updated:</strong> {{ page.date }}
                     </p>
                 </a>
-                <a href="{{ page.path }}">
+                <a class="preview-image" href="{{ page.path }}">
                     {% set image = resize_image(
                         path=page.extra.image,
                         width=600,
