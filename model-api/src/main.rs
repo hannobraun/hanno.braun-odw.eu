@@ -2,6 +2,7 @@ use rocket::{
     error, get, http::Status, response::Responder as RocketResponder, routes,
     Responder,
 };
+use tempfile::tempdir;
 use thiserror::Error;
 use tokio::{io, process::Command};
 
@@ -12,12 +13,15 @@ fn rocket() -> _ {
 
 #[get("/model/spacer?<outer>&<inner>&<height>")]
 async fn spacer(outer: f64, inner: f64, height: f64) -> Result<String, Error> {
+    let tmp = tempdir()?;
+    let path = tmp.path().join("model.3mf");
+    let path_str = path.as_os_str().to_str().ok_or(TempDirNotValidUtf8Error)?;
+
     let output = Command::new("openscad")
         .arg(format!("-Douter={}", outer))
         .arg(format!("-Dinner={}", inner))
         .arg(format!("-Dheight={}", height))
-        // TASK: Store file in temporary directory.
-        .args(["-o", "spacer.3mf"])
+        .args(["-o", path_str])
         .arg("api.scad")
         .current_dir("models/spacer")
         .output()
@@ -40,8 +44,25 @@ enum Error {
     #[error("I/O error")]
     Io(#[from] io::Error),
 
+    #[error("Temporary directory path is not valid UTF-8")]
+    TempDirNotValidUtf8(#[from] TempDirNotValidUtf8Error),
+
     #[error("Error calling OpenSCAD")]
     OpenScad(OpenScadError),
+}
+
+#[derive(Debug, Error)]
+#[error("Temporary directory path is not valid UTF-8")]
+struct TempDirNotValidUtf8Error;
+
+impl<'r> RocketResponder<'r, 'static> for TempDirNotValidUtf8Error {
+    fn respond_to(
+        self,
+        _: &'r rocket::Request,
+    ) -> rocket::response::Result<'static> {
+        error!("Temporary directory path is not valid UTF-8",);
+        Err(Status::InternalServerError)
+    }
 }
 
 #[derive(Debug)]
