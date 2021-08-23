@@ -23,7 +23,10 @@
 {% endmacro %}
 
 {% macro section_title() %}
-    <h2>{{ section.title }}</h2>
+    <header class="section">
+        <h2>{{ section.title }}</h2>
+        <a href="/atom.xml">(Atom feed)</a>
+    </header>
 {% endmacro %}
 
 {% macro update(page, show_permalink) %}
