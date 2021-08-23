@@ -70,6 +70,7 @@ header.section {
 }
 
 @mixin box {
+    margin:           1em;
     padding:          1em;
     border-radius:    0.25em;
     background-color: #f4f4f4;
