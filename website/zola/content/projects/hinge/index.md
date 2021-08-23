@@ -9,7 +9,7 @@ image = "projects/hinge/hinge.jpg"
 This is a 3D-printed hinge. It doesn't serve a purpose in itself, but it can be used as a component of other prints.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/hinge/hinge.jpg",
         alt="A 3D-printed hinge."
     )

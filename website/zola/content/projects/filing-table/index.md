@@ -11,7 +11,7 @@ When I got my 3D printer, it radically improved my workshop's capabilities. Sudd
 Since I (currently) have neither the room nor the budget for a CNC mill, this got me thinking: Can I somehow use the accuracy of the printer to improve my accuracy when working with aluminium? I'm sure the last word on this topic isn't spoken yet, but here's my first attempt at an answer.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/filing-table/filing-table.jpg",
         alt="The filing table, on it a piece of aluminium and a file in a file holder."
     )

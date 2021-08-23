@@ -11,7 +11,7 @@ I had just moved into my new workshop. Being motivated to do *something*, but no
 Here's what I came up with using nothing but aluminium sheet, an aluminium rod, a threaded rod, screws, nuts, and some standard tools:
 
 {{
-    resized_image(
+    preview_image(
         path="projects/worst-linear-axis/worst-linear-axis-v1.jpg",
         alt="A flimsy construction of bent aluminium sheet, resembling a linear axis."
     )
@@ -20,7 +20,7 @@ Here's what I came up with using nothing but aluminium sheet, an aluminium rod, 
 Didn't work. Way too flimsy. No matter, on to version 2:
 
 {{
-    resized_image(
+    preview_image(
         path="projects/worst-linear-axis/worst-linear-axis-v2.jpg",
         alt="Another aluminium sheet construction resembling a linear axis."
     )

@@ -4,7 +4,7 @@ date  = "2021-08-04"
 +++
 
 {{
-    resized_image(
+    preview_image(
         path="updates/20210804T120900Z/printer-at-home.jpg",
         alt="A Prusa Mini 3D printer on top of a cabinet."
     )

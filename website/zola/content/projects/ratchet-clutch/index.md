@@ -26,7 +26,7 @@ I did create my own model, but basically copied his whole mechanism, so most of 
 But back to my solution. At the center of the mechanism is a lead screw and a nut. This translates the linear motion of the lead screw into a rotation of the nut.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/ratchet-clutch/lead-screw-and-nut.jpg",
         alt="The lead screw with the nut on it."
     )
@@ -35,7 +35,7 @@ But back to my solution. At the center of the mechanism is a lead screw and a nu
 The nut goes into the rotor. Both the nut and the rotor have matching steps going in a circle. Those steps will engage when rotating in one direction, while just sliding over each other when rotating in the other direction. This is basically a ratchet.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/ratchet-clutch/rotor-and-nut.jpg",
         alt="The rotor on the left, the nut on the right. The matching steps can be seen."
     )
@@ -44,7 +44,7 @@ The nut goes into the rotor. Both the nut and the rotor have matching steps goin
 The nut goes into the rotor like this:
 
 {{
-    resized_image(
+    preview_image(
         path="projects/ratchet-clutch/rotor-and-nut-together.jpg",
         alt="The rotor and nut again, this time with the nut put into its place in the rotor."
     )
@@ -53,7 +53,7 @@ The nut goes into the rotor like this:
 And the lid goes on top:
 
 {{
-    resized_image(
+    preview_image(
         path="projects/ratchet-clutch/rotor-assembled.jpg",
         alt="The rotor assembled."
     )
@@ -66,7 +66,7 @@ Since I don't know whether this mechanism has a proper name, I'm calling it the 
 But we're not quite done yet: There need to be something to hold this in a way that allows for free rotation. For this, there's a simple housing.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/ratchet-clutch/housing-and-rotor.jpg",
         alt="The housing with the rotor inside it, the lid of the housing to the side."
     )
@@ -75,7 +75,7 @@ But we're not quite done yet: There need to be something to hold this in a way t
 The lid is just pressed on top.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/ratchet-clutch/housing-assembled.jpg",
         alt="The housing assembled."
     )

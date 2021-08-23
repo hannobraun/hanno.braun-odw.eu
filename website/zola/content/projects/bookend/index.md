@@ -9,7 +9,7 @@ image = "projects/bookend/bookend.jpg"
 My shelves aren't exactly bursting with physical books these days. Shameful, I know. But while I work on that, I need a stopgap solution.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/bookend/bookend.jpg",
         alt="A 3D-printed bookend."
     )

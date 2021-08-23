@@ -4,7 +4,7 @@ date  = "2021-08-09"
 +++
 
 {{
-    resized_image(
+    preview_image(
         path="updates/20210809T133200Z/cutting-boards.jpg",
         alt="Two wooden cutting boards on a table."
     )

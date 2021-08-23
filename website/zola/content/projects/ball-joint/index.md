@@ -9,7 +9,7 @@ image = "projects/ball-joint/ball-joint.jpg"
 I've been inspired by [this video of a 3D-printed ball joint](https://www.youtube.com/watch?v=JkHzmdVvHTg) and decided to make my own version.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/ball-joint/ball-joint.jpg",
         alt="A 3D-printed, print-in-place ball joint."
     )

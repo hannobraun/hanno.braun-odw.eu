@@ -11,7 +11,7 @@ When I first learned that 3D printers can print screws, my reaction was one of m
 Some time later, my Prusa Mini arrived, and I discovered that the thumb drive it came with had models of a screw and a nut on it. I wanted to try that out.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/3d-printed-screws/big-screw.jpg",
         alt="A big 3D-printed screw, placed on a hand for size comparison."
     )
@@ -22,7 +22,7 @@ The result looked so perfect that I started wondering: This big screw could cert
 So I started scaling down the {{ external_link(url="https://www.prusaprinters.org/prints/13786-screw-and-nut", text="original model") }}. Here's the end result:
 
 {{
-    resized_image(
+    preview_image(
         path="projects/3d-printed-screws/screw-collection.jpg",
         alt="The big screw and nut from before in the background, with three smaller screw/nut combinations in front of it."
     )

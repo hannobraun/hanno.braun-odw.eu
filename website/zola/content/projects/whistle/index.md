@@ -11,7 +11,7 @@ One of the first things (maybe the first thing?) I printed on my Prusa Mini was 
 After printing a few more to replace lost ones, I decided enough is enough.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/whistle/whistle.jpg",
         alt="A 3D-printed whistle with a holder thingy to put a string through."
     )

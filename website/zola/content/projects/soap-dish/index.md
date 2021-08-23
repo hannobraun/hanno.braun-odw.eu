@@ -9,7 +9,7 @@ image = "projects/soap-dish/soap-dish.jpg"
 Sometimes you need something to put your soap on.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/soap-dish/soap-dish.jpg",
         alt="A 3D-printed soap dish."
     )
@@ -18,7 +18,7 @@ Sometimes you need something to put your soap on.
 It prints best with variable layer height (I don't think the one pictured here had that enabled). The automatic setting in PrusaSlicer (without any smoothing) seemed to work best.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/soap-dish/soap-dish-with-soap.jpg",
         alt="A 3D-printed soap dish, with soap on it."
     )

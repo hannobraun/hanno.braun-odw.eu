@@ -11,7 +11,7 @@ So here's a very specific problem: When eating peanuts out of a bowl, where do y
 What to do? I present to you, the Peanut Bowl.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/peanut-bowl/peanut-bowl.jpg",
         alt="A 3D-printed bowl with two halves, one empty, the other filled with peanuts."
     )
@@ -20,7 +20,7 @@ What to do? I present to you, the Peanut Bowl.
 You fill one half with peanuts. As you eat them, the discarded husks go into the other chamber. They also stack, for easier storage.
 
 {{
-    resized_image(
+    preview_image(
         path="projects/peanut-bowl/peanut-bowl-stacked.jpg",
         alt="Two peanut bowls, one stacked into the other/"
     )
