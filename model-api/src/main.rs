@@ -12,7 +12,7 @@ fn rocket() -> _ {
 }
 
 // TASK: Make sure downloaded file has correct file ending.
-#[get("/model/spacer?<outer>&<inner>&<height>")]
+#[get("/models/spacer?<outer>&<inner>&<height>")]
 async fn spacer(outer: f64, inner: f64, height: f64) -> Result<File, Error> {
     let tmp = tempdir()?;
     let path = tmp.path().join("model.3mf");
