@@ -1,6 +1,6 @@
 {% set image = resize_image(path=path, width=600, op="fit_width") %}
 
-<a class="resized-image" href="/{{ path }}">
+<a class="preview-image" href="/{{ path }}">
     <img
         src="{{ image.url }}"
         alt="{{ alt }}" />
