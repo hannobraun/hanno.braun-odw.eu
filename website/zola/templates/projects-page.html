@@ -2,10 +2,13 @@
 
 {% block main %}
     <article class="project">
-        <h2>{{ page.title }}</h2>
-        <p class="published">
-            <strong>Published:</strong> {{ page.date }}
-        </p>
+        <header>
+            <h2>{{ page.title }}</h2>
+            <p class="published">
+                <strong>Published:</strong> {{ page.date }}
+            </p>
+        </header>
+
         {{ page.content | safe }}
 
         <hr />

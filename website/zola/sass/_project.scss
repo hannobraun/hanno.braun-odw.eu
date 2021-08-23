@@ -1,11 +1,13 @@
 article.project {
-    > h2 {
-        margin-bottom: 0em;
-    }
+    header {
+        h2 {
+            margin-bottom: 0em;
+        }
 
-    p.published {
-        margin-top: 0em;
-        font-size:  85%;
+        p.published {
+            margin-top: 0em;
+            font-size:  85%;
+        }
     }
 
     p.summary {
