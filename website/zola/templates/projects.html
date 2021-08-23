@@ -7,23 +7,25 @@
     <ol class="projects">
         {% for page in section.pages -%}
             <li>
-                <a href="{{ page.path }}" class="title">
-                    <h2>{{ page.title }}</h2>
-                    <p class="updated">
-                        <strong>Updated:</strong> {{ page.date }}
-                    </p>
-                </a>
-                <a class="preview-image" href="{{ page.path }}">
-                    {% set image = resize_image(
-                        path=page.extra.image,
-                        width=600,
-                        op="fit_width"
-                    ) %}
-                    <img
-                        src="{{ image.url }}"
-                        alt="{{ page.title }}" />
-                    <p>Go to project...</p>
-                </a>
+                <article>
+                    <a href="{{ page.path }}" class="title">
+                        <h2>{{ page.title }}</h2>
+                        <p class="updated">
+                            <strong>Updated:</strong> {{ page.date }}
+                        </p>
+                    </a>
+                    <a class="preview-image" href="{{ page.path }}">
+                        {% set image = resize_image(
+                            path=page.extra.image,
+                            width=600,
+                            op="fit_width"
+                        ) %}
+                        <img
+                            src="{{ image.url }}"
+                            alt="{{ page.title }}" />
+                        <p>Go to project...</p>
+                    </a>
+                </article>
             </li>
         {%- endfor %}
     </ol>
