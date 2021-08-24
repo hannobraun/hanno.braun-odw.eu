@@ -2,6 +2,6 @@
 title   = "Notes"
 sort_by = "date"
 
-template      = "projects.html"
+template      = "notes.html"
 page_template = "projects-page.html"
 +++
