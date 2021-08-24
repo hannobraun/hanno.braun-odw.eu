@@ -39,7 +39,7 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<File, Error> {
     Ok(file)
 }
 
-// TASK: Add route that returns of model.
+// TASK: Add route that returns images of model.
 
 #[derive(Debug, Error, Responder)]
 enum Error {
