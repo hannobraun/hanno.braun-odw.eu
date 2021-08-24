@@ -17,3 +17,14 @@ ol.notes article {
         font-size:  $font-size-reduced;
     }
 }
+
+article.project header {
+    h2 {
+        margin-bottom: 0em;
+    }
+
+    p.published {
+        margin-top: 0em;
+        font-size:  $font-size-reduced;
+    }
+}
