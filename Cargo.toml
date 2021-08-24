@@ -1,2 +1,2 @@
 [workspace]
-members = ["model-api", "website"]
+members = ["model-api"]
