@@ -29,6 +29,12 @@ status = 301 # moved permanently
 force  = true
 
 [[redirects]]
+from   = "/projects/*"
+to     = "/notes/:splat"
+status = 301 # moved permanently
+force  = true
+
+[[redirects]]
 from   = "rss.xml"
 to     = "atom.xml"
 status = 301 # moved permanently
