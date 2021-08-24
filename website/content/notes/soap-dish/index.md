@@ -3,14 +3,14 @@ title = "Soap Dish"
 date = 2021-05-13
 
 [extra]
-image = "projects/soap-dish/soap-dish.jpg"
+image = "notes/soap-dish/soap-dish.jpg"
 +++
 
 Sometimes you need something to put your soap on.
 
 {{
     preview_image(
-        path="projects/soap-dish/soap-dish.jpg",
+        path="notes/soap-dish/soap-dish.jpg",
         alt="A 3D-printed soap dish."
     )
 }}
@@ -19,7 +19,7 @@ It prints best with variable layer height (I don't think the one pictured here h
 
 {{
     preview_image(
-        path="projects/soap-dish/soap-dish-with-soap.jpg",
+        path="notes/soap-dish/soap-dish-with-soap.jpg",
         alt="A 3D-printed soap dish, with soap on it."
     )
 }}

@@ -3,7 +3,7 @@ title = "3D-Printed Screws"
 date = 2020-08-18
 
 [extra]
-image = "projects/3d-printed-screws/big-screw.jpg"
+image = "notes/3d-printed-screws/big-screw.jpg"
 +++
 
 When I first learned that 3D printers can print screws, my reaction was one of mild surprise: Yes, why wouldn't you be able to print very rough screw threads with a 3D printer?
@@ -12,7 +12,7 @@ Some time later, my Prusa Mini arrived, and I discovered that the thumb drive it
 
 {{
     preview_image(
-        path="projects/3d-printed-screws/big-screw.jpg",
+        path="notes/3d-printed-screws/big-screw.jpg",
         alt="A big 3D-printed screw, placed on a hand for size comparison."
     )
 }}
@@ -23,7 +23,7 @@ So I started scaling down the {{ external_link(url="https://www.prusaprinters.or
 
 {{
     preview_image(
-        path="projects/3d-printed-screws/screw-collection.jpg",
+        path="notes/3d-printed-screws/screw-collection.jpg",
         alt="The big screw and nut from before in the background, with three smaller screw/nut combinations in front of it."
     )
 }}

@@ -3,7 +3,7 @@ title = "Filing Table"
 date = 2020-08-25
 
 [extra]
-image = "projects/filing-table/filing-table.jpg"
+image = "notes/filing-table/filing-table.jpg"
 +++
 
 When I got my 3D printer, it radically improved my workshop's capabilities. Suddenly I could build things at a previously unimaginable accuracy. It also introduced a disconnect though: While I could form plastic to tenths of millimeters, my aluminium pieces were still crooked.
@@ -12,7 +12,7 @@ Since I (currently) have neither the room nor the budget for a CNC mill, this go
 
 {{
     preview_image(
-        path="projects/filing-table/filing-table.jpg",
+        path="notes/filing-table/filing-table.jpg",
         alt="The filing table, on it a piece of aluminium and a file in a file holder."
     )
 }}
@@ -21,7 +21,7 @@ The principle is easy: A file is put in a specially made file holder, which is d
 
 {{
     video(
-        path="/projects/filing-table/filing-table.webm",
+        path="/notes/filing-table/filing-table.webm",
         text="Me using the filing table to work on a piece of aluminium, showing some progress on the surface."
     )
 }}
@@ -30,7 +30,7 @@ The results are pretty good. I can make pieces of aluminium now that have flat f
 
 {{
     video(
-        path="/projects/filing-table/end-result.webm",
+        path="/notes/filing-table/end-result.webm",
         text="The end result of some filing using the filing table. Surfaces are mostly flat, and angles are mostly right, based on some eyeball-based inspection."
     )
 }}

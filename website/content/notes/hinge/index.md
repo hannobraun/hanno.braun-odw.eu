@@ -3,14 +3,14 @@ title = "Hinge"
 date = 2020-12-27
 
 [extra]
-image = "projects/hinge/hinge.jpg"
+image = "notes/hinge/hinge.jpg"
 +++
 
 This is a 3D-printed hinge. It doesn't serve a purpose in itself, but it can be used as a component of other prints.
 
 {{
     preview_image(
-        path="projects/hinge/hinge.jpg",
+        path="notes/hinge/hinge.jpg",
         alt="A 3D-printed hinge."
     )
 }}
@@ -19,7 +19,7 @@ It's printed in-place, meaning the moving parts come off the printer fully assem
 
 {{
     video(
-        path="/projects/hinge/hinge.webm",
+        path="/notes/hinge/hinge.webm",
         text="The hinge in action."
     )
 }}

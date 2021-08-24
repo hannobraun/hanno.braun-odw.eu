@@ -3,7 +3,7 @@ title = "Ratchet Clutch"
 date = 2020-09-12
 
 [extra]
-image = "projects/ratchet-clutch/ratchet-clutch.jpg"
+image = "notes/ratchet-clutch/ratchet-clutch.jpg"
 +++
 
 I recently had this wild idea involving a Super Soaker-style water gun, but with a rotating mass that powers an air pump. I don't think I'll ever build this, but there was one aspect of this idea that really fascinated me: It would require a mechanism that can translate a pumping motion into a moment to accelerate the rotating mass.
@@ -12,7 +12,7 @@ Of course, the pumping motion should _only_ accelerate the rotating mass. It sho
 
 {{
     video(
-        path="/projects/ratchet-clutch/ratchet-clutch.webm",
+        path="/notes/ratchet-clutch/ratchet-clutch.webm",
         text="The ratchet clutch mechanism in action."
     )
 }}
@@ -27,7 +27,7 @@ But back to my solution. At the center of the mechanism is a lead screw and a nu
 
 {{
     preview_image(
-        path="projects/ratchet-clutch/lead-screw-and-nut.jpg",
+        path="notes/ratchet-clutch/lead-screw-and-nut.jpg",
         alt="The lead screw with the nut on it."
     )
 }}
@@ -36,7 +36,7 @@ The nut goes into the rotor. Both the nut and the rotor have matching steps goin
 
 {{
     preview_image(
-        path="projects/ratchet-clutch/rotor-and-nut.jpg",
+        path="notes/ratchet-clutch/rotor-and-nut.jpg",
         alt="The rotor on the left, the nut on the right. The matching steps can be seen."
     )
 }}
@@ -45,7 +45,7 @@ The nut goes into the rotor like this:
 
 {{
     preview_image(
-        path="projects/ratchet-clutch/rotor-and-nut-together.jpg",
+        path="notes/ratchet-clutch/rotor-and-nut-together.jpg",
         alt="The rotor and nut again, this time with the nut put into its place in the rotor."
     )
 }}
@@ -54,7 +54,7 @@ And the lid goes on top:
 
 {{
     preview_image(
-        path="projects/ratchet-clutch/rotor-assembled.jpg",
+        path="notes/ratchet-clutch/rotor-assembled.jpg",
         alt="The rotor assembled."
     )
 }}
@@ -67,7 +67,7 @@ But we're not quite done yet: There need to be something to hold this in a way t
 
 {{
     preview_image(
-        path="projects/ratchet-clutch/housing-and-rotor.jpg",
+        path="notes/ratchet-clutch/housing-and-rotor.jpg",
         alt="The housing with the rotor inside it, the lid of the housing to the side."
     )
 }}
@@ -76,7 +76,7 @@ The lid is just pressed on top.
 
 {{
     preview_image(
-        path="projects/ratchet-clutch/housing-assembled.jpg",
+        path="notes/ratchet-clutch/housing-assembled.jpg",
         alt="The housing assembled."
     )
 }}
