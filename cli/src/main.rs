@@ -1,4 +1,4 @@
-use std::fmt::Write as _;
+use std::{fmt::Write as _, fs};
 
 use time::{macros::format_description, OffsetDateTime};
 
@@ -13,6 +13,9 @@ fn main() -> anyhow::Result<()> {
 
     let title = now.format(&title_format)?;
     let date = now.format(&&date_format)?;
+
+    let dir_path = format!("content/updates/{}", title);
+    fs::create_dir_all(dir_path)?;
 
     let mut update = String::new();
     write!(
