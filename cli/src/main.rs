@@ -34,7 +34,7 @@ fn main() -> anyhow::Result<()> {
             title = \"{}\"\n\
             date  = \"{}\"\n\
             +++\n\
-\n\
+            \n\
             This is an update.\n\
         ",
         title, date
