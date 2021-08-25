@@ -1,6 +1,6 @@
 use time::{macros::format_description, OffsetDateTime};
 
-fn main() {
+fn main() -> anyhow::Result<()> {
     // Date and time formats follow ISO 8601. See Wikipedia:
     // See https://en.wikipedia.org/wiki/ISO_8601.
     let title_format =
@@ -9,10 +9,11 @@ fn main() {
 
     let now = OffsetDateTime::now_utc();
 
-    // TASK: Improve error handling.
-    let title = now.format(&title_format).unwrap();
-    let date = now.format(&&date_format).unwrap();
+    let title = now.format(&title_format)?;
+    let date = now.format(&&date_format)?;
 
     println!("Title: {}", title);
     println!("Date: {}", date);
+
+    Ok(())
 }
