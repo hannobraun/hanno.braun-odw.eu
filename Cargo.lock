@@ -1108,7 +1108,7 @@ dependencies = [
  "libc",
  "standback",
  "stdweb",
- "time-macros",
+ "time-macros 0.1.1",
  "version_check",
  "winapi",
 ]
@@ -1119,7 +1119,9 @@ version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1a776787d9c5d455bec3db044586ccdd8a9c74d5da5dc319fb80f3db08808fe6"
 dependencies = [
+ "itoa",
  "libc",
+ "time-macros 0.2.1",
 ]
 
 [[package]]
@@ -1131,6 +1133,12 @@ dependencies = [
  "proc-macro-hack",
  "time-macros-impl",
 ]
+
+[[package]]
+name = "time-macros"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "04a153416002296880a3b51329a0e3df31c779c53ec827993e865ce427982843"
 
 [[package]]
 name = "time-macros-impl"
