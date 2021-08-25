@@ -3,12 +3,6 @@
 version = 3
 
 [[package]]
-name = "anyhow"
-version = "1.0.43"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "28ae2b3dec75a406790005a200b1bd89785afc02517a00ca99ecfe093ee9e6cf"
-
-[[package]]
 name = "async-stream"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -121,7 +115,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d5f1c7727e460397e56abc4bddc1d49e07a1ad78fc98eb2e1c8f032a58a2f80d"
 dependencies = [
  "percent-encoding",
- "time 0.2.27",
+ "time",
  "version_check",
 ]
 
@@ -491,14 +485,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "mbh"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "time 0.3.1",
-]
-
-[[package]]
 name = "memchr"
 version = "2.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -809,7 +795,7 @@ dependencies = [
  "serde",
  "state",
  "tempfile",
- "time 0.2.27",
+ "time",
  "tokio",
  "tokio-stream",
  "tokio-util",
@@ -857,7 +843,7 @@ dependencies = [
  "smallvec",
  "stable-pattern",
  "state",
- "time 0.2.27",
+ "time",
  "tokio",
  "uncased",
 ]
@@ -1115,20 +1101,9 @@ dependencies = [
  "libc",
  "standback",
  "stdweb",
- "time-macros 0.1.1",
+ "time-macros",
  "version_check",
  "winapi",
-]
-
-[[package]]
-name = "time"
-version = "0.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1a776787d9c5d455bec3db044586ccdd8a9c74d5da5dc319fb80f3db08808fe6"
-dependencies = [
- "itoa",
- "libc",
- "time-macros 0.2.1",
 ]
 
 [[package]]
@@ -1140,12 +1115,6 @@ dependencies = [
  "proc-macro-hack",
  "time-macros-impl",
 ]
-
-[[package]]
-name = "time-macros"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04a153416002296880a3b51329a0e3df31c779c53ec827993e865ce427982843"
 
 [[package]]
 name = "time-macros-impl"
