@@ -1,11 +1,20 @@
 FROM rust:latest AS builder
 
-COPY Cargo.toml ./
-COPY src ./src
-
+# Create an empty crate with the same dependencies as the actual crate, then
+# build the dependencies. The result will be cached by Docker, unless
+# `Cargo.toml` or `Cargo.lock` change.
+RUN cargo new model-api
+WORKDIR model-api
+COPY Cargo.toml Cargo.lock ./
 RUN cargo build --release
+
+# Now copy the actual source code and build it. Everything up until here won't
+# have to be rebuilt if only the files in `src/` change, which is much more
+# common than the dependencies changing.
+COPY src ./src
+RUN touch src/main.rs && cargo build --release
 
 
 FROM archlinux:latest
-COPY --from=builder /target/release/model-api model-api
+COPY --from=builder /model-api/target/release/model-api model-api
 CMD ["./model-api"]
