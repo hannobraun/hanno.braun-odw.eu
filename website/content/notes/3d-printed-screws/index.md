@@ -19,7 +19,7 @@ Some time later, my Prusa Mini arrived, and I discovered that the thumb drive it
 
 The result looked so perfect that I started wondering: This big screw could certainly not be the limit of what this printer is capable of. I wondered how much smaller I could go, while still getting functional screw threads.
 
-So I started scaling down the {{ external_link(url="https://www.prusaprinters.org/prints/13786-screw-and-nut", text="original model") }}. Here's the end result:
+So I started scaling down the {{ ext_link(url="https://www.prusaprinters.org/prints/13786-screw-and-nut", text="original model") }}. Here's the end result:
 
 {{
     preview_image(

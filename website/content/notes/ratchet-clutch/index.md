@@ -19,9 +19,9 @@ Of course, the pumping motion should _only_ accelerate the rotating mass. It sho
 
 What you can see/hear here is that I'm pushing a lead screw into a hole in my mechanism, which accelerates an internal mass. The mass doesn't stop accelerating when I move the lead screw back out, and I can push it in multiple times to keep accelerating the mass.
 
-So how did I come up with this? First I found out about the humming top, which is an old toy employing such a mechanism that rotates a metal body to create a sound from the airflow. I wasn't able to find out how those worked (nor did I have one at hand to take apart), but I eventually found {{ external_link(url="https://www.youtube.com/watch?v=geReOCHCWkg", text="this video by My Tech Fun") }}, which presents a similar toy and explains the mechanism in detail.
+So how did I come up with this? First I found out about the humming top, which is an old toy employing such a mechanism that rotates a metal body to create a sound from the airflow. I wasn't able to find out how those worked (nor did I have one at hand to take apart), but I eventually found {{ ext_link(url="https://www.youtube.com/watch?v=geReOCHCWkg", text="this video by My Tech Fun") }}, which presents a similar toy and explains the mechanism in detail.
 
-I did create my own model, but basically copied his whole mechanism, so most of the credit goes to him. Also, his end result is a fully working toy, while I just built a proof of concept for the mechanism. I recommend you {{ external_link(url="https://www.youtube.com/watch?v=geReOCHCWkg", text="check out the video") }}!
+I did create my own model, but basically copied his whole mechanism, so most of the credit goes to him. Also, his end result is a fully working toy, while I just built a proof of concept for the mechanism. I recommend you {{ ext_link(url="https://www.youtube.com/watch?v=geReOCHCWkg", text="check out the video") }}!
 
 But back to my solution. At the center of the mechanism is a lead screw and a nut. This translates the linear motion of the lead screw into a rotation of the nut.
 
@@ -83,7 +83,7 @@ The lid is just pressed on top.
 
 And that's basically it. One thing to note is that the whole thing is not very well designed, as there's too much friction between the rotor and the housing. It didn't work initially, but I was able to save it by applying some silicone-based lubricant to the rotor and housing.
 
-There are a few things that could be improved: There's too much clearance between the parts, the lead screw and nut also fit a bit too loosely, and there's the problem with the friction of course. Another area of investigation would be to try another mechanism altogether. Some untimely YouTube recommendations have taught me about the {{ external_link(url="https://en.wikipedia.org/wiki/Freewheel", text="freewheel") }} and {{ external_link(url="https://en.wikipedia.org/wiki/Sprag_clutch", text="sprag clutch") }} since finishing this, which look promising.
+There are a few things that could be improved: There's too much clearance between the parts, the lead screw and nut also fit a bit too loosely, and there's the problem with the friction of course. Another area of investigation would be to try another mechanism altogether. Some untimely YouTube recommendations have taught me about the {{ ext_link(url="https://en.wikipedia.org/wiki/Freewheel", text="freewheel") }} and {{ ext_link(url="https://en.wikipedia.org/wiki/Sprag_clutch", text="sprag clutch") }} since finishing this, which look promising.
 
 I have decided to not pursue this further, however. It works well enough as a proof of concept and I don't have a project lined up that would require this mechanism.
 

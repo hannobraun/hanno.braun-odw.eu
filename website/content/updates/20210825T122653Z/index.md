@@ -10,4 +10,4 @@ date  = "2021-08-25"
     )
 }}
 
-Look what I got in the mail yesterday: A spool of 100% biodegradable 3D printing filament ({{ external_link(url="https://www.fillamentumnonoilen.com/", text="Fillamentum NonOilen") }}). Looking forward to trying it out!
+Look what I got in the mail yesterday: A spool of 100% biodegradable 3D printing filament ({{ ext_link(url="https://www.fillamentumnonoilen.com/", text="Fillamentum NonOilen") }}). Looking forward to trying it out!
