@@ -17,4 +17,6 @@ RUN touch src/main.rs && cargo build --release
 
 FROM archlinux:latest
 COPY --from=builder /model-api/target/release/model-api model-api
+ENV ROCKET_ADDRESS=0.0.0.0
+EXPOSE 8000/tcp
 CMD ["./model-api"]
