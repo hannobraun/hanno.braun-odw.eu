@@ -16,6 +16,12 @@ ol.notes article {
         margin-top: 0em;
         font-size:  $font-size-reduced;
     }
+
+    div.goto {
+        // margin: 0 auto;
+        font-size: $font-size-reduced;
+        text-align: center;
+    }
 }
 
 article.note header {

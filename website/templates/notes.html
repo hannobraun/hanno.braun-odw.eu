@@ -14,17 +14,25 @@
                             <strong>Published:</strong> {{ page.date }}
                         </p>
                     </a>
-                    <a class="preview-image" href="{{ page.path }}">
-                        {% set image = resize_image(
-                            path=page.extra.image,
-                            width=600,
-                            op="fit_width"
-                        ) %}
-                        <img
-                            src="{{ image.url }}"
-                            alt="{{ page.title }}" />
-                        <p>Go to note...</p>
-                    </a>
+
+                    {% if page.extra.image %}
+                        <a class="preview-image" href="{{ page.path }}">
+                            {% set image = resize_image(
+                                path=page.extra.image,
+                                width=600,
+                                op="fit_width"
+                            ) %}
+                            <img
+                                src="{{ image.url }}"
+                                alt="{{ page.title }}" />
+                            <p>Go to note...</p>
+                        </a>
+                    {% else %}
+                        <p>{{ page.summary | safe }}</p>
+                        <div class="goto">
+                            <a href="{{ page.path }}">Go to note...</a>
+                        </div>
+                    {% endif %}
                 </article>
             </li>
         {%- endfor %}
