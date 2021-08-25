@@ -19,7 +19,7 @@ FROM archlinux:latest
 
 COPY --from=builder /model-api/target/release/model-api model-api
 
-ENV ROCKET_ADDRESS=0.0.0.0
+ENV ROCKET_ADDRESS=::
 ENV ROCKET_PORT=80
 
 EXPOSE 80/tcp
