@@ -1,3 +1,5 @@
+use std::fmt::Write as _;
+
 use time::{macros::format_description, OffsetDateTime};
 
 fn main() -> anyhow::Result<()> {
@@ -12,8 +14,21 @@ fn main() -> anyhow::Result<()> {
     let title = now.format(&title_format)?;
     let date = now.format(&&date_format)?;
 
-    println!("Title: {}", title);
-    println!("Date: {}", date);
+    let mut update = String::new();
+    write!(
+        update,
+        "\
+            +++\n\
+            title = \"{}\"\n\
+            date  = \"{}\"\n\
+            +++\n\
+\n\
+            This is an update.\n\
+        ",
+        title, date
+    )?;
+
+    print!("{}", update);
 
     Ok(())
 }
