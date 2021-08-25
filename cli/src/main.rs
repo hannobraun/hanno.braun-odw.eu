@@ -15,7 +15,7 @@ fn main() -> anyhow::Result<()> {
     let date = now.format(&&date_format)?;
 
     let dir_path = format!("content/updates/{}", title);
-    fs::create_dir_all(dir_path)?;
+    fs::create_dir_all(&dir_path)?;
 
     let mut update = String::new();
     write!(
