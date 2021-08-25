@@ -1,4 +1,8 @@
-use std::{fmt::Write as _, fs};
+use std::{
+    fs::{self, OpenOptions},
+    io::Write as _,
+    path::Path,
+};
 
 use time::{macros::format_description, OffsetDateTime};
 
@@ -17,7 +21,12 @@ fn main() -> anyhow::Result<()> {
     let dir_path = format!("content/updates/{}", title);
     fs::create_dir_all(&dir_path)?;
 
-    let mut update = String::new();
+    let file_path = Path::new(&dir_path).join("index.md");
+    let mut update = OpenOptions::new()
+        .create_new(true)
+        .write(true)
+        .open(file_path)?;
+
     write!(
         update,
         "\
@@ -30,8 +39,6 @@ fn main() -> anyhow::Result<()> {
         ",
         title, date
     )?;
-
-    print!("{}", update);
 
     Ok(())
 }
