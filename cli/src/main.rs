@@ -1,3 +1,6 @@
+use time::Instant;
+
 fn main() {
-    println!("Hello, world!");
+    let now = Instant::now();
+    println!("Now: {:?}", now);
 }
