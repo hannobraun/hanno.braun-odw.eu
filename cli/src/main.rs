@@ -35,6 +35,13 @@ title = \"{title}\"
 date  = \"{date}\"
 +++
 
+{{{{
+    preview_image(
+        path=\"updates/{title}/image.jpg\",
+        alt=\"\"
+    )
+}}}}
+
 This is an update.
 \
         ",
