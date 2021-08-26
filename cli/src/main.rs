@@ -30,12 +30,13 @@ fn main() -> anyhow::Result<()> {
     write!(
         update,
         "\
-            +++\n\
-            title = \"{title}\"\n\
-            date  = \"{date}\"\n\
-            +++\n\
-            \n\
-            This is an update.\n\
++++
+title = \"{title}\"
+date  = \"{date}\"
++++
+
+This is an update.
+\
         ",
         title = title,
         date = date,
