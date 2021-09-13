@@ -17,6 +17,8 @@ RUN touch src/main.rs && cargo build --release
 
 FROM archlinux:latest
 
+RUN pacman -Sy && pacman -S openscad --noconfirm
+
 COPY --from=builder /model-api/target/release/model-api model-api
 
 ENV ROCKET_ADDRESS=::
