@@ -20,6 +20,7 @@ FROM archlinux:latest
 RUN pacman -Sy && pacman -S openscad --noconfirm
 
 COPY --from=builder /model-api/target/release/model-api model-api
+COPY models ./models
 
 ENV ROCKET_ADDRESS=::
 ENV ROCKET_PORT=80
