@@ -10,7 +10,10 @@ command = "zola build --base-url $DEPLOY_PRIME_URL"
 
 [dev]
 framework  = "#custom"
-command    = "zola serve"
+# TASK: This points to my local Zola fork. Switch back to upstream version, once
+#       my pull request is merged and released:
+#       https://github.com/getzola/zola/pull/1620
+command    = "/home/hanno/.cargo/bin/zola serve"
 targetPort = 1111
 
 
