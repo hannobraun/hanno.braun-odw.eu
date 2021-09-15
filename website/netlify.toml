@@ -11,7 +11,10 @@ command = "zola build --base-url $DEPLOY_PRIME_URL"
 [dev]
 framework  = "#custom"
 # TASK: This points to my local Zola fork. Switch back to upstream version, once
-#       my pull request is merged and released:
+#       the next version is released. It will supposedly contain this pull
+#       request:
+#       https://github.com/getzola/zola/pull/1564
+#       Which will supposedly fix the bug I fixed here:
 #       https://github.com/getzola/zola/pull/1620
 command    = "/home/hanno/.cargo/bin/zola serve"
 targetPort = 1111
