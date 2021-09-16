@@ -9,7 +9,6 @@ date = 2021-09-16
 
 As a software developer, programmatic CAD makes complete sense to me. You can use established tools for programming and get all the advantages of a programming language built-in. Collaboration with other team members, adding comments to document aspects of your model, automating repetitive modelling tasks, generative design... all this and more is available without needing to be explicitly supported by the CAD software.
 
-<!-- TASK: Turn "let me know" into a mailto link or something. -->
 The remainder of this note presents some interesting examples of programmatic CAD software that I'm aware of, both for my own future reference, and in the hope that it might be useful for others too. If you think that I've missed or misrepresented something, please let me know!
 
 
