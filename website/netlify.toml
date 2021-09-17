@@ -20,6 +20,14 @@ command    = "/home/hanno/.cargo/bin/zola serve"
 targetPort = 1111
 
 
+# Custom headers
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'"
+
+
 # Page redirects
 
 [[redirects]]
