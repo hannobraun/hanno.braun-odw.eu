@@ -16,17 +16,14 @@
                     </a>
 
                     {% if page.extra.image %}
-                        <a class="preview-image" href="{{ page.path }}">
-                            {% set image = resize_image(
+                        {{
+                            macros::preview_image(
                                 path=page.extra.image,
-                                width=600,
-                                op="fit_width"
-                            ) %}
-                            <img
-                                src="{{ image.static_path | trim_start_matches(pat="static") }}"
-                                alt="{{ page.title }}" />
-                            <p>Go to note...</p>
-                        </a>
+                                link=page.path,
+                                alt=page.title,
+                                text="Go to note..."
+                            )
+                        }}
                     {% else %}
                         <p>{{ page.summary | safe }}</p>
                         <div class="goto">
