@@ -23,7 +23,7 @@
                                 op="fit_width"
                             ) %}
                             <img
-                                src="{{ image.url }}"
+                                src="{{ image.static_path | trim_start_matches(pat="static") }}"
                                 alt="{{ page.title }}" />
                             <p>Go to note...</p>
                         </a>

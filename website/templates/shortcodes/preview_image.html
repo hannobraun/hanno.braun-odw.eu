@@ -2,7 +2,7 @@
 
 <a class="preview-image" href="/{{ path }}">
     <img
-        src="{{ image.url }}"
+        src="{{ image.static_path | trim_start_matches(pat="static") }}"
         alt="{{ alt }}" />
     <p>(click for full size)</p>
 </a>
