@@ -42,3 +42,14 @@
         </div>
     </article>
 {% endmacro %}
+
+{% macro preview_image(path, alt) %}
+    {% set image = resize_image(path=path, width=600, op="fit_width") %}
+
+    <a class="preview-image" href="/{{ path }}">
+        <img
+            src="{{ image.static_path | trim_start_matches(pat="static") }}"
+            alt="{{ alt }}" />
+        <p>(click for full size)</p>
+    </a>
+{% endmacro %}
