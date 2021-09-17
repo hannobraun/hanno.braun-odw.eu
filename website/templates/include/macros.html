@@ -43,10 +43,10 @@
     </article>
 {% endmacro %}
 
-{% macro preview_image(path, alt, text) %}
+{% macro preview_image(path, link, alt, text) %}
     {% set image = resize_image(path=path, width=600, op="fit_width") %}
 
-    <a class="preview-image" href="/{{ path }}">
+    <a class="preview-image" href="{{ link }}">
         <img
             src="{{ image.static_path | trim_start_matches(pat="static") }}"
             alt="{{ alt }}" />
