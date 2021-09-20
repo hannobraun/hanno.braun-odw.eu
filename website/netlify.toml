@@ -26,6 +26,7 @@ targetPort = 1111
   for = "/*"
   [headers.values]
     Content-Security-Policy = "default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'"
+    X-Content-Type-Options = "nosniff"
 
 
 # Page redirects
