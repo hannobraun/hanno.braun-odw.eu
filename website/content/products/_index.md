@@ -28,6 +28,7 @@ Configure a custom spacer and download it for 3D printing using the following fo
             name="outer"
             id="outer"
             step="0.01"
+            value="30.0"
             placeholder="outer radius (in mm)" />
     </div>
     <div>
@@ -38,6 +39,7 @@ Configure a custom spacer and download it for 3D printing using the following fo
             name="inner"
             id="inner"
             step="0.01"
+            value="15.0"
             placeholder="inner radius (in mm)" />
     </div>
     <div>
@@ -48,6 +50,7 @@ Configure a custom spacer and download it for 3D printing using the following fo
             name="height"
             id="height"
             step="0.01"
+            value="10.0"
             placeholder="height (in mm)" />
     </div>
     <input
