@@ -27,6 +27,8 @@ targetPort = 1111
   [headers.values]
     Content-Security-Policy = "default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'"
     X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+
 
 
 # Page redirects
