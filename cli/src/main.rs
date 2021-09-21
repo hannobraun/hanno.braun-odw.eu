@@ -1,7 +1,7 @@
 mod args;
 mod templates;
 
-use std::fs;
+use std::fs::{self, OpenOptions};
 
 use self::{
     args::{Args, Command},
@@ -18,7 +18,13 @@ fn main() -> anyhow::Result<()> {
     let dir_path = template.dir_path()?;
     fs::create_dir_all(&dir_path)?;
 
-    template.write(dir_path)?;
+    let file_path = template.file_path(dir_path)?;
+    let file = OpenOptions::new()
+        .create_new(true)
+        .write(true)
+        .open(file_path)?;
+
+    template.write(file)?;
 
     Ok(())
 }

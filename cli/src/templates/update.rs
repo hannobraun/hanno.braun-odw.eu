@@ -1,6 +1,5 @@
 use std::{
-    fs::OpenOptions,
-    io::Write as _,
+    io,
     path::{Path, PathBuf},
 };
 
@@ -34,15 +33,14 @@ impl Template for Update {
         Ok(dir_path.into())
     }
 
-    fn write(&self, dir_path: impl AsRef<Path>) -> anyhow::Result<()> {
+    fn file_path(&self, dir_path: impl AsRef<Path>) -> anyhow::Result<PathBuf> {
         let file_path = dir_path.as_ref().join("index.md");
-        let mut update = OpenOptions::new()
-            .create_new(true)
-            .write(true)
-            .open(file_path)?;
+        Ok(file_path.into())
+    }
 
+    fn write(&self, mut output: impl io::Write) -> anyhow::Result<()> {
         write!(
-            update,
+            output,
             "\
 +++
 title = \"{title}\"
