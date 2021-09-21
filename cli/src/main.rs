@@ -1,9 +1,9 @@
 mod args;
-mod templates;
+mod generators;
 
 use self::{
     args::{Args, Command},
-    templates::{write_template, Note, Update},
+    generators::{write_template, Note, Update},
 };
 
 fn main() -> anyhow::Result<()> {
