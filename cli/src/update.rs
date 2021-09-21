@@ -6,30 +6,35 @@ use std::{
 
 use time::{macros::format_description, OffsetDateTime};
 
-pub fn write() -> anyhow::Result<()> {
-    // Date and time formats follow ISO 8601. See Wikipedia:
-    // See https://en.wikipedia.org/wiki/ISO_8601.
-    let title_format =
-        format_description!("[year][month][day]T[hour][minute][second]Z");
-    let date_format = format_description!("[year]-[month]-[day]");
+use crate::template::Template;
 
-    let now = OffsetDateTime::now_utc();
+pub struct Update;
 
-    let title = now.format(&title_format)?;
-    let date = now.format(&&date_format)?;
+impl Template for Update {
+    fn write(&self) -> anyhow::Result<()> {
+        // Date and time formats follow ISO 8601. See Wikipedia:
+        // See https://en.wikipedia.org/wiki/ISO_8601.
+        let title_format =
+            format_description!("[year][month][day]T[hour][minute][second]Z");
+        let date_format = format_description!("[year]-[month]-[day]");
 
-    let dir_path = format!("content/updates/{}", title);
-    fs::create_dir_all(&dir_path)?;
+        let now = OffsetDateTime::now_utc();
 
-    let file_path = Path::new(&dir_path).join("index.md");
-    let mut update = OpenOptions::new()
-        .create_new(true)
-        .write(true)
-        .open(file_path)?;
+        let title = now.format(&title_format)?;
+        let date = now.format(&&date_format)?;
 
-    write!(
-        update,
-        "\
+        let dir_path = format!("content/updates/{}", title);
+        fs::create_dir_all(&dir_path)?;
+
+        let file_path = Path::new(&dir_path).join("index.md");
+        let mut update = OpenOptions::new()
+            .create_new(true)
+            .write(true)
+            .open(file_path)?;
+
+        write!(
+            update,
+            "\
 +++
 title = \"{title}\"
 date  = \"{date}\"
@@ -47,9 +52,10 @@ date  = \"{date}\"
 This is an update.
 \
         ",
-        title = title,
-        date = date,
-    )?;
+            title = title,
+            date = date,
+        )?;
 
-    Ok(())
+        Ok(())
+    }
 }
