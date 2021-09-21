@@ -18,7 +18,7 @@ Configure a custom spacer and download it for 3D printing using the following fo
 
 <form method="GET" action="https://model-api.braun-odw.eu/models/spacer.3mf">
     <div>
-        <label for="outer">Outer radius (in mm)</label>
+        <label for="outer">Outer diameter (in mm)</label>
         <input
             type="number"
             required
@@ -26,10 +26,10 @@ Configure a custom spacer and download it for 3D printing using the following fo
             id="outer"
             step="0.01"
             value="30.0"
-            placeholder="outer radius (in mm)" />
+            placeholder="outer diameter (in mm)" />
     </div>
     <div>
-        <label for="inner">Inner radius (in mm)</label>
+        <label for="inner">Inner diameter (in mm)</label>
         <input
             type="number"
             required
@@ -37,7 +37,7 @@ Configure a custom spacer and download it for 3D printing using the following fo
             id="inner"
             step="0.01"
             value="15.0"
-            placeholder="inner radius (in mm)" />
+            placeholder="inner diameter (in mm)" />
     </div>
     <div>
         <label for="height">Height (in mm)</label>
