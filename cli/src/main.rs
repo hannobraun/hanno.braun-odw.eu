@@ -1,8 +1,6 @@
 mod args;
 mod update;
 
-use clap::Clap as _;
-
 use self::args::{Args, Command};
 
 fn main() -> anyhow::Result<()> {
