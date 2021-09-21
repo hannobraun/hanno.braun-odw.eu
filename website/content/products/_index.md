@@ -1,6 +1,8 @@
 +++
-title    = "Products"
-template = "products.html"
+title = "Products"
+
+template      = "products.html"
+page_template = "products-page.html"
 +++
 
 ## Spacer

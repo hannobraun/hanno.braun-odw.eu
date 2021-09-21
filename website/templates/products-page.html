@@ -1,0 +1,9 @@
+{% import "include/macros.html" as macros %}
+
+{% extends "extend/base.html" %}
+
+{% block main %}
+    <article class="product">
+        {{ page.content | safe }}
+    </article>
+{% endblock main %}
