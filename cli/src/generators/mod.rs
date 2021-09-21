@@ -19,18 +19,18 @@ pub trait Generator: Sized {
 }
 
 pub fn generate<G: Generator>(args: G::Args) -> anyhow::Result<()> {
-    let template = G::new(args)?;
+    let generator = G::new(args)?;
 
-    let dir_path = template.dir_path()?;
+    let dir_path = generator.dir_path()?;
     fs::create_dir_all(&dir_path)?;
 
-    let file_path = template.file_path(dir_path)?;
+    let file_path = generator.file_path(dir_path)?;
     let file = OpenOptions::new()
         .create_new(true)
         .write(true)
         .open(file_path)?;
 
-    template.write(file)?;
+    generator.write(file)?;
 
     Ok(())
 }
