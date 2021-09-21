@@ -1,9 +1,9 @@
 mod args;
-mod template;
+mod templates;
 
 use self::{
     args::{Args, Command},
-    template::{Template as _, Update},
+    templates::{Template as _, Update},
 };
 
 fn main() -> anyhow::Result<()> {
