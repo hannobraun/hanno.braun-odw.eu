@@ -18,7 +18,7 @@ pub trait Generator: Sized {
     fn write(&self, output: impl io::Write) -> anyhow::Result<()>;
 }
 
-pub fn write_template<T: Generator>(args: T::Args) -> anyhow::Result<()> {
+pub fn generate<T: Generator>(args: T::Args) -> anyhow::Result<()> {
     let template = T::new(args)?;
 
     let dir_path = template.dir_path()?;
