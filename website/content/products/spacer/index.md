@@ -2,8 +2,6 @@
 title = "Spacer"
 +++
 
-## Spacer
-
 {{
     preview_image(
         path="products/spacer/spacer.png",
