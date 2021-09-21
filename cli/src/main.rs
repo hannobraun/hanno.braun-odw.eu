@@ -12,7 +12,7 @@ fn main() -> anyhow::Result<()> {
     let args = Args::parse();
 
     match args.command {
-        Command::Update => write_template::<Update>()?,
+        Command::Update => write_template::<Update>(())?,
     }
 
     Ok(())
