@@ -6,7 +6,7 @@ use std::{
 
 use time::{macros::format_description, OffsetDateTime};
 
-use crate::template::Template;
+use super::Template;
 
 pub struct Update;
 
