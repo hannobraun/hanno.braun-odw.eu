@@ -16,4 +16,5 @@ impl Args {
 #[derive(Clap)]
 pub enum Command {
     Update,
+    Note { title: String },
 }
