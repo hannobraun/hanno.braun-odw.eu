@@ -24,7 +24,7 @@ impl Template for Update {
         let now = OffsetDateTime::now_utc();
 
         let title = now.format(&title_format)?;
-        let date = now.format(&&date_format)?;
+        let date = now.format(&date_format)?;
 
         Ok(Update { title, date })
     }
