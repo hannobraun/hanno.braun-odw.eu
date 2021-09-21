@@ -1,3 +1,4 @@
+mod note;
 mod update;
 
 use std::{
@@ -6,7 +7,7 @@ use std::{
     path::{Path, PathBuf},
 };
 
-pub use self::update::Update;
+pub use self::{note::Note, update::Update};
 
 pub trait Template: Sized {
     type Args;
