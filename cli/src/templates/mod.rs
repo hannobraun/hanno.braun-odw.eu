@@ -16,7 +16,7 @@ pub trait Template: Sized {
 }
 
 pub fn write_template<T: Template>() -> anyhow::Result<()> {
-    let template: T = Template::new()?;
+    let template = T::new()?;
 
     let dir_path = template.dir_path()?;
     fs::create_dir_all(&dir_path)?;
