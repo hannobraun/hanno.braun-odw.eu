@@ -12,7 +12,7 @@ template = "products.html"
     )
 }}
 
-A spacer is used two create a distance between two connected parts in an assembly. It has a hole in the middle, so a bolt can go through. Often enough, an off-the-shelf spacer or a stack of washers will do the job well enough. Sometimes though, you need a spacer with very precise dimensions. Then a custom, 3D-printed one comes in handy.
+A spacer is used to create a distance between two connected parts in an assembly. It has a hole in the middle, so a bolt can go through. Often enough, an off-the-shelf spacer or a stack of washers will do the job well enough. Sometimes though, you need a spacer with very precise dimensions. Then a custom, 3D-printed one comes in handy.
 
 
 ### Print your own
