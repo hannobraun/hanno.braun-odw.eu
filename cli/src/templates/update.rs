@@ -1,7 +1,7 @@
 use std::{
-    fs::{self, OpenOptions},
+    fs::OpenOptions,
     io::Write as _,
-    path::Path,
+    path::{Path, PathBuf},
 };
 
 use time::{macros::format_description, OffsetDateTime};
@@ -29,11 +29,13 @@ impl Template for Update {
         Ok(Update { title, date })
     }
 
-    fn write(&self) -> anyhow::Result<()> {
+    fn dir_path(&self) -> anyhow::Result<PathBuf> {
         let dir_path = format!("content/updates/{}", self.title);
-        fs::create_dir_all(&dir_path)?;
+        Ok(dir_path.into())
+    }
 
-        let file_path = Path::new(&dir_path).join("index.md");
+    fn write(&self, dir_path: impl AsRef<Path>) -> anyhow::Result<()> {
+        let file_path = dir_path.as_ref().join("index.md");
         let mut update = OpenOptions::new()
             .create_new(true)
             .write(true)
