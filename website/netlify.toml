@@ -40,6 +40,12 @@ status = 302 # temporary redirect
 force  = true
 
 [[redirects]]
+from   = "/products"
+to     = "/products/spacer"
+status = 302 # temporary redirect
+force  = true
+
+[[redirects]]
 from   = "/project/*"
 to     = "/notes/:splat"
 status = 301 # moved permanently
