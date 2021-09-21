@@ -1,6 +1,9 @@
+mod args;
 mod update;
 
-use clap::Clap;
+use clap::Clap as _;
+
+use self::args::{Args, Command};
 
 fn main() -> anyhow::Result<()> {
     let args = Args::parse();
@@ -10,15 +13,4 @@ fn main() -> anyhow::Result<()> {
     }
 
     Ok(())
-}
-
-#[derive(Clap)]
-struct Args {
-    #[clap(subcommand)]
-    command: Command,
-}
-
-#[derive(Clap)]
-enum Command {
-    Update,
 }
