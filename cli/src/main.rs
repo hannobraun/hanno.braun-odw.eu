@@ -10,7 +10,7 @@ fn main() -> anyhow::Result<()> {
     let args = Args::parse();
 
     let template = match args.command {
-        Command::Update => Update,
+        Command::Update => Update::new()?,
     };
 
     template.write()?;

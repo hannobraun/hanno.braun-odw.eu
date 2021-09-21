@@ -11,6 +11,10 @@ use super::Template;
 pub struct Update;
 
 impl Template for Update {
+    fn new() -> anyhow::Result<Self> {
+        Ok(Update)
+    }
+
     fn write(&self) -> anyhow::Result<()> {
         // Date and time formats follow ISO 8601. See Wikipedia:
         // See https://en.wikipedia.org/wiki/ISO_8601.
