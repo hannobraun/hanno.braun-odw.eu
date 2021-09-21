@@ -42,6 +42,8 @@ date  = \"{date}\"
     )
 }}}}
 
+{{{{ ext_link(url=\"https://example.com\", text=\"An external link.\") }}}}
+
 This is an update.
 \
         ",
