@@ -6,7 +6,7 @@ title = "Spacer"
 
 {{
     preview_image(
-        path="products/spacer.png",
+        path="products/spacer/spacer.png",
         alt="CAD model of a simple spacer"
     )
 }}
