@@ -5,14 +5,14 @@ use std::{
 
 use time::{macros::format_description, OffsetDateTime};
 
-use super::Template;
+use super::Generator;
 
 pub struct Update {
     title: String,
     date: String,
 }
 
-impl Template for Update {
+impl Generator for Update {
     type Args = ();
 
     fn new(_: Self::Args) -> anyhow::Result<Self> {

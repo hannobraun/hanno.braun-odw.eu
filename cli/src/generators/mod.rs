@@ -9,7 +9,7 @@ use std::{
 
 pub use self::{note::Note, update::Update};
 
-pub trait Template: Sized {
+pub trait Generator: Sized {
     type Args;
 
     fn new(args: Self::Args) -> anyhow::Result<Self>;
@@ -18,7 +18,7 @@ pub trait Template: Sized {
     fn write(&self, output: impl io::Write) -> anyhow::Result<()>;
 }
 
-pub fn write_template<T: Template>(args: T::Args) -> anyhow::Result<()> {
+pub fn write_template<T: Generator>(args: T::Args) -> anyhow::Result<()> {
     let template = T::new(args)?;
 
     let dir_path = template.dir_path()?;

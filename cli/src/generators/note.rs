@@ -5,7 +5,7 @@ use std::{
 
 use time::{macros::format_description, OffsetDateTime};
 
-use super::Template;
+use super::Generator;
 
 pub struct Note {
     title: String,
@@ -13,7 +13,7 @@ pub struct Note {
     date: String,
 }
 
-impl Template for Note {
+impl Generator for Note {
     type Args = String;
 
     fn new(title: Self::Args) -> anyhow::Result<Self> {
