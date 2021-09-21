@@ -18,8 +18,8 @@ pub trait Generator: Sized {
     fn write(&self, output: impl io::Write) -> anyhow::Result<()>;
 }
 
-pub fn generate<T: Generator>(args: T::Args) -> anyhow::Result<()> {
-    let template = T::new(args)?;
+pub fn generate<G: Generator>(args: G::Args) -> anyhow::Result<()> {
+    let template = G::new(args)?;
 
     let dir_path = template.dir_path()?;
     fs::create_dir_all(&dir_path)?;
