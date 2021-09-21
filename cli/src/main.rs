@@ -1,11 +1,9 @@
 mod args;
 mod templates;
 
-use templates::write_template;
-
 use self::{
     args::{Args, Command},
-    templates::{Note, Update},
+    templates::{write_template, Note, Update},
 };
 
 fn main() -> anyhow::Result<()> {
