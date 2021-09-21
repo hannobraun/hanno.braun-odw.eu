@@ -15,7 +15,7 @@ pub struct Update {
 impl Template for Update {
     type Args = ();
 
-    fn new(_: ()) -> anyhow::Result<Self> {
+    fn new(_: Self::Args) -> anyhow::Result<Self> {
         // Date and time formats follow ISO 8601. See Wikipedia:
         // See https://en.wikipedia.org/wiki/ISO_8601.
         let title_format =
