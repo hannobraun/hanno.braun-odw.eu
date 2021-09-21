@@ -8,14 +8,13 @@ use time::{macros::format_description, OffsetDateTime};
 
 use super::Template;
 
-pub struct Update;
+pub struct Update {
+    title: String,
+    date: String,
+}
 
 impl Template for Update {
     fn new() -> anyhow::Result<Self> {
-        Ok(Update)
-    }
-
-    fn write(&self) -> anyhow::Result<()> {
         // Date and time formats follow ISO 8601. See Wikipedia:
         // See https://en.wikipedia.org/wiki/ISO_8601.
         let title_format =
@@ -27,7 +26,11 @@ impl Template for Update {
         let title = now.format(&title_format)?;
         let date = now.format(&&date_format)?;
 
-        let dir_path = format!("content/updates/{}", title);
+        Ok(Update { title, date })
+    }
+
+    fn write(&self) -> anyhow::Result<()> {
+        let dir_path = format!("content/updates/{}", self.title);
         fs::create_dir_all(&dir_path)?;
 
         let file_path = Path::new(&dir_path).join("index.md");
@@ -56,8 +59,8 @@ date  = \"{date}\"
 This is an update.
 \
         ",
-            title = title,
-            date = date,
+            title = self.title,
+            date = self.date,
         )?;
 
         Ok(())
