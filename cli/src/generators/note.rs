@@ -46,6 +46,10 @@ title = \"{title}\"
 date  = \"{date}\"
 +++
 
+This is a note. Here's the summary.
+
+<!-- more -->
+
 {{{{
     preview_image(
         path=\"notes/{path}/image.jpg\",
@@ -54,8 +58,6 @@ date  = \"{date}\"
 }}}}
 
 {{{{ ext_link(url=\"https://example.com\", text=\"An external link.\") }}}}
-
-This is a note.
 \
         ",
             title = self.title,
