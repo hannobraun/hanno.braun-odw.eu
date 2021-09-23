@@ -30,7 +30,6 @@ targetPort = 1111
     X-Frame-Options = "DENY"
 
 
-
 # Page redirects
 
 [[redirects]]
