@@ -29,6 +29,11 @@ targetPort = 1111
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
 
+[[headers]]
+  for = "/.well-known/matrix/client"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
 
 # Page redirects
 
