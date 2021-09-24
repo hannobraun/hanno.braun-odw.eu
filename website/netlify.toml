@@ -83,7 +83,7 @@ status = 301
 force  = true
 
 [[redirects]]
-from   = "https://madebyhanno.netlify.app/*"
+from   = "https://hannobraun.netlify.app/*"
 to     = "https://hanno.braun-odw.eu/:splat"
 status = 301
 force  = true
