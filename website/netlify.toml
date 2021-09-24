@@ -63,16 +63,19 @@ status = 301 # moved permanently
 force  = true
 
 
-# Domain redirects
+# Secondary domains
 
 [[redirects]]
-from   = "https://madeby.hannobraun.de/*"
+from   = "https://madebyhanno.netlify.app/*"
 to     = "https://made-by.braun-odw.eu/:splat"
 status = 301
 force  = true
 
+
+# Legacy domains
+
 [[redirects]]
-from   = "https://madebyhanno.netlify.app/*"
+from   = "https://madeby.hannobraun.de/*"
 to     = "https://made-by.braun-odw.eu/:splat"
 status = 301
 force  = true
