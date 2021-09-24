@@ -84,7 +84,7 @@ force  = true
 
 [[redirects]]
 from   = "https://madebyhanno.netlify.app/*"
-to     = "https://made-by.braun-odw.eu/:splat"
+to     = "https://hanno.braun-odw.eu/:splat"
 status = 301
 force  = true
 
@@ -111,6 +111,12 @@ force  = true
 
 [[redirects]]
 from   = "https://madeby.hannobraun.de/*"
-to     = "https://made-by.braun-odw.eu/:splat"
+to     = "https://hanno.braun-odw.eu/:splat"
+status = 301
+force  = true
+
+[[redirects]]
+from   = "https://made-by.braun-odw.eu/*"
+to     = "https://hanno.braun-odw.eu/:splat"
 status = 301
 force  = true
