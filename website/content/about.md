@@ -2,7 +2,7 @@
 title = "About"
 +++
 
-Hey, I'm Hanno! I'm writing here about what happens in my workshop, and some stuff related to that. Check out my {{ ext_link(url="https://hanno.braun-odw.eu/", text="personal website") }}, if you want to know more about me.
+Hey, I'm Hanno! I'm writing here about what happens in my workshop, and some stuff related to that.
 
 Want to contact me? Here's how:
 
