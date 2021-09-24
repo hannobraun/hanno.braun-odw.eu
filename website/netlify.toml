@@ -71,6 +71,18 @@ force  = true
 # Secondary domains
 
 [[redirects]]
+from   = "https://braun-odw.eu/*"
+to     = "https://hanno.braun-odw.eu/:splat"
+status = 301
+force  = true
+
+[[redirects]]
+from   = "https://www.braun-odw.eu/*"
+to     = "https://hanno.braun-odw.eu/:splat"
+status = 301
+force  = true
+
+[[redirects]]
 from   = "https://madebyhanno.netlify.app/*"
 to     = "https://made-by.braun-odw.eu/:splat"
 status = 301
@@ -78,6 +90,24 @@ force  = true
 
 
 # Legacy domains
+
+[[redirects]]
+from   = "https://hannobraun.de/"
+to     = "https://hanno.braun-odw.eu/"
+status = 301
+force  = true
+
+[[redirects]]
+from   = "https://hannobraun.de/*"
+to     = "https://archive.braun-odw.eu/:splat"
+status = 301
+force  = true
+
+[[redirects]]
+from   = "https://www.hannobraun.de/*"
+to     = "https://hannobraun.de/:splat"
+status = 301
+force  = true
 
 [[redirects]]
 from   = "https://madeby.hannobraun.de/*"
