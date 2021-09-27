@@ -1,5 +1,5 @@
 [package]
-name    = "mbh" # short for "Made by Hanno"
+name    = "hbo" # short for `hanno.braun-odw.eu
 version = "0.1.0"
 edition = "2018"
 
