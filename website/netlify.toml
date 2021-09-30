@@ -68,6 +68,15 @@ status = 301 # moved permanently
 force  = true
 
 
+# API proxy
+
+[[redirects]]
+from   = "/api/*"
+to     = "https://api.braun-odw.eu/:splat"
+status = 200
+force  = true
+
+
 # Secondary domains
 
 [[redirects]]
