@@ -1,8 +1,8 @@
-# Made by Hanno
+# Hanno Braun's Personal Website
 
 ## About
 
-This repository contains the source code for the website "Made by Hanno" (https://madeby.hannobraun.de), where I present some of the things I do in my workshop.
+This repository contains the source code for Hanno Braun's personal website (https://hanno.braun-odw.eu), where I present some of the things I do in my workshop.
 
 ## Software Used
 
