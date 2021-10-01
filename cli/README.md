@@ -1,9 +1,15 @@
-# Made by Hanno CLI Tool
+# Website CLI Tool
 
 ## Usage
 
-Just run tool without any arguments from the website folder, to generate a new update.
+To generate a new update:
 
 ```
-mbh
+hbo update
+```
+
+To generate a new note:
+
+```
+hbo note "Title of the Note"
 ```
