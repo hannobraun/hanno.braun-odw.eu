@@ -1,5 +1,5 @@
 title    = "Hanno Braun"
-base_url = "https://made-by.braun-odw.eu"
+base_url = "https://hanno.braun-odw.eu"
 
 compile_sass  = true
 generate_feed = true
