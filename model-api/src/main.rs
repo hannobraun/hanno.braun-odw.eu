@@ -12,7 +12,7 @@ fn rocket() -> _ {
 }
 
 #[get("/models/spacer.3mf?<outer>&<inner>&<height>")]
-async fn spacer(outer: f64, inner: f64, height: f64) -> Result<File, Error> {
+async fn spacer(outer: f64, inner: f64, height: f64) -> Result<Model, Error> {
     let tmp = tempdir()?;
     let path = tmp.path().join("model.3mf");
     let path_str = path.as_os_str().to_str().ok_or(TempDirNotValidUtf8Error)?;
@@ -36,7 +36,12 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<File, Error> {
     }
 
     let file = File::open(path).await?;
-    Ok(file)
+    Ok(Model { inner: file })
+}
+
+#[derive(Responder)]
+struct Model {
+    inner: File,
 }
 
 // TASK: Add route that returns images of model.
