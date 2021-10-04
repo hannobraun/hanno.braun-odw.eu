@@ -42,6 +42,7 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<Model, Error> {
 #[derive(Responder)]
 struct Model {
     inner: File,
+    // TASK: Set caching headers.
 }
 
 // TASK: Add route that returns images of model.
