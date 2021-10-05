@@ -13,7 +13,7 @@ fn rocket() -> _ {
     rocket::build().mount("/", routes![spacer])
 }
 
-#[get("/models/spacer.3mf?<outer>&<inner>&<height>")]
+#[get("/models/spacer.3mf?rev=1&<outer>&<inner>&<height>")]
 async fn spacer(outer: f64, inner: f64, height: f64) -> Result<Model, Error> {
     let tmp = tempdir()?;
     let path = tmp.path().join("model.3mf");
