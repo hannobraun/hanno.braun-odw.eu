@@ -36,13 +36,19 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<Model, Error> {
     }
 
     let file = File::open(path).await?;
-    Ok(Model { inner: file })
+    Ok(file.into())
 }
 
 #[derive(Responder)]
 struct Model {
     inner: File,
     // TASK: Set caching headers.
+}
+
+impl From<File> for Model {
+    fn from(inner: File) -> Self {
+        Self { inner }
+    }
 }
 
 // TASK: Add route that returns images of model.
