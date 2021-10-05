@@ -53,7 +53,7 @@ impl From<File> for Model {
             inner,
             cache_control: Header::new(
                 CACHE_CONTROL.as_str(),
-                "public, max-age=3600",
+                "public, max-age=31536000, immutable",
             ),
         }
     }
