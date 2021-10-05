@@ -1,6 +1,8 @@
 use rocket::{
-    error, get, http::Status, response::Responder as RocketResponder, routes,
-    Responder,
+    error, get,
+    http::{hyper::header::CACHE_CONTROL, Header, Status},
+    response::Responder as RocketResponder,
+    routes, Responder,
 };
 use tempfile::tempdir;
 use thiserror::Error;
@@ -42,12 +44,18 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<Model, Error> {
 #[derive(Responder)]
 struct Model {
     inner: File,
-    // TASK: Set caching headers.
+    cache_control: Header<'static>,
 }
 
 impl From<File> for Model {
     fn from(inner: File) -> Self {
-        Self { inner }
+        Self {
+            inner,
+            cache_control: Header::new(
+                CACHE_CONTROL.as_str(),
+                "s-max-age=3600",
+            ),
+        }
     }
 }
 
