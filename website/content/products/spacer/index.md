@@ -17,6 +17,10 @@ A spacer is used to create a distance between two connected parts in an assembly
 Configure a custom spacer and download it for 3D printing using the following form.
 
 <form method="GET" action="/api/models/spacer.3mf">
+    <input
+        type="hidden"
+        name="rev"
+        value="1" />
     <div>
         <label for="outer">Outer diameter (in mm)</label>
         <input
