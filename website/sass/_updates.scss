@@ -1,6 +1,8 @@
 article.update {
     @include box;
 
+    margin: 1em;
+
     .content p {
         margin: 0;
         margin-bottom: 0.5em;

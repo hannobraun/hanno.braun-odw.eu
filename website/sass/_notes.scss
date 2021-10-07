@@ -1,6 +1,8 @@
 ol.notes article {
     @include box;
 
+    margin: 1em;
+
     a.title {
         font-weight:     normal;
         text-decoration: none;
