@@ -1,7 +1,14 @@
 body > footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3em;
+
+    margin-bottom: 3em;
+
     .made-in-odenwald {
         text-align: center;
-        margin:     3em auto;
 
         a {
             color: #000000;
