@@ -15,7 +15,7 @@ form.newsletter {
     input[type=submit] {
         border: 0 none;
 
-        border-radius: 0.25em;
+        border-radius: $border-radius;
         padding:       0.5em 1em;
 
         font-weight: bold;
