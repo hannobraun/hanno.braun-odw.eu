@@ -8,9 +8,7 @@ Want to get in touch? Here's how to contact me:
     <tr>
         <th>Email</th>
         <td>
-            <a href="mailto:Hanno%20Braun%20%3Channo@braun-odw.eu%3E">
-                hanno@braun-odw.eu
-            </a>
+            {{ email() }}
         </td>
     </tr>
     <tr>
