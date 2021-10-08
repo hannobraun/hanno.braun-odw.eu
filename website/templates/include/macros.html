@@ -6,6 +6,12 @@
     {% endif %}
 {% endmacro %}
 
+{% macro email() %}
+    <a href="mailto:Hanno%20Braun%20%3Channo@braun-odw.eu%3E">
+        hanno@braun-odw.eu
+    </a>
+{% endmacro %}
+
 {% macro nav_entry(title, path) %}
     {% if page %}
         {% set current_path = page.path %}
