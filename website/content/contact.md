@@ -14,9 +14,7 @@ Want to get in touch? Here's how to contact me:
     <tr>
         <th>Matrix</th>
         <td>
-            <a href="https://matrix.to/#/@hanno:braun-odw.eu">
-                @hanno:braun-odw.eu
-            </a>
+            {{ matrix() }}
         </td>
     </tr>
     <tr>
