@@ -3,15 +3,15 @@ body > footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 3em;
+    gap: $margin-wide;
 
-    margin-bottom: 3em;
+    margin-bottom: $margin-wide;
 
     nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 3em;
+        gap: $margin-wide;
 
         h3 {
             font-size: 100%;
