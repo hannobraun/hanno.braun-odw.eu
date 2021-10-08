@@ -26,13 +26,15 @@
                 <h1>Hanno Braun</h1>
                 <h2>making, automation, small-scale manufacturing</h2>
             </a>
-            <nav>
-                <ul>
-                    {{ macros::nav_entry(title="Updates", path="/updates") }}
-                    {{ macros::nav_entry(title="Notes", path="/notes") }}
-                    {{ macros::nav_entry(title="About", path="/about") }}
-                </ul>
-            </nav>
+            <div class="right">
+                <nav>
+                    <ul>
+                        {{ macros::nav_entry(title="Updates", path="/updates") }}
+                        {{ macros::nav_entry(title="Notes", path="/notes") }}
+                        {{ macros::nav_entry(title="About", path="/about") }}
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             {% block main %}{% endblock main %}
