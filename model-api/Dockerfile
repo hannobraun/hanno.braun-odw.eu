@@ -24,6 +24,7 @@ COPY models ./models
 
 ENV ROCKET_ADDRESS=::
 ENV ROCKET_PORT=80
+ENV ROCKET_LOG_LEVEL=normal
 
 EXPOSE 80/tcp
 
