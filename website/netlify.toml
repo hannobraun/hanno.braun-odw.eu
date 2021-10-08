@@ -69,6 +69,7 @@ from   = "/api/*"
 to     = "https://api.braun-odw.eu/:splat"
 status = 200
 force  = true
+headers = { Authorization = "Basic Wa81oPIR1PtMIJ3cFgkvyCXXeHESx4CV" }
 
 
 # Secondary domains
