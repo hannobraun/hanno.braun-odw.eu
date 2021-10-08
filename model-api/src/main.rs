@@ -147,3 +147,30 @@ impl<'r> RocketResponder<'r, 'static> for OpenScadError {
         Err(Status::InternalServerError)
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use rocket::{
+        http::{hyper::header::AUTHORIZATION, Header, Status},
+        local::blocking::Client,
+    };
+
+    #[test]
+    fn auth() -> Result<(), rocket::Error> {
+        let rocket = super::rocket();
+        let client = Client::tracked(rocket)?;
+
+        let path = "/models/spacer.3mf?rev=1&outer=30.0&inner=12.0&height=10.0";
+
+        let response = client.get(path).dispatch();
+        assert_eq!(response.status(), Status::Forbidden);
+
+        let response = client
+            .get(path)
+            .header(Header::new(AUTHORIZATION.as_str(), super::AUTH_HEADER))
+            .dispatch();
+        assert_eq!(response.status(), Status::Ok);
+
+        Ok(())
+    }
+}
