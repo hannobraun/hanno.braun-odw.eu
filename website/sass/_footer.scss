@@ -7,6 +7,26 @@ body > footer {
 
     margin-bottom: 3em;
 
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3em;
+
+        h3 {
+            font-size: 100%;
+
+            margin: 0;
+            margin-bottom: $default-margin / 2;
+        }
+        ul li a {
+            text-decoration: none;
+            font-size: $font-size-reduced;
+            font-weight: normal;
+            color: $color-normal;
+        }
+    }
+
     .made-in-odenwald a {
         color: #000000;
     }

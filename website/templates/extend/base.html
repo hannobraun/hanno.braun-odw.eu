@@ -42,6 +42,23 @@
         <footer>
             {% include "include/newsletter.html" %}
 
+            <nav>
+                <section>
+                    <h3>Content</h3>
+                    <ul>
+                        {{ macros::nav_entry(title="Updates", path="/updates") }}
+                        {{ macros::nav_entry(title="Notes", path="/notes") }}
+                    </ul>
+                </section>
+                <section>
+                    <h3>Other</h3>
+                    <ul>
+                        {{ macros::nav_entry(title="Products", path="/products") }}
+                        {{ macros::nav_entry(title="About", path="/about") }}
+                    </ul>
+                </section>
+            </nav>
+
             <div class="made-in-odenwald">
                 <a href="/made-in-odenwald/0.jpg" target="_blank">
                     Made in Odenwald ♥
