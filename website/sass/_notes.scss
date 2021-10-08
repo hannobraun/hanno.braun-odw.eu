@@ -1,7 +1,7 @@
 ol.notes article {
     @include box;
 
-    margin: $default-margin;
+    margin: $margin-default;
 
     a.title {
         font-weight:     normal;

@@ -1,7 +1,7 @@
 article.update {
     @include box;
 
-    margin: $default-margin;
+    margin: $margin-default;
 
     .content p {
         margin: 0;
