@@ -22,6 +22,28 @@ body > header {
     }
 
     div.right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        div.contact {
+            margin-top: $margin-default;
+            margin-bottom: $margin-default * 2;
+
+            p {
+                margin: 0;
+                text-align: right;
+
+                font-size: $font-size-reduced;
+
+                a {
+                    color: $color-strong;
+                    text-decoration: none;
+                }
+            }
+        }
+
         nav ul li {
             display:     inline;
             margin-left: 1em;
