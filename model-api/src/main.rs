@@ -1,8 +1,12 @@
 use rocket::{
     error, get,
-    http::{hyper::header::CACHE_CONTROL, Header, Status},
+    http::{
+        hyper::header::{AUTHORIZATION, CACHE_CONTROL},
+        Header, Status,
+    },
+    request::{self, FromRequest},
     response::Responder as RocketResponder,
-    routes, Responder,
+    routes, Request, Responder,
 };
 use tempfile::tempdir;
 use thiserror::Error;
@@ -14,7 +18,12 @@ fn rocket() -> _ {
 }
 
 #[get("/models/spacer.3mf?rev=1&<outer>&<inner>&<height>")]
-async fn spacer(outer: f64, inner: f64, height: f64) -> Result<Model, Error> {
+async fn spacer(
+    _authorized: Authorized,
+    outer: f64,
+    inner: f64,
+    height: f64,
+) -> Result<Model, Error> {
     let tmp = tempdir()?;
     let path = tmp.path().join("model.3mf");
     let path_str = path.as_os_str().to_str().ok_or(TempDirNotValidUtf8Error)?;
@@ -39,6 +48,33 @@ async fn spacer(outer: f64, inner: f64, height: f64) -> Result<Model, Error> {
 
     let file = File::open(path).await?;
     Ok(file.into())
+}
+
+const AUTH_HEADER: &str = "Basic Wa81oPIR1PtMIJ3cFgkvyCXXeHESx4CV";
+
+struct Authorized;
+
+#[rocket::async_trait]
+impl<'r> FromRequest<'r> for Authorized {
+    type Error = ();
+
+    async fn from_request(
+        request: &'r Request<'_>,
+    ) -> request::Outcome<Self, Self::Error> {
+        let failure = request::Outcome::Failure((Status::Forbidden, ()));
+        let auth_header = request.headers().get_one(AUTHORIZATION.as_str());
+
+        let auth_header = match auth_header {
+            Some(header) => header,
+            None => return failure,
+        };
+
+        if auth_header == AUTH_HEADER {
+            return request::Outcome::Success(Self);
+        }
+
+        failure
+    }
 }
 
 #[derive(Responder)]
