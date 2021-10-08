@@ -2,6 +2,14 @@
 title = "About"
 +++
 
-Hey, I'm Hanno! I'm writing here about what happens in my workshop, and some stuff related to that.
+<img class="about" src="/about/hanno-braun.jpg" />
 
-Are you interested in what I'm doing here? I'm always happy to chat. [Please get in touch!](/contact)
+Hey, I'm Hanno! I'm a self-employed maker and software developer living in the beautiful [Odenwald](/made-in-odenwald/2.jpg) region in Germany, Europe.
+
+I'm interested in making, automation, manufacturing, and small businesses that do all that. I enjoy nature (which is why I live pretty much in the middle of it), and believe we should do what we can to preserve it.
+
+This website is dedicated to these topics, and I keep adding content here regularly. If you enjoy it (or don't) [please let me know](/contact)! I appreciate your feedback
+
+I'm also a big believer in open source, and try to do as much as my work in the open as is practical. Check out my {{ ext_link(url="https://github.com/hannobraun", text="GitHub profile") }}, if you're interested in what I'm up to.
+
+Are you interested in any of these topics? If so, [please get in touch](/contact)! I always enjoy talking to like-minded individuals.

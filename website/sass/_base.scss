@@ -67,6 +67,16 @@ header.section {
     }
 }
 
+img.about {
+    float: right;
+    max-width: $content-width / 3;
+
+    margin-left: $margin-default;
+    margin-bottom: $margin-default;
+
+    border-radius: 0.25em;
+}
+
 @mixin box {
     padding:          1em;
     border-radius:    $border-radius;
