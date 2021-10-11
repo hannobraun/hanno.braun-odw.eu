@@ -5,7 +5,7 @@ date  = "2021-10-11"
 
 {{
     preview_image(
-        path="updates/20211011T140850Z/e3d-brass-nozzles.jpg",
+        path="updates/20211011T144421Z/e3d-brass-nozzles.jpg",
         alt="Three brass nozzles made by E3D; 0.25mm, 0.6mm, and 0.8mm nozzle diameter."
     )
 }}
