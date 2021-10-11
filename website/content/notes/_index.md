@@ -1,6 +1,6 @@
 +++
 title   = "Notes"
-sort_by = "date"
+sort_by = "updatedate"
 
 template      = "notes.html"
 page_template = "notes-page.html"
