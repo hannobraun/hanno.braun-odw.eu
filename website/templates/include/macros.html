@@ -53,6 +53,13 @@
     </article>
 {% endmacro %}
 
+{% macro note_title(page) %}
+    <h2>{{ page.title }}</h2>
+    <p class="published">
+        <strong>Published:</strong> {{ page.date }}
+    </p>
+{% endmacro %}
+
 {% macro preview_image(path, link, alt, text) %}
     {% set image = resize_image(path=path, width=600, op="fit_width") %}
 

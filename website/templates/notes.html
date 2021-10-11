@@ -9,10 +9,7 @@
             <li>
                 <article>
                     <a class="title" href="{{ page.path }}">
-                        <h2>{{ page.title }}</h2>
-                        <p class="published">
-                            <strong>Published:</strong> {{ page.date }}
-                        </p>
+                        {{ macros::note_title(page=page) }}
                     </a>
 
                     {% if page.extra.image %}
