@@ -13,7 +13,7 @@ To judge the eco-friendliness of a filament, I've come up with the following cri
 - **How well can it be recycled?** As far as I understand, all thermoplastics can be recycled, but their physical properties might degrade by some degree when doing so.
 - **Is it biodegradable?** If the material can no longer be recycled, or maybe is lost and ends up on the ground somewhere, it's great if it can just rot away and not end up as permanent trash.
 
-The following list is a snapshot of the current state of my research and experiences. If you think that it is incomplete, or if I got something wrong, please let me know! I intend to update this note as I learn more.
+The following list is a snapshot of the current state of my research and experiences. If you think that it is incomplete, or if I got something wrong, [please let me know](/contact)! I intend to update this note as I learn more.
 
 
 ### PLA
