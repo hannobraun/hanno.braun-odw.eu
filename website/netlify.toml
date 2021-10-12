@@ -10,8 +10,8 @@ command = "zola build --base-url $DEPLOY_PRIME_URL"
 
 [dev]
 framework  = "#custom"
-command    = "zola serve"
-targetPort = 1111
+command    = "./scripts/serve.sh"
+targetPort = 3000
 
 
 # Custom headers
