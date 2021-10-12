@@ -56,7 +56,11 @@
 {% macro note_title(page) %}
     <h2>{{ page.title }}</h2>
     <p class="published">
-        <strong>Published:</strong> {{ page.date }}
+        {% if page.updated %}
+            <strong>Published:</strong> {{ page.date }} (<strong>updated</strong> {{ page.updated }})
+        {% else %}
+            <strong>Published:</strong> {{ page.date }}
+        {% endif %}
     </p>
 {% endmacro %}
 
