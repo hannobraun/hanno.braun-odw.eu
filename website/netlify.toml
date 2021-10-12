@@ -1,6 +1,6 @@
 [build]
-publish = "public"
-command = "zola build"
+publish = "_site"
+command = "./scripts/build"
 
 [build.environment]
 ZOLA_VERSION = "0.14.1"
