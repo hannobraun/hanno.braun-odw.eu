@@ -1,6 +1,6 @@
 [build]
 publish = "_site"
-command = "./scripts/build"
+command = "./scripts/build.sh"
 
 [build.environment]
 ZOLA_VERSION = "0.14.1"
