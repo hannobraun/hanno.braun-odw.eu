@@ -10,6 +10,12 @@ site.ignore(
   "content",
 );
 
+site.addEventListener("beforeUpdate", (event) => {
+  Deno.run({
+    cmd: ["zola", "build"],
+  });
+})
+
 site.copy("public", ".");
 
 export default site;
