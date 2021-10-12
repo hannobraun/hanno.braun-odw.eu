@@ -10,4 +10,6 @@ site.ignore(
   "content",
 );
 
+site.copy("public", ".");
+
 export default site;
