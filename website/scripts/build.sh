@@ -2,7 +2,13 @@
 
 set -e
 
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/d77989e0193c1c9dd9aa462d4179d11653e41ca5/Formula/deno.rb
+TAP=hannobraun/deno
+MODULE=deno
+VERSION=1.14.3
+
+brew tap-new $TAP
+brew extract --version $VERSION $MODULE $TAP
+brew install $TAP/$MODULE@$VERSION
 
 zola build
 deno run -A https://deno.land/x/lume/ci.ts
