@@ -2,5 +2,4 @@
 
 set -e
 
-zola build
-lume --serve
+zola serve
