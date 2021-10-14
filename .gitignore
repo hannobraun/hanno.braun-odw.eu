@@ -3,3 +3,6 @@
 
 # Vim
 *.swp
+
+# Local Netlify folder
+.netlify
