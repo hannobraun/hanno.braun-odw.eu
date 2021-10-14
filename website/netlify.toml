@@ -1,6 +1,6 @@
 [build]
 publish = "_site"
-command = "./scripts/build.sh"
+command = "zola build"
 
 [build.environment]
 ZOLA_VERSION = "0.14.1"
@@ -10,7 +10,7 @@ command = "zola build --base-url $DEPLOY_PRIME_URL"
 
 [dev]
 framework  = "#custom"
-command    = "./scripts/serve.sh"
+command    = "zola serve"
 targetPort = 1111
 
 
