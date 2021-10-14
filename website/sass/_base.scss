@@ -29,7 +29,7 @@ hr {
 
 body {
     > main {
-        max-width: $content-width;
+        max-width: $width-content;
         margin: 0 auto;
 
         > ol {
@@ -69,7 +69,7 @@ header.section {
 
 img.about {
     float: right;
-    max-width: $content-width / 3;
+    max-width: $width-content / 3;
 
     margin-left: $margin-default;
     margin-bottom: $margin-default;
