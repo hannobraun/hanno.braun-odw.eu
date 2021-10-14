@@ -1,5 +1,5 @@
 [build]
-publish = "_site"
+publish = "public"
 command = "zola build"
 
 [build.environment]
