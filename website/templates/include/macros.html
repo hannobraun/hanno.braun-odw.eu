@@ -65,11 +65,9 @@
 {% endmacro %}
 
 {% macro preview_image(path, link, alt, text) %}
-    {% set image = resize_image(path=path, width=600, op="fit_width") %}
-
     <a class="preview-image" href="{{ link }}">
         <img
-            src="{{ image.static_path | trim_start_matches(pat="static") }}"
+            src="/{{ path }}?nf_resize=fit&w=600"
             alt="{{ alt }}" />
         <p>{{ text }}</p>
     </a>
