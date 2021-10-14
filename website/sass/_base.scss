@@ -80,5 +80,5 @@ img.about {
 @mixin box {
     padding:          1em;
     border-radius:    $border-radius;
-    background-color: #f4f4f4;
+    background-color: $color-bg;
 }
