@@ -2,6 +2,10 @@
 
 set -e
 
+# Required because `brew tap-new` initializes a Git repository.
+git config --global user.name "Hanno Braun"
+git config --global user.email "hanno@braun-odw.eu"
+
 TAP=hannobraun/deno
 MODULE=deno
 VERSION=1.14.3
