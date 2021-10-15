@@ -54,7 +54,7 @@
 {% endmacro %}
 
 {% macro note(page) %}
-    <article>
+    <article class="note-preview">
         <a class="title" href="{{ page.path }}">
             {{ macros::note_title(page=page) }}
         </a>
