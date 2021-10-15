@@ -5,7 +5,7 @@
 {% block main %}
     {{ macros::section_title() }}
 
-    <ol>
+    <ol class="feed">
         {% for page in paginator.pages -%}
             <li>
                 {{ macros::note(page=page) }}
