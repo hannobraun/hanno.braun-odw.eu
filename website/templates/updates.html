@@ -13,20 +13,5 @@
         {%- endfor %}
     </ol>
 
-    <nav class="pagination">
-        {% if paginator.previous %}
-            <a
-                class="previous"
-                href="{{ macros::abs_to_rel(abs=paginator.previous) }}">
-                🢐 Previous
-            </a>
-        {% endif %}
-        {% if paginator.next %}
-            <a
-                class="next"
-                href="{{ macros::abs_to_rel(abs=paginator.next) }}">
-                Next 🢒
-            </a>
-        {% endif %}
-    </div>
+    {{ macros::pagination() }}
 {% endblock main %}

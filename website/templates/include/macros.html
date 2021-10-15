@@ -73,6 +73,25 @@
     </a>
 {% endmacro %}
 
+{% macro pagination() %}
+    <nav class="pagination">
+        {% if paginator.previous %}
+            <a
+                class="previous"
+                href="{{ macros::abs_to_rel(abs=paginator.previous) }}">
+                🢐 Previous
+            </a>
+        {% endif %}
+        {% if paginator.next %}
+            <a
+                class="next"
+                href="{{ macros::abs_to_rel(abs=paginator.next) }}">
+                Next 🢒
+            </a>
+        {% endif %}
+    </div>
+{% endmacro %}
+
 {% macro abs_to_rel(abs) %}
     {{ abs | trim_start_matches(pat=config.base_url) }}
 {% endmacro %}
