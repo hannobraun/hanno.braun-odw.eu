@@ -5,7 +5,7 @@
 {% block main %}
     {{ macros::section_title() }}
     <ol>
-        {% for page in section.pages | reverse -%}
+        {% for page in section.pages -%}
             <li>
                 {{ macros::update(page=page, show_permalink=true) }}
             </li>
