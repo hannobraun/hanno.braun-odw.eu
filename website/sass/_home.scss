@@ -1,0 +1,17 @@
+.feeds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    > section {
+        max-width: 50%;
+
+        .more {
+            margin-top: $margin-wide;
+
+            font-size: $font-size-reduced;
+            text-align: center;
+        }
+    }
+}
