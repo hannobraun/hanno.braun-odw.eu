@@ -33,7 +33,7 @@ targetPort = 1111
 
 [[redirects]]
 from   = "/"
-to     = "/updates"
+to     = "/home"
 status = 302 # temporary redirect
 force  = true
 
