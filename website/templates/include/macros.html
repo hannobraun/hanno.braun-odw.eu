@@ -53,6 +53,30 @@
     </article>
 {% endmacro %}
 
+{% macro note(page) %}
+    <article>
+        <a class="title" href="{{ page.path }}">
+            {{ macros::note_title(page=page) }}
+        </a>
+
+        {% if page.extra.image %}
+            {{
+                macros::preview_image(
+                    path=page.extra.image,
+                    link=page.path,
+                    alt=page.title,
+                    text="Go to note..."
+                )
+            }}
+        {% else %}
+            <p>{{ page.summary | safe }}</p>
+            <div class="goto">
+                <a href="{{ page.path }}">Go to note...</a>
+            </div>
+        {% endif %}
+    </article>
+{% endmacro %}
+
 {% macro note_title(page) %}
     <h2>{{ page.title }}</h2>
     <p class="published">

@@ -8,27 +8,7 @@
     <ol class="notes">
         {% for page in paginator.pages -%}
             <li>
-                <article>
-                    <a class="title" href="{{ page.path }}">
-                        {{ macros::note_title(page=page) }}
-                    </a>
-
-                    {% if page.extra.image %}
-                        {{
-                            macros::preview_image(
-                                path=page.extra.image,
-                                link=page.path,
-                                alt=page.title,
-                                text="Go to note..."
-                            )
-                        }}
-                    {% else %}
-                        <p>{{ page.summary | safe }}</p>
-                        <div class="goto">
-                            <a href="{{ page.path }}">Go to note...</a>
-                        </div>
-                    {% endif %}
-                </article>
+                {{ macros::note(page=page) }}
             </li>
         {%- endfor %}
     </ol>
