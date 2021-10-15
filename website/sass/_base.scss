@@ -27,11 +27,9 @@ hr {
     margin: $margin-wide auto;
 }
 
-body {
-    > main {
-        max-width: $width-content;
-        margin: 0 auto;
-    }
+body > main {
+    max-width: $width-content;
+    margin: 0 auto;
 }
 
 nav ul {
