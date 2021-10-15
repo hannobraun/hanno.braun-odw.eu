@@ -45,7 +45,7 @@
             {{ page.content | safe }}
         </div>
         <div class="metadata">
-            Posted on <span class="date">{{ page.date }}</span>
+            Posted on <span class="date">{{ page.date | date }}</span>
             {% if show_permalink == true %}
                 - <a href="{{ page.path }}">permalink</a>
             {% endif %}

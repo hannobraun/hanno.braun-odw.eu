@@ -1,6 +1,6 @@
 +++
 title = "20210824T124900Z"
-date  = "2021-08-24"
+date  = "2021-08-24T12:49:00Z"
 +++
 
 I'm still tweaking the website. Just renamed the "Projects" section to "Notes". I plan to post more content targeted at makers there, in addition to the project descriptions that I've posted so far.
