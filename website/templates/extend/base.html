@@ -50,6 +50,13 @@
 
             <nav>
                 <section>
+                    <h3>Pages</h3>
+                    <ul>
+                        {{ macros::nav_entry(title="Home", path="/home") }}
+                        {{ macros::nav_entry(title="About", path="/about") }}
+                    </ul>
+                </section>
+                <section>
                     <h3>Content</h3>
                     <ul>
                         {{ macros::nav_entry(title="Updates", path="/updates") }}
@@ -59,7 +66,6 @@
                 <section>
                     <h3>Other</h3>
                     <ul>
-                        {{ macros::nav_entry(title="About", path="/about") }}
                         {{ macros::nav_entry(title="Contact", path="/contact") }}
                         {{ macros::nav_entry(title="Products", path="/products") }}
                     </ul>
