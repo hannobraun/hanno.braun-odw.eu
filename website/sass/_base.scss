@@ -77,6 +77,15 @@ img.about {
     border-radius: 0.25em;
 }
 
+nav.pagination {
+    a.previous {
+        float: left;
+    }
+    a.next {
+        float: right;
+    }
+}
+
 @mixin box {
     padding:          1em;
     border-radius:    $border-radius;

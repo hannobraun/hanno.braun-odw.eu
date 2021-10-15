@@ -4,11 +4,29 @@
 
 {% block main %}
     {{ macros::section_title() }}
+
     <ol>
-        {% for page in section.pages -%}
+        {% for page in paginator.pages -%}
             <li>
                 {{ macros::update(page=page, show_permalink=true) }}
             </li>
         {%- endfor %}
     </ol>
+
+    <nav class="pagination">
+        {% if paginator.previous %}
+            <a
+                class="previous"
+                href="{{ macros::abs_to_rel(abs=paginator.previous) }}">
+                🢐 Previous
+            </a>
+        {% endif %}
+        {% if paginator.next %}
+            <a
+                class="next"
+                href="{{ macros::abs_to_rel(abs=paginator.next) }}">
+                Next 🢒
+            </a>
+        {% endif %}
+    </div>
 {% endblock main %}
