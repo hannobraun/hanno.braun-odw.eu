@@ -4,8 +4,9 @@
 
 {% block main %}
     {{ macros::section_title() }}
+
     <ol class="notes">
-        {% for page in section.pages -%}
+        {% for page in paginator.pages -%}
             <li>
                 <article>
                     <a class="title" href="{{ page.path }}">
@@ -31,4 +32,6 @@
             </li>
         {%- endfor %}
     </ol>
+
+    {{ macros::pagination() }}
 {% endblock main %}
