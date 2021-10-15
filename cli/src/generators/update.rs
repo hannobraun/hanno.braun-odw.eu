@@ -20,7 +20,9 @@ impl Generator for Update {
         // See https://en.wikipedia.org/wiki/ISO_8601.
         let title_format =
             format_description!("[year][month][day]T[hour][minute][second]Z");
-        let date_format = format_description!("[year]-[month]-[day]");
+        let date_format = format_description!(
+            "[year]-[month]-[day]T[hour]:[minute]:[second]Z"
+        );
 
         let now = OffsetDateTime::now_utc();
 
