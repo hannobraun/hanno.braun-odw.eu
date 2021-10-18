@@ -1,22 +1,24 @@
-div.preview > a {
-    // center link/image
-    display: block;
-    margin:  0 auto;
+div.preview {
+    > a {
+        // center link/image
+        display: block;
+        margin:  0 auto;
 
-    // center text under image
-    text-align: center;
+        // center text under image
+        text-align: center;
 
-    p {
-        font-size:  $font-size-reduced;
-        margin-top: 0;
-    }
+        p {
+            font-size:  $font-size-reduced;
+            margin-top: 0;
+        }
 
-    img {
-        // for styling alt text
-        color:     #666666;
-        font-size: $font-size-reduced;
+        img {
+            // for styling alt text
+            color:     #666666;
+            font-size: $font-size-reduced;
 
-        border-radius: $border-radius;
+            border-radius: $border-radius;
+        }
     }
 }
 
