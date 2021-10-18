@@ -60,15 +60,15 @@
         </a>
 
         <div class="preview">
-            {% if page.extra.image %}
-                <a href="{{ page.path }}">
+            <a href="{{ page.path }}">
+                {% if page.extra.image %}
                     <img
                         src="/notes/{{ page.slug }}/{{ page.extra.image }}?nf_resize=fit&w=600"
                         alt="{{ page.title }}" />
-                </a>
-            {% else %}
-                <p>{{ page.extra.intro | markdown | safe }}</p>
-            {% endif %}
+                {% else %}
+                    <p>{{ page.extra.intro | markdown | safe }}</p>
+                {% endif %}
+            </a>
             <div class="goto">
                 <a href="{{ page.path }}">Go to note...</a>
             </div>
