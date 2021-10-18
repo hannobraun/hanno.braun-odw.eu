@@ -5,7 +5,7 @@ date  = "2021-10-14T13:12:02Z"
 
 {{
     preview_image(
-        path="updates/20211014T131202Z/tools.jpg",
+        path="/updates/20211014T131202Z/tools.jpg",
         alt="A wrench set, and a set of socket wrench (ratchet) and sockets."
     )
 }}

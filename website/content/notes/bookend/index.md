@@ -10,7 +10,7 @@ My shelves aren't exactly bursting with physical books these days. Shameful, I k
 
 {{
     preview_image(
-        path="notes/bookend/bookend.jpg",
+        path="/notes/bookend/bookend.jpg",
         alt="A 3D-printed bookend."
     )
 }}

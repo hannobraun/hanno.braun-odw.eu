@@ -5,7 +5,7 @@ date  = "2021-08-04T12:09:00Z"
 
 {{
     preview_image(
-        path="updates/20210804T120900Z/printer-at-home.jpg",
+        path="/updates/20210804T120900Z/printer-at-home.jpg",
         alt="A Prusa Mini 3D printer on top of a cabinet."
     )
 }}

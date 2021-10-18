@@ -5,7 +5,7 @@ date  = "2021-10-07T12:08:13Z"
 
 {{
     preview_image(
-        path="updates/20211007T120813Z/micrometer.jpg",
+        path="/updates/20211007T120813Z/micrometer.jpg",
         alt="A micrometer laying on a table."
     )
 }}

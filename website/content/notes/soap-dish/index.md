@@ -10,7 +10,7 @@ Sometimes you need something to put your soap on.
 
 {{
     preview_image(
-        path="notes/soap-dish/soap-dish.jpg",
+        path="/notes/soap-dish/soap-dish.jpg",
         alt="A 3D-printed soap dish."
     )
 }}
@@ -19,7 +19,7 @@ It prints best with variable layer height (I don't think the one pictured here h
 
 {{
     preview_image(
-        path="notes/soap-dish/soap-dish-with-soap.jpg",
+        path="/notes/soap-dish/soap-dish-with-soap.jpg",
         alt="A 3D-printed soap dish, with soap on it."
     )
 }}

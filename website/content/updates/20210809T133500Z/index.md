@@ -5,7 +5,7 @@ date  = "2021-08-09T13:35:00Z"
 
 {{
     preview_image(
-        path="updates/20210809T133500Z/book-press.jpg",
+        path="/updates/20210809T133500Z/book-press.jpg",
         alt="A home-made book press, made from two cutting boards and standard hardware (bolts, washers, winged nuts)."
     )
 }}

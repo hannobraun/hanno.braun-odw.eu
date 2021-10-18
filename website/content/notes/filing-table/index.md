@@ -12,7 +12,7 @@ Since I (currently) have neither the room nor the budget for a CNC mill, this go
 
 {{
     preview_image(
-        path="notes/filing-table/filing-table.jpg",
+        path="/notes/filing-table/filing-table.jpg",
         alt="The filing table, on it a piece of aluminium and a file in a file holder."
     )
 }}

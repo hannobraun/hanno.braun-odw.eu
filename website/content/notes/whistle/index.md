@@ -12,7 +12,7 @@ After printing a few more to replace lost ones, I decided enough is enough.
 
 {{
     preview_image(
-        path="notes/whistle/whistle.jpg",
+        path="/notes/whistle/whistle.jpg",
         alt="A 3D-printed whistle with a holder thingy to put a string through."
     )
 }}

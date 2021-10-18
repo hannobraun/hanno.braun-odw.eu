@@ -10,7 +10,7 @@ I've been inspired by [this video of a 3D-printed ball joint](https://www.youtub
 
 {{
     preview_image(
-        path="notes/ball-joint/ball-joint.jpg",
+        path="/notes/ball-joint/ball-joint.jpg",
         alt="A 3D-printed, print-in-place ball joint."
     )
 }}

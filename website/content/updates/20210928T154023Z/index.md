@@ -5,7 +5,7 @@ date  = "2021-09-28T15:40:23Z"
 
 {{
     preview_image(
-        path="updates/20210928T154023Z/spacer-printed-in-nonoilen.jpg",
+        path="/updates/20210928T154023Z/spacer-printed-in-nonoilen.jpg",
         alt=""
     )
 }}
@@ -16,7 +16,7 @@ Some {{ ext_link(url="https://www.3dlac.com/", text="3DLAC") }} solved the probl
 
 {{
     preview_image(
-        path="updates/20210928T154023Z/3dlac-plus.jpg",
+        path="/updates/20210928T154023Z/3dlac-plus.jpg",
         alt=""
     )
 }}

@@ -12,7 +12,7 @@ Here's what I came up with using nothing but aluminium sheet, an aluminium rod, 
 
 {{
     preview_image(
-        path="notes/worst-linear-axis/worst-linear-axis-v1.jpg",
+        path="/notes/worst-linear-axis/worst-linear-axis-v1.jpg",
         alt="A flimsy construction of bent aluminium sheet, resembling a linear axis."
     )
 }}
@@ -21,7 +21,7 @@ Didn't work. Way too flimsy. No matter, on to version 2:
 
 {{
     preview_image(
-        path="notes/worst-linear-axis/worst-linear-axis-v2.jpg",
+        path="/notes/worst-linear-axis/worst-linear-axis-v2.jpg",
         alt="Another aluminium sheet construction resembling a linear axis."
     )
 }}

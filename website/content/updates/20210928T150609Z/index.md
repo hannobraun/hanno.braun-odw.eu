@@ -5,7 +5,7 @@ date  = "2021-09-28T15:06:09Z"
 
 {{
     preview_image(
-        path="updates/20210928T150609Z/prusa-mini-extruder-disassembled.jpg",
+        path="/updates/20210928T150609Z/prusa-mini-extruder-disassembled.jpg",
         alt="A Prusa Mini with a disassembled extruder."
     )
 }}
@@ -14,7 +14,7 @@ Did some printer surgery yesterday! The filament was stuck in the extruder after
 
 {{
     preview_image(
-        path="updates/20210928T150609Z/filament-stuck-in-extruder.jpg",
+        path="/updates/20210928T150609Z/filament-stuck-in-extruder.jpg",
         alt="3D printing filament with a frayed end, stuck inside the disassembled extruder."
     )
 }}

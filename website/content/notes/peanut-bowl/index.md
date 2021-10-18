@@ -12,7 +12,7 @@ What to do? I present to you, the Peanut Bowl.
 
 {{
     preview_image(
-        path="notes/peanut-bowl/peanut-bowl.jpg",
+        path="/notes/peanut-bowl/peanut-bowl.jpg",
         alt="A 3D-printed bowl with two halves, one empty, the other filled with peanuts."
     )
 }}
@@ -21,7 +21,7 @@ You fill one half with peanuts. As you eat them, the discarded husks go into the
 
 {{
     preview_image(
-        path="notes/peanut-bowl/peanut-bowl-stacked.jpg",
+        path="/notes/peanut-bowl/peanut-bowl-stacked.jpg",
         alt="Two peanut bowls, one stacked into the other/"
     )
 }}

@@ -10,7 +10,7 @@ This is a 3D-printed hinge. It doesn't serve a purpose in itself, but it can be 
 
 {{
     preview_image(
-        path="notes/hinge/hinge.jpg",
+        path="/notes/hinge/hinge.jpg",
         alt="A 3D-printed hinge."
     )
 }}

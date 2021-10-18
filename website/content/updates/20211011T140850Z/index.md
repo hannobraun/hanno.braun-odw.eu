@@ -5,7 +5,7 @@ date  = "2021-10-11T14:08:50Z"
 
 {{
     preview_image(
-        path="updates/20211011T140850Z/printing-problem.jpg",
+        path="/updates/20211011T140850Z/printing-problem.jpg",
         alt="A 3D-printed calibration cube, posed in front of a light source for better visibility of its problematic features. Its first few layers show a taper, starting small, before increasing to the expected size. One size shows a bulge, where layers are too large."
     )
 }}

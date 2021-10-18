@@ -12,7 +12,7 @@ Some time later, my Prusa Mini arrived, and I discovered that the thumb drive it
 
 {{
     preview_image(
-        path="notes/3d-printed-screws/big-screw.jpg",
+        path="/notes/3d-printed-screws/big-screw.jpg",
         alt="A big 3D-printed screw, placed on a hand for size comparison."
     )
 }}
@@ -23,7 +23,7 @@ So I started scaling down the {{ ext_link(url="https://www.prusaprinters.org/pri
 
 {{
     preview_image(
-        path="notes/3d-printed-screws/screw-collection.jpg",
+        path="/notes/3d-printed-screws/screw-collection.jpg",
         alt="The big screw and nut from before in the background, with three smaller screw/nut combinations in front of it."
     )
 }}

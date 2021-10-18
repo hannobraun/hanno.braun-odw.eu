@@ -5,7 +5,7 @@ date  = "2021-08-25T12:26:53Z"
 
 {{
     preview_image(
-        path="updates/20210825T122653Z/fillamentum-nonoilen.jpg",
+        path="/updates/20210825T122653Z/fillamentum-nonoilen.jpg",
         alt="A spool of Fillamentum NonOilen 3D printing filament."
     )
 }}
