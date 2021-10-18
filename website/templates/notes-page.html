@@ -9,6 +9,10 @@
             {{ macros::note_title(page=page) }}
         </header>
 
+        {% if page.extra.intro %}
+            {{ page.extra.intro | markdown | safe }}
+        {% endif %}
+
         {{ page.content | safe }}
 
         <hr />

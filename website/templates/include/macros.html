@@ -69,7 +69,7 @@
                 )
             }}
         {% else %}
-            <p>{{ page.summary | safe }}</p>
+            <p>{{ page.extra.intro | markdown | safe }}</p>
             <div class="goto">
                 <a href="{{ page.path }}">Go to note...</a>
             </div>

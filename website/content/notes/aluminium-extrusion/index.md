@@ -1,13 +1,14 @@
 +++
 title = "Aluminium Extrusion"
 date  = "2021-09-23"
-+++
 
+[extra]
+intro = """
 Aluminium extrusion ("aluminum", for our North American friends), also called T-slot framing or aluminium profile, is an extremely useful component for building projects in the home shop, especially in combination with 3D-printed parts.
 
 I haven't had a chance to use it for any projects so far, but I'm very interested. I've started to look into it, and this note is a snapshot of the current state of my research. I intend to update it, as I learn more.
-
-<!-- more -->
+"""
++++
 
 Please note that I'm located in Germany, and the following is based on what is available to me locally. I don't know what the situation is like in the rest of the world. For all I know, the information presented here could be universally applicable, or not at all relevant outside of central Europe.
 

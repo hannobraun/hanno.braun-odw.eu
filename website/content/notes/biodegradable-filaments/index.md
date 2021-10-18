@@ -1,11 +1,12 @@
 +++
 title = "Biodegradable Filaments"
 date  = "2021-10-04"
-+++
 
+[extra]
+intro = """
 3D printing is extremely useful and has revolutionized some aspects of what can be made in small workshop and home environments. But plastics are a huge problem, and it sucks to be contributing to that. In this note, I'll examine some options for eco-friendly 3D printing filaments, to explore how we can limit the environmental impact of 3D printing.
-
-<!-- more -->
+"""
++++
 
 To judge the eco-friendliness of a filament, I've come up with the following criteria:
 
