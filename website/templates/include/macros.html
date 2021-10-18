@@ -65,7 +65,8 @@
                     <img
                         src="/notes/{{ page.slug }}/{{ page.extra.image }}?nf_resize=fit&w=600"
                         alt="{{ page.title }}" />
-                {% else %}
+                {% endif %}
+                {% if page.extra.intro %}
                     <p>{{ page.extra.intro | markdown | safe }}</p>
                 {% endif %}
             </a>
