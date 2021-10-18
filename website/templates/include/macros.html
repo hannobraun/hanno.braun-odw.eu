@@ -86,8 +86,8 @@
     </p>
 {% endmacro %}
 
-{% macro preview_image(path, link, alt, text) %}
-    <a class="preview-image" href="{{ link }}">
+{% macro preview_image(path, alt, text) %}
+    <a class="preview-image" href="{{ path }}">
         <img
             src="{{ path }}?nf_resize=fit&w=600"
             alt="{{ alt }}" />
