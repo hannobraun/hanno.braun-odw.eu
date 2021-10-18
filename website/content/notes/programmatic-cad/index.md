@@ -5,7 +5,7 @@ updated = 2021-10-13
 
 [extra]
 intro = """
-{{ ext_link(url="https://en.wikipedia.org/wiki/Computer-aided_design", text="CAD") }} software usually comes with a graphical user interface, but that is not the only way to approach that problem. It's also possible to write a CAD model as a computer program, either using a specialized programming language, or a general-purpose language with an appropriate API. This approach is called programmatic CAD or Code-CAD.
+CAD software usually comes with a graphical user interface, but that is not the only way to approach that problem. It's also possible to write a CAD model as a computer program, either using a specialized programming language, or a general-purpose language with an appropriate API. This approach is called programmatic CAD or Code-CAD.
 """
 +++
 
