@@ -60,12 +60,14 @@
         </a>
 
         {% if page.extra.image %}
-            <a class="preview" href="{{ page.path }}">
-                <img
-                    src="/notes/{{ page.slug }}/{{ page.extra.image }}?nf_resize=fit&w=600"
-                    alt="{{ page.title }}" />
-                <p>Go to note...</p>
-            </a>
+            <div class="preview">
+                <a href="{{ page.path }}">
+                    <img
+                        src="/notes/{{ page.slug }}/{{ page.extra.image }}?nf_resize=fit&w=600"
+                        alt="{{ page.title }}" />
+                    <p>Go to note...</p>
+                </a>
+            </div>
         {% else %}
             <p>{{ page.extra.intro | markdown | safe }}</p>
             <div class="goto">
