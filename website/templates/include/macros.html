@@ -55,12 +55,10 @@
 
 {% macro note_preview(page) %}
     <article class="note-preview">
-        <a class="title" href="{{ page.path }}">
-            {{ macros::note_title(page=page) }}
-        </a>
-
         <div class="preview">
             <a href="{{ page.path }}">
+                {{ macros::note_title(page=page) }}
+
                 {% if page.extra.image %}
                     <img
                         src="/notes/{{ page.slug }}/{{ page.extra.image }}?nf_resize=fit&w=600"
