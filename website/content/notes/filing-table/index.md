@@ -39,4 +39,4 @@ Granted, the result in that video looks a bit better than actually is in reality
 
 So what now? Obviously, this isn't built to last. The table and the file holder already show wear after using them a few times. I don't have any suitable lubrication at hand, and the fine aluminium dust getting between the moving surfaces certainly doesn't help. It is a great proof of concept though, and I'll be looking into using this (or an improved version) to bootstrap an aluminium version.
 
-All the modeling was done with OpenSCAD. I've made the <a href="filing-table.zip">models available for download</a>, if you want to print one youself.
+All the modeling was done with OpenSCAD. I've made the <a href="filing-table.zip">models available for download</a>, if you want to print one yourself.
