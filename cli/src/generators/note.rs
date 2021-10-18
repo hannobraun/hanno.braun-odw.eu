@@ -55,7 +55,7 @@ This is some text.
 
 {{{{
     preview_image(
-        path=\"notes/{path}/image.jpg\",
+        path=\"/notes/{path}/image.jpg\",
         alt=\"\"
     )
 }}}}
