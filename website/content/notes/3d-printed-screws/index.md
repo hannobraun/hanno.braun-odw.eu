@@ -36,4 +36,4 @@ Unfortunately I didn't take notes or save the 3MF files, so the following is fro
 - To get the quarter-size screw/nut to work, I had to adjust the layer height to 0.10 mm. This actually resulted in the nicest-feeling result. The fit between the original models is quite sloppy, and since I just scaled it down (without adjusting the thread tolerances), this just happened to result in the nicest fit at quarter size.
 - For the eight-size screw/nut, I adjusted the layer height to 0.05 mm. This one feels and works quite well too.
 
-I realize that none of this is going to be news for experienced printers, but I wasn't even remotely aware that it is possible to get this kind of detail out of a printer that costs 380€. I aways knew that a 3D printer was going to be useful in the workshop, but this opens up many more possibilities.
+I realize that none of this is going to be news for experienced printers, but I wasn't even remotely aware that it is possible to get this kind of detail out of a printer that costs 380€. I always knew that a 3D printer was going to be useful in the workshop, but this opens up many more possibilities.
