@@ -4,17 +4,11 @@ article.note-preview {
     margin: $margin-default;
 
     h2 {
-        margin-top:    $margin-narrow;
-        margin-bottom: 0em;
-    }
-
-    p.published {
-        margin-top: 0em;
-        font-size:  $font-size-reduced;
+        margin-top: $margin-narrow;
     }
 }
 
-article.note header {
+header.note {
     h2 {
         margin-bottom: 0em;
     }

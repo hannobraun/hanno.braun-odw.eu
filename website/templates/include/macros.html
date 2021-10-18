@@ -57,7 +57,9 @@
     <article class="note-preview">
         <div class="preview">
             <a href="{{ page.path }}">
-                {{ macros::note_title(page=page) }}
+                <header class="note">
+                    {{ macros::note_title(page=page) }}
+                </header>
 
                 {% if page.extra.image %}
                     <img
