@@ -46,6 +46,7 @@ title = \"{title}\"
 date  = \"{date}\"
 
 [extra]
+image = \"image.jpg\"
 intro = \"\"\"
 This is the introduction that is shown in note previews and the note itself.
 \"\"\"
