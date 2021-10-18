@@ -4,14 +4,6 @@ div.preview {
         display: block;
         margin:  0 auto;
 
-        // center text under image
-        text-align: center;
-
-        p {
-            font-size:  $font-size-reduced;
-            margin-top: 0;
-        }
-
         img {
             // for styling alt text
             color:     #666666;
@@ -19,6 +11,10 @@ div.preview {
 
             border-radius: $border-radius;
         }
+    }
+    div.goto {
+        font-size: $font-size-reduced;
+        text-align: center;
     }
 }
 

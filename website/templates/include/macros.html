@@ -65,8 +65,10 @@
                     <img
                         src="/notes/{{ page.slug }}/{{ page.extra.image }}?nf_resize=fit&w=600"
                         alt="{{ page.title }}" />
-                    <p>Go to note...</p>
                 </a>
+                <div class="goto">
+                    <a href="{{ page.path }}">Go to note...</a>
+                </div>
             </div>
         {% else %}
             <p>{{ page.extra.intro | markdown | safe }}</p>
