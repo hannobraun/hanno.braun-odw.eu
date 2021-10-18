@@ -44,11 +44,14 @@ impl Generator for Note {
 +++
 title = \"{title}\"
 date  = \"{date}\"
+
+[extra]
+intro = \"\"\"
+This is the introduction that is shown in note previews and the note itself.
+\"\"\"
 +++
 
-This is a note. Here's the summary.
-
-<!-- more -->
+This is some text.
 
 {{{{
     preview_image(
