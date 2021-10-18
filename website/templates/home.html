@@ -25,7 +25,7 @@
             <ol class="feed">
                 {% for page in notes.pages | slice(end=3) -%}
                     <li>
-                        {{ macros::note(page=page) }}
+                        {{ macros::note_preview(page=page) }}
                     </li>
                 {%- endfor %}
             </ol>

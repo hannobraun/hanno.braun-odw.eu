@@ -8,7 +8,7 @@
     <ol class="feed">
         {% for page in paginator.pages -%}
             <li>
-                {{ macros::note(page=page) }}
+                {{ macros::note_preview(page=page) }}
             </li>
         {%- endfor %}
     </ol>
