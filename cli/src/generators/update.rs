@@ -53,7 +53,7 @@ date  = \"{date}\"
 
 {{{{
     preview_image(
-        path=\"updates/{title}/image.jpg\",
+        path=\"/updates/{title}/image.jpg\",
         alt=\"\"
     )
 }}}}
