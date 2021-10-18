@@ -3,7 +3,7 @@ title = "Whistle"
 date = 2020-12-25
 
 [extra]
-image = "notes/whistle/whistle.jpg"
+image = "whistle.jpg"
 +++
 
 One of the first things (maybe the first thing?) I printed on my Prusa Mini was the whistle model that came with the printer. It's a quick, useful print, but it has one problem: It's easy to drag out of your pocket without noticing.

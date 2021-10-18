@@ -3,7 +3,7 @@ title = "Dovetail Slide Box"
 date = 2020-12-26
 
 [extra]
-image = "notes/dovetail-slide-box/box-open.jpg"
+image = "box-open.jpg"
 +++
 
 Sometimes you need a box to put stuff in.

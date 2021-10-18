@@ -3,7 +3,7 @@ title = "Ball Joint"
 date = 2021-01-17
 
 [extra]
-image = "notes/ball-joint/ball-joint.jpg"
+image = "ball-joint.jpg"
 +++
 
 I've been inspired by [this video of a 3D-printed ball joint](https://www.youtube.com/watch?v=JkHzmdVvHTg) and decided to make my own version.

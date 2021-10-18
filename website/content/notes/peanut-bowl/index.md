@@ -3,7 +3,7 @@ title = "Peanut Bowl"
 date = 2021-05-09
 
 [extra]
-image = "notes/peanut-bowl/peanut-bowl.jpg"
+image = "peanut-bowl.jpg"
 +++
 
 So here's a very specific problem: When eating peanuts out of a bowl, where do you put the husks? Not in the same bowl, surely, or finding un-eaten peanuts will become harder and harder. A second bowl might be unwieldy, depending on where you're sitting.

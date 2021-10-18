@@ -3,7 +3,7 @@ title = "Bookend"
 date = 2021-05-02
 
 [extra]
-image = "notes/bookend/bookend.jpg"
+image = "bookend.jpg"
 +++
 
 My shelves aren't exactly bursting with physical books these days. Shameful, I know. But while I work on that, I need a stopgap solution.

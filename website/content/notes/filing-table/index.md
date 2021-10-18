@@ -3,7 +3,7 @@ title = "Filing Table"
 date = 2020-08-25
 
 [extra]
-image = "notes/filing-table/filing-table.jpg"
+image = "filing-table.jpg"
 +++
 
 When I got my 3D printer, it radically improved my workshop's capabilities. Suddenly I could build things at a previously unimaginable accuracy. It also introduced a disconnect though: While I could form plastic to tenths of millimeters, my aluminium pieces were still crooked.

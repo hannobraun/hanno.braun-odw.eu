@@ -3,7 +3,7 @@ title = "Worst Linear Axis"
 date = 2020-08-17
 
 [extra]
-image = "notes/worst-linear-axis/worst-linear-axis-v1.jpg"
+image = "worst-linear-axis-v1.jpg"
 +++
 
 I had just moved into my new workshop. Being motivated to do *something*, but not really knowing what to do, nor having the material at hand for anything of consequence, I came up with a slightly crazy idea: Why not build a linear axis out of materials from the local hardware store?

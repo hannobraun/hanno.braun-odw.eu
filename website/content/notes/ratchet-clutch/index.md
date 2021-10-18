@@ -3,7 +3,7 @@ title = "Ratchet Clutch"
 date = 2020-09-12
 
 [extra]
-image = "notes/ratchet-clutch/ratchet-clutch.jpg"
+image = "ratchet-clutch.jpg"
 +++
 
 I recently had this wild idea involving a Super Soaker-style water gun, but with a rotating mass that powers an air pump. I don't think I'll ever build this, but there was one aspect of this idea that really fascinated me: It would require a mechanism that can translate a pumping motion into a moment to accelerate the rotating mass.

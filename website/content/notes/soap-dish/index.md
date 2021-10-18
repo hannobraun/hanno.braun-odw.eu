@@ -3,7 +3,7 @@ title = "Soap Dish"
 date = 2021-05-13
 
 [extra]
-image = "notes/soap-dish/soap-dish.jpg"
+image = "soap-dish.jpg"
 +++
 
 Sometimes you need something to put your soap on.

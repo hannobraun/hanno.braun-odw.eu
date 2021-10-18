@@ -3,7 +3,7 @@ title = "3D-Printed Screws"
 date = 2020-08-18
 
 [extra]
-image = "notes/3d-printed-screws/big-screw.jpg"
+image = "big-screw.jpg"
 +++
 
 When I first learned that 3D printers can print screws, my reaction was one of mild surprise: Yes, why wouldn't you be able to print very rough screw threads with a 3D printer?

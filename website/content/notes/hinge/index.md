@@ -3,7 +3,7 @@ title = "Hinge"
 date = 2020-12-27
 
 [extra]
-image = "notes/hinge/hinge.jpg"
+image = "hinge.jpg"
 +++
 
 This is a 3D-printed hinge. It doesn't serve a purpose in itself, but it can be used as a component of other prints.
