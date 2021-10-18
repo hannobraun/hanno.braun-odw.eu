@@ -1,6 +1,4 @@
-use clap::Clap;
-
-#[derive(Clap)]
+#[derive(clap::Parser)]
 pub struct Args {
     #[clap(subcommand)]
     pub command: Command,
@@ -9,11 +7,11 @@ pub struct Args {
 impl Args {
     /// Convenience method to ease access to `Clap::parse` implementation
     pub fn parse() -> Self {
-        <Self as Clap>::parse()
+        <Self as clap::Parser>::parse()
     }
 }
 
-#[derive(Clap)]
+#[derive(clap::Parser)]
 pub enum Command {
     Update,
     Note { title: String },
