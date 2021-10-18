@@ -86,15 +86,6 @@
     </p>
 {% endmacro %}
 
-{% macro preview_image(path, alt) %}
-    <a class="preview-image" href="{{ path }}">
-        <img
-            src="{{ path }}?nf_resize=fit&w=600"
-            alt="{{ alt }}" />
-        <p>(click for full size)</p>
-    </a>
-{% endmacro %}
-
 {% macro pagination() %}
     <nav class="pagination">
         {% if paginator.previous %}
