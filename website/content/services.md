@@ -23,7 +23,7 @@ As I expressed above, I'm still learning about manufacturing businesses, and I c
 - In about a decade of self-employment, I spent a lot of time thinking about business. I might have some ideas for you too, specifically in the areas of positioning and marketing.
 - I have lots of interest (although little experience) in industrial automation, and would like to figure out how automation can provide benefit in small-scale manufacturing.
 
-And as I already mentioned, if you need more than just advice, I'm happy to offer software development (and, to a lesser extent, CAD modeling) services at a reduced rate, to the right clients.
+If you need more than just advice, I'm happy to offer software development (and, to a lesser extent, CAD modeling) services at a reduced rate, to the right clients.
 
 
 ### Don't fit that description?
