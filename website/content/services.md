@@ -5,7 +5,7 @@ title = "Services"
 Are you a **maker** who's building, or already running, a **small manufacturing business** to sell your own product? I'm offering **free consulting services** to businesses like yours, and also software development and potentially CAD modeling services at reduced rates.
 
 
-### Why do this?
+### Why offer free consulting?
 
 I'm very interested in small, owner-operated manufacturing businesses that make and sell their own products. I want to learn more about what you do, what problems you face, and how I can be helpful.
 
