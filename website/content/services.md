@@ -14,17 +14,16 @@ Eventually, I want to run a profitable business selling products and services to
 Let me emphasize that: If you are building a business to make and sell your own product, **I want to talk to you**! Please don't be shy. If you're not sure whether you qualify, [please get in touch anyway](/contact)! No harm in asking!
 
 
-### What I can do
+### What can I help with?
 
-I can be a bit of an idiot, but people sometimes compliment me for my insight, or just for getting them to think in new directions. Having someone with an outside perspective to bounce your ideas off of can be very valuable, and I figure that's the least I can provide.
+As I expressed above, I'm still learning about manufacturing businesses, and I can't provide you with deep, encompassing expertise on the topic. However, I do believe I can bring some value:
 
-Other than that, I can help you in the following areas:
+- At the very least, I can provide an outside perspective. Explaining your ideas and processes to someone who's going to have stupid questions can sometimes be enough to get you thinking in new directions!
+- With over 20 years of experience in software development, I have some insight into what works and what doesn't. If you're developing custom software, I'm sure to have opinions!
+- In about a decade of self-employment, I spent a lot of time thinking about business. I might have some ideas for you too, specifically in the areas of positioning and marketing.
+- I have lots of interest (although little experience) in industrial automation, and would like to figure out how automation can provide benefit in small-scale manufacturing.
 
-- I've been self-employed for about a decade now (some of that time even semi-successfully), and I have done lots of thinking about business topics like positioning and marketing during that time.
-- I've also been doing software development for over 20 years. If you're thinking about doing some custom software development, I'm sure to have opinions.
-- I have lots of interest (although little experience) in industrial automation, and would like to figure out how automation can be a benefit in small-scale manufacturing.
-
-And as mentioned above, if you need more than just advice, I'm happy to offer software development (and, to a lesser extent, CAD modeling) services at a reduced rate, to the right clients.
+And as I already mentioned, if you need more than just advice, I'm happy to offer software development (and, to a lesser extent, CAD modeling) services at a reduced rate, to the right clients.
 
 
 ### Don't fit that description?
