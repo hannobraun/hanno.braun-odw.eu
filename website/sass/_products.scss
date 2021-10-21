@@ -5,7 +5,7 @@ article.product form {
     flex-direction: column;
 
     div {
-        margin: 0.5em;
+        margin: $margin-narrow * 2;
         width: 65%;
 
         align-self: center;
