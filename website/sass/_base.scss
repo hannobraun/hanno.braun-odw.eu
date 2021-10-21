@@ -72,7 +72,7 @@ img.about {
     margin-left: $margin-default;
     margin-bottom: $margin-default;
 
-    border-radius: 0.25em;
+    border-radius: $border-radius;
 }
 
 nav.pagination {
