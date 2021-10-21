@@ -7,6 +7,6 @@
 {% endblock title %}
 
 {% block main %}
-    <a href="/updates">🢐 back to Updates</a>
+    {{ macros::back(text="Updates", path="/updates") }}
     {{ macros::update(page=page, show_permalink=false) }}
 {% endblock main %}

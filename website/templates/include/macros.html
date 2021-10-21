@@ -32,6 +32,10 @@
     <li><a class="{{ class }}" href="{{ path }}">{{ title }}</a></li>
 {% endmacro %}
 
+{% macro back(text, path) %}
+    <a href="{{ path }}">🢐 back to {{ text }}</a>
+{% endmacro %}
+
 {% macro section_title() %}
     <header class="section">
         <h2>{{ section.title }}</h2>

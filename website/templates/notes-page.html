@@ -3,7 +3,7 @@
 {% extends "extend/base.html" %}
 
 {% block main %}
-    <a href="/notes">🢐 back to Notes</a>
+    {{ macros::back(text="Notes", path="/notes") }}
     <article>
         <header class="note">
             {{ macros::note_title(page=page) }}
