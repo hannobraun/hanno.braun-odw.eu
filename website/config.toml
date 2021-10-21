@@ -9,3 +9,12 @@ build_search_index = false
 
 [slugify]
 paths = "safe"
+
+[extra.pages]
+Home = "/home"
+About = "/about"
+Updates = "/updates"
+Notes = "/notes"
+Services = "/services"
+Products = "/products"
+Contact = "/contact"
