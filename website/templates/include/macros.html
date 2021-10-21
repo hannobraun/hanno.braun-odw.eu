@@ -34,8 +34,10 @@
     <li><a class="{{ class }}" href="{{ path }}">{{ name }}</a></li>
 {% endmacro %}
 
-{% macro back(text, path) %}
-    <a href="{{ path }}">🢐 back to {{ text }}</a>
+{% macro back(name) %}
+    {% set path = config.extra.pages[name] %}
+
+    <a href="{{ path }}">🢐 back to {{ name }}</a>
 {% endmacro %}
 
 {% macro section_title() %}
