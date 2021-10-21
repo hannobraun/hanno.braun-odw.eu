@@ -22,25 +22,23 @@
     </head>
     <body>
         <header>
+            <div class="contact">
+                <p>{{ macros::email() }}</p>
+                <p>{{ macros::matrix() }}</p>
+            </div>
             <a class="title" href="/">
                 <h1>Hanno Braun</h1>
                 <h2>making, automation, small-scale manufacturing</h2>
             </a>
-            <div class="right">
-                <div class="contact">
-                    <p>{{ macros::email() }}</p>
-                    <p>{{ macros::matrix() }}</p>
-                </div>
-                <nav>
-                    <ul>
-                        {{ macros::nav_entry(title="Home", path="/home") }}
-                        {{ macros::nav_entry(title="Updates", path="/updates") }}
-                        {{ macros::nav_entry(title="Notes", path="/notes") }}
-                        {{ macros::nav_entry(title="Services", path="/services") }}
-                        {{ macros::nav_entry(title="About", path="/about") }}
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <ul>
+                    {{ macros::nav_entry(title="Home", path="/home") }}
+                    {{ macros::nav_entry(title="Updates", path="/updates") }}
+                    {{ macros::nav_entry(title="Notes", path="/notes") }}
+                    {{ macros::nav_entry(title="Services", path="/services") }}
+                    {{ macros::nav_entry(title="About", path="/about") }}
+                </ul>
+            </nav>
         </header>
         <main>
             {% block main %}{% endblock main %}

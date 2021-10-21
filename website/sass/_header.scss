@@ -2,12 +2,6 @@ body > header {
     max-width: $width-header;
     margin: 0 auto;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-
     margin-bottom: $margin-wide;
 
     a.title {
@@ -25,6 +19,8 @@ body > header {
     }
 
     div.contact {
+        float: right;
+
         margin-top: $margin-default;
         margin-bottom: $margin-default * 2;
 
@@ -42,6 +38,8 @@ body > header {
     }
 
     nav {
+        text-align: right;
+
         ul li {
             display:     inline;
             margin-left: 1em;
@@ -58,12 +56,5 @@ body > header {
                 border-bottom-width: 1px;
             }
         }
-    }
-
-    div.right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
     }
 }
