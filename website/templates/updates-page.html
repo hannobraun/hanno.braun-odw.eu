@@ -2,10 +2,6 @@
 
 {% extends "extend/base.html" %}
 
-{% block title %}
-    {{ macros::title(word="Updates") }}
-{% endblock title %}
-
 {% block main %}
     {{ macros::back(name="Updates") }}
     {{ macros::update(page=page, show_permalink=false) }}
