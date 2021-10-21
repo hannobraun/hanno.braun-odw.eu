@@ -1,8 +1,8 @@
 {% macro title(word="") %}
-    {% if word != "" %}
-        <title>{{ word }} - Hanno Braun</title>
-    {% else %}
+    {% if word == "" %}
         <title>Hanno Braun</title>
+    {% else %}
+        <title>{{ word }} - Hanno Braun</title>
     {% endif %}
 {% endmacro %}
 
