@@ -1,7 +1,7 @@
 form.newsletter {
     @include box;
 
-    max-width: 30em;
+    max-width: $width-narrow;
 
     input {
         margin: 0.5em 0;
