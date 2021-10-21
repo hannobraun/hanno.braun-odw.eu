@@ -85,7 +85,7 @@ nav.pagination {
 }
 
 @mixin box {
-    padding:          1em;
+    padding:          $margin-default;
     border-radius:    $border-radius;
     background-color: $color-bg;
 }
