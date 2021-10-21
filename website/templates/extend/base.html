@@ -32,11 +32,11 @@
             </a>
             <nav>
                 <ul>
-                    {{ macros::nav_entry(title="Home", path="/home") }}
-                    {{ macros::nav_entry(title="Updates", path="/updates") }}
-                    {{ macros::nav_entry(title="Notes", path="/notes") }}
-                    {{ macros::nav_entry(title="Services", path="/services") }}
-                    {{ macros::nav_entry(title="About", path="/about") }}
+                    {{ macros::nav_entry(name="Home") }}
+                    {{ macros::nav_entry(name="Updates") }}
+                    {{ macros::nav_entry(name="Notes") }}
+                    {{ macros::nav_entry(name="Services") }}
+                    {{ macros::nav_entry(name="About") }}
                 </ul>
             </nav>
         </header>
@@ -51,28 +51,28 @@
                 <section>
                     <h3>Pages</h3>
                     <ul>
-                        {{ macros::nav_entry(title="Home", path="/home") }}
-                        {{ macros::nav_entry(title="About", path="/about") }}
+                        {{ macros::nav_entry(name="Home") }}
+                        {{ macros::nav_entry(name="About") }}
                     </ul>
                 </section>
                 <section>
                     <h3>Content</h3>
                     <ul>
-                        {{ macros::nav_entry(title="Updates", path="/updates") }}
-                        {{ macros::nav_entry(title="Notes", path="/notes") }}
+                        {{ macros::nav_entry(name="Updates") }}
+                        {{ macros::nav_entry(name="Notes") }}
                     </ul>
                 </section>
                 <section>
                     <h3>Offers</h3>
                     <ul>
-                        {{ macros::nav_entry(title="Services", path="/services") }}
-                        {{ macros::nav_entry(title="Products", path="/products") }}
+                        {{ macros::nav_entry(name="Services") }}
+                        {{ macros::nav_entry(name="Products") }}
                     </ul>
                 </section>
                 <section>
                     <h3>Other</h3>
                     <ul>
-                        {{ macros::nav_entry(title="Contact", path="/contact") }}
+                        {{ macros::nav_entry(name="Contact") }}
                     </ul>
                 </section>
             </nav>

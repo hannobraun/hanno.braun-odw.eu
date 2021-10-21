@@ -16,7 +16,9 @@
     <a href="https://matrix.to/#/@hanno:braun-odw.eu">@hanno:braun-odw.eu</a>
 {% endmacro %}
 
-{% macro nav_entry(title, path) %}
+{% macro nav_entry(name) %}
+    {% set path = config.extra.pages[name] %}
+
     {% if page %}
         {% set current_path = page.path %}
     {% elif section %}
@@ -29,7 +31,7 @@
         {% set class = "" %}
     {% endif %}
 
-    <li><a class="{{ class }}" href="{{ path }}">{{ title }}</a></li>
+    <li><a class="{{ class }}" href="{{ path }}">{{ name }}</a></li>
 {% endmacro %}
 
 {% macro back(text, path) %}
