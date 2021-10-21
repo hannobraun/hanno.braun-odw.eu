@@ -4,7 +4,7 @@ form.newsletter {
     max-width: $width-narrow;
 
     input {
-        margin: 0.5em 0;
+        margin: $margin-narrow * 2 0;
     }
 
     input[type=email] {
@@ -16,7 +16,7 @@ form.newsletter {
         border: 0 none;
 
         border-radius: $border-radius;
-        padding:       0.5em 1em;
+        padding:       $margin-narrow * 2 $margin-default;
 
         font-weight: bold;
 
