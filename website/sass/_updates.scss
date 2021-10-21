@@ -4,7 +4,8 @@ article.update {
     margin: $margin-default;
 
     .metadata {
-        margin-top: 1.0em;
+        margin: $margin-default;
+        margin-bottom: 0;
 
         font-size: $font-size-reduced;
         font-style: italic;
