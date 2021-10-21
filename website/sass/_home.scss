@@ -1,11 +1,13 @@
 .feeds {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 
     > section {
-        max-width: 50%;
+        flex-grow: 1;
+        flex-basis: $width-content / 2;
 
         .more {
             margin-top: $margin-wide;
