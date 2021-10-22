@@ -5,6 +5,10 @@ form.newsletter {
 
     margin: 0 auto;
 
+    h2 {
+        margin-top: 0;
+    }
+
     input {
         margin: $margin-narrow * 2 0;
     }
