@@ -1,1 +1,3 @@
-{% include "include/newsletter.html" %}
+{% import "include/macros.html" as macros %}
+
+{{ macros::newsletter_form() }}
