@@ -1,6 +1,4 @@
 form.newsletter {
-    @include box;
-
     max-width: $width-narrow;
 
     margin: 0 auto;
@@ -34,4 +32,8 @@ form.newsletter {
         color:            #ffffff;
         background-color: #444444;
     }
+}
+
+form.newsletter-box {
+    @include box;
 }
