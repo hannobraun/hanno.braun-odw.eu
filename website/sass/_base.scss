@@ -82,6 +82,8 @@ nav.pagination {
     justify-content: space-between;
     align-items:     baseline;
 
+    margin: $margin-wide;
+
     p.disabled {
         font-weight: bold;
         text-decoration: line-through;
