@@ -76,11 +76,19 @@ img.about {
 }
 
 nav.pagination {
-    a.previous {
-        float: left;
-    }
-    a.next {
-        float: right;
+    display:         flex;
+    flex-direction:  row;
+    flex-wrap:       nowrap;
+    justify-content: space-between;
+    align-items:     baseline;
+
+    p.disabled {
+        font-weight: bold;
+        text-decoration: line-through;
+
+        color: $color-weak;
+
+        margin: 0;
     }
 }
 

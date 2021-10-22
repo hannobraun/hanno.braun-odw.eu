@@ -104,6 +104,10 @@
                 href="{{ macros::abs_to_rel(abs=paginator.previous) }}">
                 🢐 previous page
             </a>
+        {% else %}
+            <p class="disabled">
+                🢐 previous page
+            </p>
         {% endif %}
         {% if paginator.next %}
             <a
@@ -111,6 +115,10 @@
                 href="{{ macros::abs_to_rel(abs=paginator.next) }}">
                 next page 🢒
             </a>
+        {% else %}
+            <p class="disabled">
+                next page 🢒
+            </p>
         {% endif %}
     </div>
 {% endmacro %}
