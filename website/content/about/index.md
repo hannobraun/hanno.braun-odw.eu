@@ -12,7 +12,7 @@ I'm interested in making, automation, manufacturing, and small businesses that d
 
 This website is dedicated to these topics, and I keep adding content here regularly. If you enjoy it (or don't) [please let me know](/contact)! I appreciate your feedback
 
-I'm also a big believer in open source, and try to do as much as my work in the open as is practical. Check out my {{ ext_link(url="https://github.com/hannobraun", text="GitHub profile") }}, if you're interested in what I'm up to.
+I'm also a big believer in open source, and try to do as much of my work in the open as is practical. Check out my {{ ext_link(url="https://github.com/hannobraun", text="GitHub profile") }}, if you're interested in what I'm up to.
 
 
 ### Let's talk!
