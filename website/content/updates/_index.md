@@ -6,4 +6,6 @@ paginate_by = 5
 
 template      = "updates.html"
 page_template = "updates-page.html"
+
+generate_feed = true
 +++
