@@ -6,6 +6,7 @@ highlight_code     = false
 build_search_index = false
 
 generate_feed = true
+feed_filename = "atom.xml" # need to add custom template before changing
 
 [slugify]
 paths = "safe"
