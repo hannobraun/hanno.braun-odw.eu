@@ -55,6 +55,9 @@ to     = "/notes/:splat"
 status = 301 # moved permanently
 force  = true
 
+
+# Feed redirects
+
 [[redirects]]
 from   = "rss.xml"
 to     = "atom.xml"
