@@ -75,7 +75,7 @@
                         alt="{{ page.title }}" />
                 {% endif %}
                 {% if page.extra.intro %}
-                    <p>{{ page.extra.intro | markdown | safe }}</p>
+                    {{ page.extra.intro | markdown | safe }}
                 {% endif %}
             </a>
             <div class="goto">
