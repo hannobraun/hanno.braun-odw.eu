@@ -11,11 +11,11 @@ build_search_index = false
 paths = "safe"
 
 [extra.pages]
-Home = "/home"
-About = "/about"
-Updates = "/updates"
-Notes = "/notes"
-Services = "/services"
-Products = "/products"
-Contact = "/contact"
+Home      = "/home"
+About     = "/about"
+Updates   = "/updates"
+Notes     = "/notes"
+Services  = "/services"
+Products  = "/products"
+Contact   = "/contact"
 Subscribe = "/subscribe"
