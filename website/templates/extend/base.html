@@ -16,7 +16,10 @@
 
         <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
 
-        <link href="/atom.xml" rel="alternate" type="application/atom+xml" />
+        {% block feed %}
+            {% set feed = "/atom.xml" %}
+        {% endblock %}
+        <link href="{{ feed }}" rel="alternate" type="application/atom+xml" />
     </head>
     <body>
         <header>
