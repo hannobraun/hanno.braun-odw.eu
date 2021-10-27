@@ -2,6 +2,10 @@
 
 {% extends "extend/base.html" %}
 
+{% block feed %}
+    {% set feed = section.path ~ "atom.xml" %}
+{% endblock %}
+
 {% block main %}
     {{ macros::section_title() }}
 
