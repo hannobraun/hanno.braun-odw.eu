@@ -85,15 +85,23 @@
     </article>
 {% endmacro %}
 
-{% macro note_title(page) %}
+{% macro note_title(page, link_changes=false) %}
     <h2>{{ page.title }}</h2>
     <p class="published">
         {% if page.updated %}
-            <strong>Published:</strong> {{ page.date }} (<strong>updated</strong> {{ page.updated }})
+            <strong>Published:</strong> {{ page.date }} ({{ macros::note_title_updated(link_changes=link_changes) }} {{ page.updated }})
         {% else %}
             <strong>Published:</strong> {{ page.date }}
         {% endif %}
     </p>
+{% endmacro %}
+
+{% macro note_title_updated(link_changes) %}
+    {%- if link_changes -%}
+        <a href="#changes">updated</a>
+    {%- else -%}
+        <strong>updated</strong>
+    {%- endif -%}
 {% endmacro %}
 
 {% macro pagination() %}
