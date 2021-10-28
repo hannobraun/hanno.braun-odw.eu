@@ -21,6 +21,24 @@
         {{ page.content | safe }}
 
         <footer>
+            {% if page.extra.updates %}
+                <section id="updates" class="updates">
+                    <h3>Updates</h3>
+                    <table>
+                        <tr>
+                            <th>{{ page.date }}</th>
+                            <td>Initial release.</td>
+                        </tr>
+                        {% for update in page.extra.updates %}
+                            <tr>
+                                <th>{{ update.date }}</th>
+                                <td>{{ update.text }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </section>
+            {% endif %}
+
             <hr />
 
             <p>

@@ -18,3 +18,19 @@ article.note-preview header, article.note header {
         font-size:  $font-size-reduced;
     }
 }
+
+article.note section.updates {
+    @include box;
+
+    max-width: $width-narrow;
+    margin: $margin-wide auto;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    th, td {
+        vertical-align: text-top;
+        padding: $margin-narrow;
+    }
+}
