@@ -11,9 +11,13 @@ I send out a newsletter every few weeks that summarizes what happened. If you do
 {{ newsletter() }}
 
 
-### News Feed
+### News Feeds
 
-[`/atom.xml`](/atom.xml) provides a news feed for both updates and notes.
+This website provides three different news feeds:
+
+- [`/updates/atom.xml`](/updates/atom.xml) - feed for updates
+- [`/notes/atom.xml`](/notes/atom.xml) - feed for notes
+- [`/atom.xml`](/atom.xml) feed for both updates and notes
 
 Currently only {{ ext_link(text="Atom", url="https://en.wikipedia.org/wiki/Atom_(Web_standard)") }} is supported. If that's a problem and you need support for {{ ext_link(text="RSS", url="https://en.wikipedia.org/wiki/RSS") }}, please [let me know](/contact).
 
