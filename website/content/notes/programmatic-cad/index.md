@@ -11,7 +11,7 @@ CAD software usually comes with a graphical user interface, but that is not the 
 [[extra.updates]]
 date = 2021-10-13
 text = """
-Add separate section about CAD kernels; update section about programs to refer back to it. Other minor tweaks.
+Added separate section about CAD kernels; updated section about programs to refer back to it. Other minor tweaks.
 """
 +++
 
