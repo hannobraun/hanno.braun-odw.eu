@@ -43,7 +43,7 @@ impl Generator for Note {
             "\
 +++
 title = \"{title}\"
-date  = \"{date}\"
+date  = {date}
 
 [extra]
 image = \"image.jpg\"
