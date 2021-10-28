@@ -2,7 +2,7 @@
 title = "Subscribe"
 +++
 
-Want to stay up-to-date on what's happening here? There are several options to subscribe to this site.
+Want to stay up-to-date on what's happening here? There are several options to subscribe to this website.
 
 ### Newsletter
 
