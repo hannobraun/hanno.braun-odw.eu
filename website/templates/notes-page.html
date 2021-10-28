@@ -21,7 +21,7 @@
         {{ page.content | safe }}
 
         <footer>
-            {% if page.extra.updates %}
+            {% if page.extra.changes %}
                 <section id="updates" class="updates">
                     <h3>Updates</h3>
                     <table>
@@ -29,7 +29,7 @@
                             <th>{{ page.date }}</th>
                             <td>Initial release.</td>
                         </tr>
-                        {% for update in page.extra.updates %}
+                        {% for update in page.extra.changes %}
                             <tr>
                                 <th>{{ update.date }}</th>
                                 <td>{{ update.text }}</td>

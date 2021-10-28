@@ -8,7 +8,7 @@ intro = """
 CAD software usually comes with a graphical user interface, but that is not the only way to approach that problem. It's also possible to write a CAD model as a computer program, either using a specialized programming language, or a general-purpose language with an appropriate API. This approach is called programmatic CAD or Code-CAD.
 """
 
-[[extra.updates]]
+[[extra.changes]]
 date = 2021-10-13
 text = """
 Added separate section about CAD kernels; updated section about programs to refer back to it. Other minor tweaks.
