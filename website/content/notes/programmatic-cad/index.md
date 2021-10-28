@@ -7,6 +7,12 @@ updated = 2021-10-13
 intro = """
 CAD software usually comes with a graphical user interface, but that is not the only way to approach that problem. It's also possible to write a CAD model as a computer program, either using a specialized programming language, or a general-purpose language with an appropriate API. This approach is called programmatic CAD or Code-CAD.
 """
+
+[[extra.updates]]
+date = 2021-10-13
+text = """
+Add separate section about CAD kernels; update section about programs to refer back to it. Other minor tweaks.
+"""
 +++
 
 As a software developer, programmatic CAD makes complete sense to me. You can use established tools for programming and get all the advantages of a programming language built-in. Collaboration with other team members, adding comments to document aspects of your model, automating repetitive modelling tasks, generative design... all this and more is available without needing to be explicitly supported by the CAD software.
