@@ -33,10 +33,10 @@
             </a>
             <nav>
                 <ul>
-                    {{ macros::nav_entry(name="Updates") }}
-                    {{ macros::nav_entry(name="Notes") }}
-                    {{ macros::nav_entry(name="Services") }}
-                    {{ macros::nav_entry(name="About") }}
+                    {{ macros::nav_entry(path="/updates") }}
+                    {{ macros::nav_entry(path="/notes") }}
+                    {{ macros::nav_entry(path="/services") }}
+                    {{ macros::nav_entry(path="/about") }}
                 </ul>
             </nav>
         </header>
@@ -51,29 +51,29 @@
                 <section>
                     <h3>Pages</h3>
                     <ul>
-                        {{ macros::nav_entry(name="Home") }}
-                        {{ macros::nav_entry(name="About") }}
+                        {{ macros::nav_entry(path="/home") }}
+                        {{ macros::nav_entry(path="/about") }}
                     </ul>
                 </section>
                 <section>
                     <h3>Content</h3>
                     <ul>
-                        {{ macros::nav_entry(name="Updates") }}
-                        {{ macros::nav_entry(name="Notes") }}
+                        {{ macros::nav_entry(path="/updates") }}
+                        {{ macros::nav_entry(path="/notes") }}
                     </ul>
                 </section>
                 <section>
                     <h3>Offers</h3>
                     <ul>
-                        {{ macros::nav_entry(name="Services") }}
-                        {{ macros::nav_entry(name="Products") }}
+                        {{ macros::nav_entry(path="/services") }}
+                        {{ macros::nav_entry(path="/products") }}
                     </ul>
                 </section>
                 <section>
                     <h3>Other</h3>
                     <ul>
-                        {{ macros::nav_entry(name="Contact") }}
-                        {{ macros::nav_entry(name="Subscribe") }}
+                        {{ macros::nav_entry(path="/contact") }}
+                        {{ macros::nav_entry(path="/subscribe") }}
                     </ul>
                 </section>
             </nav>
