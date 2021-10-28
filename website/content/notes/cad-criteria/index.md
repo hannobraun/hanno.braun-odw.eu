@@ -1,6 +1,6 @@
 +++
 title = "My Criteria for CAD Software"
-date  = "2021-10-26"
+date  = 2021-10-26
 
 [extra]
 intro = """
