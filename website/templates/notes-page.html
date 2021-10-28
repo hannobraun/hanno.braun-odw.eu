@@ -29,10 +29,10 @@
                             <th>{{ page.date }}</th>
                             <td>Initial release.</td>
                         </tr>
-                        {% for update in page.extra.changes %}
+                        {% for change in page.extra.changes %}
                             <tr>
-                                <th>{{ update.date }}</th>
-                                <td>{{ update.text }}</td>
+                                <th>{{ change.date }}</th>
+                                <td>{{ change.text }}</td>
                             </tr>
                         {% endfor %}
                     </table>
