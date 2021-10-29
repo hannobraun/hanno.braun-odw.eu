@@ -1,17 +1,17 @@
 .preview {
-    > a {
-        // center link/image
+    a {
         display: block;
         margin:  0 auto;
-
-        img {
-            // for styling alt text
-            color:     #666666;
-            font-size: $font-size-reduced;
-
-            border-radius: $border-radius;
-        }
     }
+
+    a img {
+        // for styling alt text
+        color:     #666666;
+        font-size: $font-size-reduced;
+
+        border-radius: $border-radius;
+    }
+
     a.goto {
         font-size: $font-size-reduced;
         text-align: center;
