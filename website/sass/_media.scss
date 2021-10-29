@@ -1,4 +1,6 @@
 .preview {
+    font-size: $font-size-reduced;
+
     a {
         display: block;
         margin:  0 auto;
@@ -6,14 +8,12 @@
 
     a img {
         // for styling alt text
-        color:     #666666;
-        font-size: $font-size-reduced;
+        color: #666666;
 
         border-radius: $border-radius;
     }
 
     a.goto {
-        font-size: $font-size-reduced;
         text-align: center;
     }
 }
