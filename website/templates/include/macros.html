@@ -79,9 +79,7 @@
                 {{ page.extra.intro | markdown | safe }}
             {% endif %}
         </a>
-        <div class="goto">
-            <a href="{{ page.path }}">Go to note...</a>
-        </div>
+        <a class="goto" href="{{ page.path }}">Go to note...</a>
     </article>
 {% endmacro %}
 
