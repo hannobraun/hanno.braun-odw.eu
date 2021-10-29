@@ -64,8 +64,8 @@
 {% endmacro %}
 
 {% macro note_preview(page) %}
-    <article class="note-preview preview">
-        <a href="{{ page.path }}">
+    <article class="note-preview">
+        <a class="main" href="{{ page.path }}">
             <header>
                 {{ macros::note_title(page=page) }}
             </header>
