@@ -11,7 +11,7 @@ I've been doing CAD modeling for a while now, and although I'm far from being an
 [[extra.changes]]
 date = 2021-10-28
 text = """
-Added "Project Health" as criterion.
+Added project health as criterion.
 """
 
 [[extra.changes]]
