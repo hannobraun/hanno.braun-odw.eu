@@ -2,7 +2,10 @@
 title = "About"
 +++
 
-<img class="about" src="/about/hanno-braun.jpg" />
+<img
+    class="about"
+    src="/about/hanno-braun.jpg"
+    alt="profile picture of Hanno Braun" />
 
 Hey, I'm Hanno! I'm a self-employed maker and software developer living in the beautiful [Odenwald](/made-in-odenwald/2.jpg) region in Germany, Europe.
 
