@@ -58,7 +58,7 @@ date  = \"{date}\"
     )
 }}}}
 
-{{{{ ext_link(url=\"https://example.com\", text=\"An external link.\") }}}}
+{{{{ ext_link(text=\"An external link.\", url=\"https://example.com\") }}}}
 
 This is an update.
 \
