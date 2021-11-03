@@ -34,6 +34,19 @@ article.note-preview header, article.note header {
 }
 
 article.note {
+    aside {
+        @include box;
+
+        margin: $margin-default;
+
+        p:first-child {
+            margin-top: 0;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     section.changes {
         @include box;
 
