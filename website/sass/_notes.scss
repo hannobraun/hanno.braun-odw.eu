@@ -33,18 +33,20 @@ article.note-preview header, article.note header {
     }
 }
 
-article.note section.changes {
-    @include box;
+article.note {
+    section.changes {
+        @include box;
 
-    max-width: $width-narrow;
-    margin: $margin-wide auto;
+        max-width: $width-narrow;
+        margin: $margin-wide auto;
 
-    h3 {
-        margin-top: 0;
-    }
+        h3 {
+            margin-top: 0;
+        }
 
-    th, td {
-        vertical-align: text-top;
-        padding: $margin-narrow;
+        th, td {
+            vertical-align: text-top;
+            padding: $margin-narrow;
+        }
     }
 }
