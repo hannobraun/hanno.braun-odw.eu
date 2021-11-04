@@ -50,7 +50,7 @@ Before getting into a new CAD program, it's worth considering how it is develope
 
 There are a few sub-criteria that I judge the health of a software project by:
 
-- Is it **open source**? There is very good proprietary software too, but open source software can provide a larger amount of control and certainty to users.
+- Is it **open source**? There is very good proprietary software too, but open source software can [provide many benefits](/notes/open-source-benefits).
 - Is it **actively developed**? Without ongoing development, you might run into unfixable limitations sooner or later.
 - Does it have a **vibrant community** of users and developers? The more people are involved in a constructive way, the higher the likelihood that the project stays viable in the long term.
 - Are **documentation** and other learning materials available? In a pinch, well-written source code might do, if you can read it, but having the selection of a wide variety of materials is much better.
