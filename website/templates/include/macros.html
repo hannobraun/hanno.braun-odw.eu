@@ -106,7 +106,6 @@
     <nav class="pagination">
         {% if paginator.previous %}
             <a
-                class="previous"
                 href="{{ macros::abs_to_rel(abs=paginator.previous) }}">
                 🢐 previous page
             </a>
@@ -117,7 +116,6 @@
         {% endif %}
         {% if paginator.next %}
             <a
-                class="next"
                 href="{{ macros::abs_to_rel(abs=paginator.next) }}">
                 next page 🢒
             </a>
