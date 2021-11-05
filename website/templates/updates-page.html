@@ -9,5 +9,27 @@
 {% block main %}
     {{ macros::back(path="/updates") }}
     {{ macros::update(page=page, show_permalink=false) }}
+
+    <nav class="pagination">
+        {% if page.earlier %}
+            <a href ="{{ page.earlier.path }}">
+                🢐 previous update
+            </a>
+        {% else %}
+            <p class="disabled">
+                🢐 previous update
+            </p>
+        {% endif %}
+        {% if page.later %}
+            <a href="{{ page.later.path }}">
+                next update 🢒
+            </a>
+        {% else %}
+            <p class="disabled">
+                next update 🢒
+            </p>
+        {% endif %}
+    </nav>
+
     {{ macros::back(path="/updates") }}
 {% endblock %}
