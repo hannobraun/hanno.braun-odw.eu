@@ -40,18 +40,20 @@ body > header {
     nav {
         text-align: right;
 
-        ul li {
-            display:     inline;
-            margin-left: $margin-default;
+        ul {
+            li {
+                display:     inline;
+                margin-left: $margin-default;
 
-            a {
-                color: $color-strong;
-                text-decoration: none;
-            }
+                a {
+                    color: $color-strong;
+                    text-decoration: none;
+                }
 
-            a.active {
-                border-bottom-style: dashed;
-                border-bottom-width: 1px;
+                a.active {
+                    border-bottom-style: dashed;
+                    border-bottom-width: 1px;
+                }
             }
         }
     }
