@@ -6,7 +6,7 @@ date  = "2021-10-20T15:22:25Z"
 {{
     preview_image(
         path="/updates/20211020T152225Z/blobby-bead.jpg",
-        alt="A rectangular one-layer calibration print on a smooth print sheet. The skirt shows a thick blob where much more material has been extruded then expected."
+        alt="A rectangular one-layer calibration print on a smooth print sheet. The skirt shows a thick blob where much more material has been extruded than expected."
     )
 }}
 
