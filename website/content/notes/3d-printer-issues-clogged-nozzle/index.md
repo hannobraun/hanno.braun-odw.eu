@@ -3,7 +3,7 @@ title = "3D Printer Issues: Clogged Nozzle"
 date  = 2021-11-08
 
 [extra]
-image = "discolored-print.jpg"
+image = "discoloration.jpg"
 intro = """
 After printing perfectly fine for over year, my Prusa Mini experienced issues, to the point where it became basically unusable for a few weeks. In this note, I'm going to write about the symptoms I saw, what I think caused them, how I overcame the problems, and how I intend to prevent them from happening again in the future.
 """
