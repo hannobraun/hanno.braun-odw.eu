@@ -42,8 +42,7 @@ body > header {
 
         ul {
             li {
-                display:     inline;
-                margin-left: $margin-default;
+                display: inline;
 
                 a {
                     color: $color-strong;
@@ -54,6 +53,25 @@ body > header {
                     border-bottom-style: dashed;
                     border-bottom-width: 1px;
                 }
+            }
+
+            li:not(:last-child)::after {
+                // That `\A` here, which inserts a line break on the left side
+                // of the middle dot, is a really dirty trick.
+                //
+                // It's not actually rendered as a line break, but it is
+                // rendered as whitespace with a certain width. This is done to
+                // to counter-act whitespace on the right side of the middle
+                // dot, which stems from the markup and which I can't get rid of
+                // easily.
+                //
+                // Looks like there are CSS features in the pipeline that could
+                // help me solve this in a sane way[1], but we aren't there yet.
+                //
+                // [1]: `text-space-collapse: discard` on the parent should do
+                //      the trick, once available.
+                content: "\A·";
+                margin: $margin-narrow;
             }
         }
     }
