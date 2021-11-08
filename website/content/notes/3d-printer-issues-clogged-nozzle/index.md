@@ -31,7 +31,7 @@ After switching filaments from a dark-colored PLA to {{ ext_link(text="Fillament
 
 {{
     preview_image(
-        path="/notes/3d-printer-issues/discoloration.jpg",
+        path="/notes/3d-printer-issues-clogged-nozzle/discoloration.jpg",
         alt="A 3D printed calibration cube, mainly white, but showing a dark discoloration on the bottom."
     )
 }}
@@ -42,7 +42,7 @@ Then I started noticing that the bottoms of my prints didn't look like I expecte
 
 {{
     preview_image(
-        path="/notes/3d-printer-issues/lump.jpg",
+        path="/notes/3d-printer-issues-clogged-nozzle/lump.jpg",
         alt="A 3D-printed calibration cube, posed in front of a light source for better visibility of its problematic features. Its first few layers show a taper, starting small, before increasing to the expected size. One size shows a bulge, where layers are too large."
     )
 }}
@@ -68,7 +68,7 @@ After having run the Mini's built-in first-layer calibration procedure with a 0.
 
 {{
     preview_image(
-        path="/notes/3d-printer-issues/splurge.jpg",
+        path="/notes/3d-printer-issues-clogged-nozzle/splurge.jpg",
         alt="A rectangular one-layer calibration print on a smooth print sheet. The skirt shows a thick blob where much more material has been extruded than expected."
     )
 }}
