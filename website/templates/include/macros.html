@@ -25,7 +25,13 @@
         {% set current_path = section.path %}
     {% endif %}
 
-    {% if current_path is starting_with(path) %}
+    {% if path == "/" %}
+        {% if path == current_path %}
+            {% set class = "active" %}
+        {% else %}
+            {% set class = "" %}
+        {% endif %}
+    {% elif current_path is starting_with(path) %}
         {% set class = "active" %}
     {% else %}
         {% set class = "" %}
