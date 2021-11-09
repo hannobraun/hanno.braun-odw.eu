@@ -1,15 +1,11 @@
 {% set width = 600 %}
-{% set metadata = get_image_metadata(path=path) %}
-{% set scale_ratio = width / metadata.width %}
-{% set height = scale_ratio * metadata.height %}
 
 <div class="preview">
     <a href="{{ path }}">
         <img
             src="{{ path }}?nf_resize=fit&w={{ width }}"
             alt="{{ alt }}"
-            width="{{ width }}"
-            height="{{ height | round }}" />
+            width="{{ width }}" />
     </a>
     <a class="goto" href="{{ path }}">(click for full size)</a>
 </div>
