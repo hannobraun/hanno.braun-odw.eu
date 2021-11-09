@@ -13,7 +13,7 @@ Hey, I'm Hanno! I'm a self-employed maker, software developer, and vegan living 
 
 I'm interested in making, automation, manufacturing, and small businesses that do all that. I enjoy nature (which is why I live pretty much in the middle of it), and believe we should do what we can to preserve it.
 
-This website is dedicated to these topics, and I keep adding content here regularly. If you enjoy it (or don't) [please let me know](/contact)! I appreciate your feedback
+This website is dedicated to these topics, and I keep adding content here regularly. If you enjoy it (or don't) [please let me know](/contact)! I appreciate your feedback.
 
 I'm also a big believer in open source, and try to do as much of my work in the open as is practical. Check out my {{ ext_link(url="https://github.com/hannobraun", text="GitHub profile") }}, if you're interested in what I'm up to.
 
