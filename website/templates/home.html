@@ -1,7 +1,7 @@
 {% extends "extend/base.html" %}
 
 {% block main %}
-    {{ page.content | safe }}
+    {{ section.content | safe }}
 
     {% set updates = get_section(path="updates/_index.md") %}
     {% set notes = get_section(path="notes/_index.md") %}
