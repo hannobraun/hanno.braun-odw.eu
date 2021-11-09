@@ -20,4 +20,4 @@ I'm also a big believer in open source, and try to do as much of my work in the 
 
 ### Let's talk!
 
-Are you interested in any of these topics? If so, [please get in touch](/contact)! I always enjoy talking to like-minded individuals. Don't have anything to say right now, but want to stay up to date? Then you can [subscribe to my content](/subscribe).
+Are you interested in any of these topics? If so, [please get in touch](/contact)! I always enjoy talking to like-minded individuals. Don't have anything to say right now, but want to stay up to date? Consider [subscribing to my content](/subscribe).
