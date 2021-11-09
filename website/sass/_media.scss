@@ -1,20 +1,16 @@
 .preview {
-    font-size: $font-size-reduced;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: flex-start;
+    align-items:     center;
 
-    a {
-        display: block;
-        margin:  0 auto;
-    }
+    font-size: $font-size-reduced;
 
     a img {
         // for styling alt text
         color: #666666;
 
         border-radius: $border-radius;
-    }
-
-    a.goto {
-        text-align: center;
     }
 }
 
