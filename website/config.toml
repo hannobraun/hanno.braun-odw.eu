@@ -12,7 +12,7 @@ feed_filename = "atom.xml" # need to add custom template before changing
 paths = "safe"
 
 [extra.pages]
-"/home"      = "Home"
+"/"          = "Home"
 "/about"     = "About"
 "/updates"   = "Updates"
 "/notes"     = "Notes"
