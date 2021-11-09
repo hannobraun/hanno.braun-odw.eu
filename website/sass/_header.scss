@@ -24,15 +24,22 @@ body > header {
         margin-top: $margin-default;
         margin-bottom: $margin-default * 2;
 
-        p {
+        ul {
+            list-style-type: none;
+
             margin: 0;
-            text-align: right;
+            padding: 0;
 
-            font-size: $font-size-reduced;
+            li {
+                margin: 0;
+                text-align: right;
 
-            a {
-                color: $color-strong;
-                text-decoration: none;
+                font-size: $font-size-reduced;
+
+                a {
+                    color: $color-strong;
+                    text-decoration: none;
+                }
             }
         }
     }
