@@ -6,7 +6,7 @@ date  = "2021-11-03T14:34:32Z"
 {{
     preview_image(
         path="/updates/20211103T143432Z/nonoilen-prints.jpg",
-        alt=""
+        alt="A small calibration cube, a larger cube printed in vase mode, and a one-layer calibration square. All printed in NonOilen."
     )
 }}
 
