@@ -1,7 +1,9 @@
+{% set width = 600 %}
+
 <div class="preview">
     <a href="{{ path }}">
         <img
-            src="{{ path }}?nf_resize=fit&w=600"
+            src="{{ path }}?nf_resize=fit&w={{ width }}"
             alt="{{ alt }}" />
     </a>
     <a class="goto" href="{{ path }}">(click for full size)</a>
