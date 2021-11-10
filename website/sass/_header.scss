@@ -4,42 +4,44 @@ body > header {
 
     margin-bottom: $margin-wide;
 
-    a.title {
-        text-decoration: none;
+    div.header-top {
+        a.title {
+            text-decoration: none;
 
-        h1 {
-            margin-bottom: 0;
-            font-size:     250%;
+            h1 {
+                margin-bottom: 0;
+                font-size:     250%;
+            }
+
+            h2 {
+                margin-top: 0;
+                font-size : 100%;
+            }
         }
 
-        h2 {
-            margin-top: 0;
-            font-size : 100%;
-        }
-    }
+        div.contact {
+            float: right;
 
-    div.contact {
-        float: right;
+            margin-top: $margin-default;
+            margin-bottom: $margin-default * 2;
 
-        margin-top: $margin-default;
-        margin-bottom: $margin-default * 2;
+            font-size: $font-size-reduced;
 
-        font-size: $font-size-reduced;
+            text-align: right;
 
-        text-align: right;
+            ul {
+                list-style-type: none;
 
-        ul {
-            list-style-type: none;
-
-            margin: 0;
-            padding: 0;
-
-            li {
                 margin: 0;
+                padding: 0;
 
-                a {
-                    color: $color-strong;
-                    text-decoration: none;
+                li {
+                    margin: 0;
+
+                    a {
+                        color: $color-strong;
+                        text-decoration: none;
+                    }
                 }
             }
         }
