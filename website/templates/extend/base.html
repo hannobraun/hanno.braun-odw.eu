@@ -23,16 +23,18 @@
     </head>
     <body>
         <header>
-            <div class="contact">
-                <ul>
-                    <li>{{ macros::email() }}</li>
-                    <li>{{ macros::matrix() }}</li>
-                </ul>
+            <div class="header-top">
+                <div class="contact">
+                    <ul>
+                        <li>{{ macros::email() }}</li>
+                        <li>{{ macros::matrix() }}</li>
+                    </ul>
+                </div>
+                <a class="title" href="/">
+                    <h1>Hanno Braun</h1>
+                    <h2>making, automation, small-scale manufacturing</h2>
+                </a>
             </div>
-            <a class="title" href="/">
-                <h1>Hanno Braun</h1>
-                <h2>making, automation, small-scale manufacturing</h2>
-            </a>
             <nav>
                 <ul>
                     {{ macros::nav_entry(path="/") }}
