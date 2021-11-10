@@ -11,6 +11,8 @@ body > header {
         justify-content: space-between;
         align-items: flex-end;
 
+        padding-bottom: $margin-default;
+
         a.title {
             text-decoration: none;
 
@@ -20,15 +22,13 @@ body > header {
             }
 
             h2 {
-                margin-top: 0;
-                font-size : 100%;
+                margin: 0;
+                font-size: 100%;
             }
         }
 
         div.contact {
             float: right;
-
-            margin-bottom: $margin-default;
 
             font-size: $font-size-reduced;
             text-align: right;
