@@ -26,6 +26,8 @@ body > header {
 
         font-size: $font-size-reduced;
 
+        text-align: right;
+
         ul {
             list-style-type: none;
 
@@ -34,7 +36,6 @@ body > header {
 
             li {
                 margin: 0;
-                text-align: right;
 
                 a {
                     color: $color-strong;
