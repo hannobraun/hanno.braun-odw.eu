@@ -5,6 +5,12 @@ body > header {
     margin-bottom: $margin-wide;
 
     div.header-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+
         a.title {
             text-decoration: none;
 
@@ -23,7 +29,7 @@ body > header {
             float: right;
 
             margin-top: $margin-default;
-            margin-bottom: $margin-default * 2;
+            margin-bottom: $margin-default;
 
             font-size: $font-size-reduced;
 
