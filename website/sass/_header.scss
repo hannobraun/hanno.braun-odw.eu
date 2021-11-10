@@ -11,14 +11,15 @@ body > header {
         justify-content: space-between;
         align-items: flex-end;
 
+        padding-top: $margin-default;
         padding-bottom: $margin-default;
 
         a.title {
             text-decoration: none;
 
             h1 {
-                margin-bottom: 0;
-                font-size:     250%;
+                margin: 0;
+                font-size: 250%;
             }
 
             h2 {
