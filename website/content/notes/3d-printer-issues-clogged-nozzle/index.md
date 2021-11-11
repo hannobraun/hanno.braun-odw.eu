@@ -27,7 +27,7 @@ I was probably just looking in the wrong places, but I figure, it won't hurt to 
 
 #### The Problems
 
-After switching filaments from a dark-colored PLA to {{ ext_link(text="Fillamentum NonOilen", url="https://www.fillamentumnonoilen.com/") }}, I saw discoloring on the first few prints.
+After switching filaments from a dark-colored PLA to [Fillamentum NonOilen](/notes/fillamentum-nonoilen-on-prusa-mini/), I saw discoloring on the first few prints.
 
 {{
     preview_image(
