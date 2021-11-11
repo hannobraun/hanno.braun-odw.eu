@@ -19,7 +19,7 @@ targetPort = 1111
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self' https://*.braun-odw.eu https://*.sibforms.com"
+    Content-Security-Policy = "default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self' https://*.braun-odw.eu https://static.mailerlite.com"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
 
