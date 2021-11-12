@@ -28,7 +28,11 @@ body > header {
             }
         }
 
-        div.contact {
+        address {
+            display: flex;
+            flex-direction: column;
+
+            font-style: normal;
             font-size: $font-size-reduced;
             text-align: right;
 
