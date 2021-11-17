@@ -50,6 +50,21 @@ async fn spacer(
     Ok(file.into())
 }
 
+// When I still intended to use this API in production, I wanted users to access
+// it through a proxy, mostly because that allowed me to cache 3MF files using
+// my website's CDN.
+//
+// The following code is a relatively low-effort way to prevent access to the
+// main API endpoint. Making the following key public provides an easy way for
+// anyone to circumvent the CDN and run a DoS attack on the service directly.
+// Given that generating the 3MF file is quite expensive, this would even be
+// very easy to do with few resources.
+//
+// Preventing this would have required me to build more infrastructure, to load
+// the key from (for example) and environment variable. I didn't want to have to
+// do that, just to open source this proof of concept. Since I'm not using the
+// service for anything critical any more, I decided this is an acceptable
+// trade-off.
 const AUTH_HEADER: &str = "Basic Wa81oPIR1PtMIJ3cFgkvyCXXeHESx4CV";
 
 struct Authorized;
