@@ -32,12 +32,6 @@ targetPort = 1111
 # Page redirects
 
 [[redirects]]
-from   = "/products"
-to     = "/products/spacer"
-status = 302 # temporary redirect
-force  = true
-
-[[redirects]]
 from   = "/home"
 to     = "/"
 status = 301 # moved permanently
