@@ -6,7 +6,7 @@ body > header {
 
     div.header-top {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-end;
@@ -15,6 +15,11 @@ body > header {
         padding-bottom: $margin-default;
 
         a.title {
+            // Make sure the titles are always left-aligned, whether the flex
+            // row is wrapped or not, by making their container (the `<a>`) take
+            // up all the available space.
+            flex-grow: 1;
+
             text-decoration: none;
 
             h1 {
@@ -29,11 +34,6 @@ body > header {
         }
 
         address {
-            // Make sure the items in `<address>` always stay right-aligned,
-            // whether `<address>` is wrapped into the next line or not, by
-            // making it take up all the available space.
-            flex-grow: 1;
-
             display: flex;
             flex-direction: column;
 
