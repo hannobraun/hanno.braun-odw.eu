@@ -29,6 +29,11 @@ body > header {
         }
 
         address {
+            // Make sure the items in `<address>` always stay right-aligned,
+            // whether `<address>` is wrapped into the next line or not, by
+            // making it take up all the available space.
+            flex-grow: 1;
+
             display: flex;
             flex-direction: column;
 
