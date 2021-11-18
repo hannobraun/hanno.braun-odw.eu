@@ -6,7 +6,7 @@ date  = "2021-11-17T12:19:24Z"
 {{
     preview_image(
         path="/updates/20211117T121924Z/printer-enclosure.jpg",
-        alt=""
+        alt="A Prusa Mini in a custom-built enclosure."
     )
 }}
 
