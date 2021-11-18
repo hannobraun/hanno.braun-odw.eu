@@ -49,6 +49,12 @@ to     = "/notes/:splat"
 status = 301 # moved permanently
 force  = true
 
+[[redirects]]
+from   = "/products/spacer"
+to     = "/notes/spacer"
+status = 301 # moved permanently
+force  = true
+
 
 # Feed redirects
 
