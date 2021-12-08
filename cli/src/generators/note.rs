@@ -61,7 +61,7 @@ This is some text.
     )
 }}}}
 
-{{{{ ext_link(url=\"https://example.com\", text=\"An external link.\") }}}}
+{{{{ ext_link(text=\"An external link.\", url=\"https://example.com\") }}}}
 \
         ",
             title = self.title,
