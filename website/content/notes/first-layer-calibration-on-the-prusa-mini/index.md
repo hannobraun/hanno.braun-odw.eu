@@ -5,8 +5,7 @@ date  = 2021-12-14
 draft = true
 
 [extra]
-# TASK: Set image.
-image = "image.jpg"
+image = "result-just-right.jpg"
 intro = """
 The Prusa Mini comes with a built-in first layer calibration procedure. I find it lacking, however, and have come with my own technique for calibrating the first layer.
 """
