@@ -2,8 +2,6 @@
 title = "First Layer Calibration on the Prusa Mini"
 date  = 2021-12-14
 
-draft = true
-
 [extra]
 image = "result-just-right.jpg"
 intro = """
