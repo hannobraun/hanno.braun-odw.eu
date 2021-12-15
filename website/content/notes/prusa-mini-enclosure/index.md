@@ -1,6 +1,7 @@
 +++
-title = "Prusa Mini Enclosure"
-date  = 2021-12-08
+title   = "Prusa Mini Enclosure"
+date    = 2021-12-08
+updated = 2021-12-15
 
 [extra]
 image = "enclosure-front-right.jpg"
