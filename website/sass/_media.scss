@@ -19,6 +19,10 @@ article {
         display: block;
         margin:  0 auto;
     }
+
+    ul li {
+        margin-bottom: $margin-narrow;
+    }
 }
 
 a.download {
