@@ -7,6 +7,12 @@ image = "enclosure-front-right.jpg"
 intro = """
 I've been wanting an enclosure for my Prusa Mini for a while. When my friend Martin Dederer offered to build one, if I send him a design, that offer was hard to pass up.
 """
+
+[[extra.changes]]
+date = 2021-12-15
+text = """
+Added entries about temperature monitoring, fire extinguisher, and camera to list of future extensions.
+"""
 +++
 
 Here's the end result:
@@ -68,6 +74,9 @@ This is only the first version. I have ideas for several extensions and modifica
 - Make the power switch and USB port accessible from the front, using extensions from levendig|dsgn ({{ ext_link(text="[1]", url="https://shop.levendigdsgn.com/products/usb-powerswitch-extension-cable-prusa-mini") }}, {{ ext_link(text="[2]", url="https://shop.levendigdsgn.com/products/usb-powerswitch-extension-printed-parts-front-prusa-mini") }}, {{ ext_link(text="[3]", url="https://shop.levendigdsgn.com/collections/prusa-mini-mods-upgrades/products/usb-powerswitch-backplate-front-prusa-mini") }}). This means that access through the right port will not be required, except for maintenance operations.
 - Print panels that fit over the access ports, with holes to let cables and filament through. This will further enclose the printer, making the enclosure more effective.
 - Add lighting on the inside. There's already not a whole lot of light where the printer stands, and the enclosure only made that worse.
+- Add temperature monitoring. I'd like to be able to monitor the temperature via a display on the outside. Possibly via two sensors: one at the top, one at the bottom. Knowing the temperature would be interesting, could help debug print issues, or could increase the reliability when printing finicky materials.
+- Add automatic fire extinguisher. There are products that contain fire-extinguishing powder and explode when exposed to flame. If worse comes to worst, this will certainly be great to have.
 - Somehow integrate the power supply, possibly by adding some kind of shelf to the outside of the back wall. This would make moving the enclosure easier, and might also be more aesthetically pleasing. Right now, the power supply just sits next to the enclosure.
 - Somehow integrate the filament roll, again, possibly with a shelf on the back side. This would also have the advantage of making it easier to move the enclosure. It also provides an opportunity to enclose the filament roll, to protect it from dust and moisture.
 - Move the display unit (then with the power switch and USB port integrated) outside of the enclosure. This would make it possible to control the printer without having to open the enclosure. But it would make it harder to move the printer outside of the enclosure for maintenance. I'm not sure about that one yet, but it's something I'd like to keep in mind.
+- Add a camera. This would allow for monitoring prints remotely, debug what went wrong based on a recording, or streaming prints to others (for example when printing a part for someone else).
