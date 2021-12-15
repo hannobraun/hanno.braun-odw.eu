@@ -1,0 +1,15 @@
+form[name=feedback] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    textarea {
+        width: 80%;
+        height: 20rem;
+        resize: both;
+    }
+
+    input[type=submit] {
+        margin: $margin-default;
+    }
+}
