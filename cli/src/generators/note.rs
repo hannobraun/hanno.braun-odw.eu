@@ -17,7 +17,7 @@ impl Generator for Note {
     type Args = String;
 
     fn new(title: Self::Args) -> anyhow::Result<Self> {
-        let mut path = title.replace(" ", "-");
+        let mut path = title.replace(" ", "-").replace(":", "");
         path.make_ascii_lowercase();
 
         let date_format = format_description!("[year]-[month]-[day]");
