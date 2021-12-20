@@ -2,7 +2,7 @@
 title = "Feedback"
 +++
 
-You can leave your anonymous feedback right here. If you want a reply, please make sure to include some means of contact (preferably an email address).
+Any comments about this website? Feel free to leave your anonymous feedback here.
 
 <form name="feedback" method="POST" data-netlify="true">
     <textarea name="feedback" placeholder="Enter feedback here..."></textarea>
