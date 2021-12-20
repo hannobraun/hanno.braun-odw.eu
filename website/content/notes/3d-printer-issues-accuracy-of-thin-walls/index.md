@@ -13,7 +13,7 @@ Let's look at an example. It's just a ring with a thin wall (0.6mm thick).
 
 {{
     preview_image(
-        path="/notes/3d-printer-issues-accuracy-of-small-features/model.png",
+        path="/notes/3d-printer-issues-accuracy-of-thin-walls/model.png",
         alt="A CAD model of a short ring with a thin wall."
     )
 }}
@@ -22,7 +22,7 @@ Nothing wild so far. Let's print it!
 
 {{
     preview_image(
-        path="/notes/3d-printer-issues-accuracy-of-small-features/printed-part.jpg",
+        path="/notes/3d-printer-issues-accuracy-of-thin-walls/printed-part.jpg",
         alt="A 3D-printed ring with a thin wall."
     )
 }}
@@ -31,7 +31,7 @@ Looks reasonable. Let's measure the wall thickness.
 
 {{
     preview_image(
-        path="/notes/3d-printer-issues-accuracy-of-small-features/wall-measurement.jpg",
+        path="/notes/3d-printer-issues-accuracy-of-thin-walls/wall-measurement.jpg",
         alt="A 3D-printed ring with a thin wall. The wall thickness is being measured with a vernier caliper. The scale shows 0.9mm."
     )
 }}
@@ -98,6 +98,6 @@ If you want to experiment a bit yourself, you can download the OpenSCAD model I 
 
 <a
     class="download"
-    href="/notes/3d-printer-issues-accuracy-of-small-features/example.scad">
+    href="/notes/3d-printer-issues-accuracy-of-thin-walls/example.scad">
     Download example OpenSCAD model
 </a>
