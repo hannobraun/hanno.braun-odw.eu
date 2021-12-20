@@ -102,8 +102,8 @@ nav.pagination {
 
 a.feedback {
     position: fixed;
-    bottom: 0;
-    left: 5%;
+    bottom: $margin-narrow;
+    left: $margin-narrow;
 
     padding: $margin-narrow;
     border-radius: $border-radius;
