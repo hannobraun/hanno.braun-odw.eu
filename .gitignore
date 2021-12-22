@@ -3,3 +3,6 @@
 
 # Local Netlify folder
 .netlify
+
+# Zola
+/public

@@ -1,4 +1,4 @@
-website/content/notes/**/*.jpg filter=lfs diff=lfs merge=lfs -text
-website/content/notes/**/*.png filter=lfs diff=lfs merge=lfs -text
-website/content/updates/**/*.jpg filter=lfs diff=lfs merge=lfs -text
-website/content/updates/**/*.png filter=lfs diff=lfs merge=lfs -text
+content/notes/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+content/notes/**/*.png filter=lfs diff=lfs merge=lfs -text
+content/updates/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+content/updates/**/*.png filter=lfs diff=lfs merge=lfs -text
