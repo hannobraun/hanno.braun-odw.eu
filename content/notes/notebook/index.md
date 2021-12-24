@@ -7,17 +7,16 @@ draft = true
 [extra]
 image = "notebook-closed.jpg"
 intro = """
-I'm using my Moleskine notebook almost daily. After watching a DiResta video or two about making notebooks, I was inspired to try my hand at creating my own version. I also had wanted to try out cork leather for a while, and this seemed like a great opportunity.
+I have a notebook that I use almost daily. After watching a DiResta video or two about making notebooks, I was inspired to try my hand at creating one of my own. I had also wanted to try cork leather for a while, and this seemed like a great opportunity.
 """
 +++
 
-My perfect notebook should have the following attributes:
-
-- Roughly A6 in size. That's large enough to be useful, and small enough to fit in my back pocket.
+I'm currently using a Moleskine notebook (and have for years), with the following attributes:
+- Pocket-sized, a bit smaller than {{ ext_link(text="A6", url="https://en.wikipedia.org/wiki/ISO_216") }}. That's large enough to be useful, and small enough to fit in my back pocket.
 - Soft cover, as having a hard cover in my back pocket doesn't feel that great.
 - Rounded corners, to further improve the back pocket feel.
 
-This is the type of Moleskine notebook I use, and that is what I wanted to replicate with my own build. Here's the result.
+That is what I wanted to replicate with my own build. Here's the result.
 
 {{
     preview_image(
@@ -38,11 +37,11 @@ It's far from perfect, but I'm very happy with it. Especially for a first try.
 I had planned this project for a while, but kept procrastinating. Beyond the attributes laid out above, there were still so many decisions to make and things to consider. I finally decided that enough was enough, and that I was going to just keep it simple for the first go:
 
 - Just use printer paper. Probably not the best choice, but I already had it, and I figured it would do fine.
-- Blank pages. This did simplify things, as I got to use printer paper and didn't have to care about perfect orientation of each page.
-- No frills. My Moleskine notebooks have this flexible band thingy, to keep the notebook closed, but I can do without it.
+- Blank pages. This did simplify things, as I got to use printer paper and didn't have to care about perfect orientation of every page.
+- No frills. My Moleskine notebooks have this flexible band, to keep the notebook closed, and a bookmark ribbon. Nice, but I can do without those.
 - I decided to go for 192 pages, as that's the same number as my usual notebooks have. Seemed like a good number.
 
-I would have preferred grid pattern paper, but figured I wouldn't be able to create something to replace my daily notebook anyway. So I decided I would use the notebook mostly for sketches, for which the blank paper would work fine.
+I would have preferred grid pattern paper, but figured I wouldn't be able to create something to replace my daily notebook anyway, on the first try. So I decided I would use the notebook mostly for sketches, for which the blank paper would work fine.
 
 With those decisions made, I was finally ready to get started!
 
@@ -58,11 +57,11 @@ There were a few tools I needed. The only substantial one, which I decided to bu
     )
 }}
 
-I adapted the concept from {{ ext_link(text="a video by Sea Lemon on YouTube", url="https://www.youtube.com/watch?v=nTeg8MH0PtI") }}. It didn't come out great, but it was cheap, and easy to do. The only real problem is, it's too big. I built this not only for the notebook, but also with the idea in mind, that I might want to bind some ebooks I like, that aren't available to buy in paper form.
+I adapted the concept from {{ ext_link(text="this video by Sea Lemon on YouTube", url="https://www.youtube.com/watch?v=nTeg8MH0PtI") }}. It didn't come out great, but it was cheap, and easy to do. The only real problem is, it's too big. I built this not only with the notebook in mind, but also with the idea that I might want to bind some ebooks I like, that aren't available to buy in paper form.
 
-Figuring that since I can print A4 paper at home, I was going to need an A4-sized book press. This ignores the fact, that I need to fold the paper to bind it as a book. So an A5-sized press would have been more than enough. Oh well.
+Figuring that since I can print A4 paper at home, I was going to need an A4-sized book press. Forgetting, of course, that I need to fold the paper to bind it as a book. So an A5-sized press would have been more than enough. Oh well.
 
-Other than the book press, I only needed some small stuff, most of which I ordered from {{ ext_link(text="Modulor", url="https://www.modulor.de/en/") }}:
+Other than the book press, I only needed some small stuff, all of which I already has or ordered from {{ ext_link(text="Modulor", url="https://www.modulor.de/en/") }}:
 
 - A knife
 - A ruler
@@ -76,7 +75,7 @@ Other than the book press, I only needed some small stuff, most of which I order
 
 Like the tools, all of the materials required were pretty cheap and easily available:
 
-- Paper: As stated above, I just decided to use some printer paper, to keep it simple.
+- Paper: As explained above, I just decided to use printer paper.
 - {{ ext_link(text="Binder's thread", url="https://www.modulor.de/en/linen-binder-s-thread-th-0-42mm-type-30-3-150m-black.html") }}
 - PVA glue
 - {{ ext_link(text="Cork leather", url="https://cork-shop.com/Korkleder-Korkstoff-vegan-Leder-naehen-basteln-kreativ-viele-Designs-und-Abmessungen-Acacia-35x25cm_1") }} for the cover
@@ -84,11 +83,11 @@ Like the tools, all of the materials required were pretty cheap and easily avail
 
 ### The Build
 
-The first thing we need is to create a text block. I'd never done this before, so I just followed a {{ ext_link(text="video by Sea Lemon", url="https://www.youtube.com/watch?v=XGQ5P8QVHSg") }} on YouTube.
+The first step was to create a text block. I'd never done this before, so I just followed {{ ext_link(text="another video by Sea Lemon", url="https://www.youtube.com/watch?v=XGQ5P8QVHSg") }} on YouTube.
 
 #### Preparing the paper
 
-First problem: I have A4 paper, but need A5-sized paper. Solution: Fold them, cut the folded end off.
+First problem: I have A4 paper, but need (roughly) A5-sized paper. Solution: Fold them, cut the folded end off.
 
 {{
     preview_image(
@@ -104,7 +103,7 @@ First problem: I have A4 paper, but need A5-sized paper. Solution: Fold them, cu
     )
 }}
 
-Yes, I know, by cutting a strip off, I'm not getting A5 exactly, but this isn't a precision project. Anyway, now I got a nice stack of A5-ish paper.
+Repeating that a bunch of times gave me a nice stack of A5-ish paper.
 
 {{
     preview_image(
@@ -113,7 +112,7 @@ Yes, I know, by cutting a strip off, I'm not getting A5 exactly, but this isn't 
     )
 }}
 
-Next up, fold it and stack it in groups of 4.
+Next, I folded it and stacked it in groups of 4.
 
 {{
     preview_image(
@@ -124,7 +123,7 @@ Next up, fold it and stack it in groups of 4.
 
 #### Making and preparing the signatures
 
-Now I needed to needed to make the signatures. A signature is a group of 4 folded papers, nested into one another.
+Now I needed to needed to make the signatures. A signature is a group of 4 folded papers, nested within one another.
 
 {{
     video(
@@ -135,7 +134,7 @@ Now I needed to needed to make the signatures. A signature is a group of 4 folde
 
 Yes, I work fast.
 
-To create a text block, the signatures are sewn together. To do that, I needed holes, so next, I marked the signatures where I wanted to make them.
+To create a text block, the signatures are sewn together. For that, I needed holes, so I marked the signatures where I wanted to make those.
 
 {{
     preview_image(
@@ -153,7 +152,7 @@ Making the holes with the awl was straight-forward.
     )
 }}
 
-At this point I spotted a wild shop dog.
+At this point, I spotted this rare and wondrous sight: a wild shop dog.
 
 {{
     preview_image(
@@ -162,11 +161,9 @@ At this point I spotted a wild shop dog.
     )
 }}
 
-What a rare and wondrous sight!
-
 #### Sewing and glueing the text block
 
-Next, I sew the signatures together to make the text block.
+Next, I sewed the signatures together to make the text block.
 
 {{
     preview_image(
@@ -175,7 +172,7 @@ Next, I sew the signatures together to make the text block.
     )
 }}
 
-Unfortunately I don't have any video of the project from here on, but I did it exactly as shown in {{ ext_link(text="the video I followed", url="https://www.youtube.com/watch?v=XGQ5P8QVHSg") }}.
+Unfortunately I don't have any video from here on, but I did it exactly as shown in {{ ext_link(text="the video I followed", url="https://www.youtube.com/watch?v=XGQ5P8QVHSg") }}.
 
 I glued the text block using two coats of PVA glue.
 
@@ -248,11 +245,13 @@ The result still looked a bit ragged. Maybe this could be improved using another
     )
 }}
 
+I repeated the cutting and sanding with the other sides, using the combination square to make sure all sides were roughly straight and square.
+
 ### Conclusion
 
-As I said in the beginning, I'm very happy with the result, especially for a first try. Although there are things I'd do differently, as stated above.
+As I said in the beginning, I'm very happy with the result, especially for a first try. Although there are things I'd do differently, as explained above.
 
-I already started using it, to sketch some ideas. Using a notebook I made myself is a nice feeling! At this point, I have no firm plans, but I'm pretty sure I'll make another one, at some point.
+I already started using it, to sketch some ideas. Using a notebook I made myself is a nice feeling! At this point, I have no firm plans, but I'm pretty sure I'll make another one at some point.
 
 {{
     preview_image(
