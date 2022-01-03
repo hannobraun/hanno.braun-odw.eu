@@ -2,8 +2,6 @@
 title = "Notebook"
 date  = 2022-01-03
 
-draft = true
-
 [extra]
 image = "notebook-closed.jpg"
 intro = """
