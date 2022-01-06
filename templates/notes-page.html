@@ -32,7 +32,7 @@
                         {% for change in page.extra.changes %}
                             <tr>
                                 <th>{{ change.date }}</th>
-                                <td>{{ change.text }}</td>
+                                <td>{{ change.text | markdown | safe }}</td>
                             </tr>
                         {% endfor %}
                     </table>

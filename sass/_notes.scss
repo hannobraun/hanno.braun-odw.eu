@@ -61,6 +61,16 @@ article.note {
             vertical-align: text-top;
             padding: $margin-narrow;
         }
+
+        td {
+            p, ul {
+                margin: 0;
+            }
+
+            ul {
+                padding-left: $margin-default;
+            }
+        }
     }
 
     form {
