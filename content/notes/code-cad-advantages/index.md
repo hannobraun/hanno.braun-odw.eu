@@ -57,4 +57,4 @@ And that's fine, of course. The best solution to a problem depends not only on t
 
 There are other disadvantages to Code-CAD, of course. Making a sketch and applying some constraints can be very easy with a nice GUI, while having to type it all out would be very tedious.
 
-For that reasons, I think the ideal CAD program would use a hybrid approach: Being code-first for all the reason presented above, but letting you edit that code through graphical tools, where it makes sense. I'm not aware of any system that works like that, at least to the extent that is possible in principle. I believe that creating such a system would be a worthwhile effort.
+For that reason, I think the ideal CAD program would use a hybrid approach: Being code-first for all the reason presented above, but letting you edit that code through graphical tools, where it makes sense. I'm not aware of any system that works like that, at least to the extent that is possible in principle. I believe that creating such a system would be a worthwhile effort.
