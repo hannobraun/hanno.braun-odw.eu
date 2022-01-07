@@ -25,8 +25,8 @@ Simply by using a programming language, you get some inherent advantages:
 
 - A well-written model is going to be parametric by nature. If you decide to change some decision you made early on in the modeling process, you won't have to modify a lot of code.
 - Programming languages allow you to build abstractions. Write one piece of code to generate a gear, another one on top of that to generate the whole gearbox.
-- You get the full power of the language. Compute positions of support beams based on the load they have to carry. Or generate the complex geometry of a key from a simple numeric representation.
-- Programming languages allow for comments. You can explain your model, why you made certain decisions, or how you created a specific feature, in as much detail as required.
+- You get the full power of the language. Compute the number and positions of support beams based on the load they have to carry. Or generate the complex geometry of a key from a simple numeric representation.
+- Programming languages allow for comments. You can explain your model and document your design intent, in as much detail as required.
 
 A sufficiently advanced GUI-based CAD program can also provide all of these things. However, the developers of that program might not have gotten around to develop what you need yet. And even if they have, they could have used that time to develop something else that would have been just as useful.
 
@@ -50,11 +50,11 @@ There is one glaring disadvantage, of course: To use Code-CAD, you have to know 
 
 This is somewhat offset by the fact that learning a non-trivial GUI-based CAD application is also not easy. But if you're already proficient in a CAD program that you're reasonably happy with, learning a completely new skill to switch to something else might not be the best use of your time.
 
-And that's fine, of course. The best solution to a problem depends not only on the problem itself, but on the context as well. Your context is going to be different than mine, so what's the best solution for me, might not even be a good one for you.
+And that's fine, of course. The best solution to a problem depends not only on the problem itself, but on the context as well. Your context is going to be different from mine, so what's the best solution for me, might not even be a good one for you.
 
 
 ### A Hybrid Approach
 
 There are other disadvantages to Code-CAD, of course. Making a sketch and applying some constraints can be very easy with a nice GUI, while having to type it all out would be very tedious.
 
-For that reason, I think the ideal CAD program would use a hybrid approach: Being code-first for all the reason presented above, but letting you edit that code through graphical tools, where it makes sense. I'm not aware of any system that works like that, at least to the extent that is possible in principle. I believe that creating such a system would be a worthwhile effort.
+For that reasons, I think the ideal CAD program would use a hybrid approach: Being code-first for all the reason presented above, but letting you edit that code through graphical tools, where it makes sense. I'm not aware of any system that works like that, at least to the extent that is possible in principle. I believe that creating such a system would be a worthwhile effort.
