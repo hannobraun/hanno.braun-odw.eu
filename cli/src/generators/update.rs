@@ -58,9 +58,16 @@ date  = \"{date}\"
     )
 }}}}
 
-{{{{ ext_link(text=\"An external link.\", url=\"https://example.com\") }}}}
+{{{{
+    video(
+        path=\"/updates/{title}/video.webm\",
+        text=\"\"
+    )
+}}
 
 This is an update.
+
+{{{{ ext_link(text=\"An external link.\", url=\"https://example.com\") }}}}
 \
         ",
             title = self.title,
