@@ -1,4 +1,6 @@
 content/notes/**/*.jpg filter=lfs diff=lfs merge=lfs -text
 content/notes/**/*.png filter=lfs diff=lfs merge=lfs -text
+content/notes/**/*.webm filter=lfs diff=lfs merge=lfs -text
 content/updates/**/*.jpg filter=lfs diff=lfs merge=lfs -text
 content/updates/**/*.png filter=lfs diff=lfs merge=lfs -text
+content/updates/**/*.webm filter=lfs diff=lfs merge=lfs -text
