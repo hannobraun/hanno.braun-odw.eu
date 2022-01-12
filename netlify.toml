@@ -55,6 +55,12 @@ to     = "/notes/spacer"
 status = 301 # moved permanently
 force  = true
 
+[[redirects]]
+from   = "/notes/programmatic-cad"
+to     = "/notes/code-cad-applications"
+status = 301 # moved permanently
+force  = true
+
 
 # Feed redirects
 
