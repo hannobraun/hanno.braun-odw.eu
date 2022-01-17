@@ -85,10 +85,12 @@
                     src="/notes/{{ page.slug }}/{{ page.extra.image }}?nf_resize=fit&w=600"
                     alt="{{ page.title }}" />
             {% endif %}
-            {% if page.extra.intro %}
-                {{ page.extra.intro | markdown | safe }}
-            {% endif %}
         </a>
+
+        {% if page.extra.intro %}
+            {{ page.extra.intro | markdown | safe }}
+        {% endif %}
+
         <a class="goto" href="{{ page.path }}">Go to note...</a>
     </article>
 {% endmacro %}
