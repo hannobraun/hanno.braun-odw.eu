@@ -22,8 +22,10 @@ article {
         margin:  $margin-default auto;
     }
 
-    ul li {
-        margin-bottom: $margin-narrow;
+    ol, ul {
+        li {
+            margin-bottom: $margin-narrow;
+        }
     }
 }
 
