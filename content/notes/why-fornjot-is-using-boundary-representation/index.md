@@ -2,8 +2,6 @@
 title = "Why Fornjot is Using Boundary Representation"
 date  = 2022-01-24
 
-draft = true
-
 [extra]
 intro = """
 {{ ext_link(text="Fornjot", url="https://github.com/hannobraun/Fornjot") }}, the CAD program I'm working on, uses a technique called boundary representation (or b-rep, for short). This is the traditional technique, used by many of the big commercial CAD packages, and it wasn't my first choice. In this note, I'd like to explain where I started with Fornjot, and why I ended up with b-rep.
