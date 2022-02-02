@@ -1,8 +1,7 @@
 +++
 title = "Products"
 
-template      = "products.html"
-page_template = "products-page.html"
+template = "products.html"
 +++
 
 I'm working on some physical products that I would like to manufacture and sell, but currently none are available. Check back later, or [subscribe](/subscribe) to be notified.
