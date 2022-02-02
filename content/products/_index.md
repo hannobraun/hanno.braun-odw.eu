@@ -1,6 +1,5 @@
 +++
-title = "Products"
-
+title    = "Products"
 template = "products.html"
 +++
 
