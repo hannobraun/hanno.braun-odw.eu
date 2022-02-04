@@ -99,17 +99,3 @@ nav.pagination {
     border-radius:    $border-radius;
     background-color: $color-bg;
 }
-
-a.feedback {
-    position: fixed;
-    bottom: $margin-narrow;
-    right: $margin-narrow;
-
-    padding: $margin-narrow;
-    border-radius: $border-radius;
-
-    background-color: #bb00bb;
-    color: white;
-
-    font-weight: bold;
-}
