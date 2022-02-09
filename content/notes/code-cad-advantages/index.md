@@ -46,7 +46,7 @@ Again, a sufficiently advanced GUI-based CAD program can provide you with all of
 
 ### The Disadvantage
 
-There is one glaring disadvantage, of course: To use Code-CAD, you have to know how to program. And while that is a very useful skill to have in general, not everyone wants to invest the effort into learning that.
+There is one glaring disadvantage, of course: To use Code-CAD, you have to know how to write code. And while that is a very useful skill to have in general, not everyone wants to invest the effort into learning that.
 
 This is somewhat offset by the fact that learning a non-trivial GUI-based CAD application is also not easy. But if you're already proficient in a CAD program that you're reasonably happy with, learning a completely new skill to switch to something else might not be the best use of your time.
 
