@@ -6,7 +6,7 @@ date  = "2022-02-03T17:27:05Z"
 {{
     preview_image(
         path="/updates/20220203T172705Z/cork.jpg",
-        alt=""
+        alt="A big sheet of cork leather, in the cardboard box it was shipped in."
     )
 }}
 
