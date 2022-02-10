@@ -63,7 +63,7 @@ date  = \"{date}\"
         path=\"/updates/{title}/video.webm\",
         text=\"\"
     )
-}}
+}}}}
 
 This is an update.
 
