@@ -1,0 +1,36 @@
+article.product > ol {
+    list-style-type: none;
+    padding-left:    0;
+
+    max-width:    fit-content;
+    margin-left:  auto;
+    margin-right: auto;
+
+    margin-top:    $margin-wide;
+    margin-bottom: $margin-wide;
+
+    li {
+        display: inline;
+    }
+
+    li:not(:last-child)::after {
+        // That `\A` here, which inserts a line break on the left
+        // side of the middle dot, is a really dirty trick.
+        //
+        // It's not actually rendered as a line break, but it is
+        // rendered as whitespace with a certain width. This is done
+        // to counter-act whitespace on the right side of the middle
+        // dot, which stems from the markup and which I can't get
+        // rid of easily.
+        //
+        // Looks like there are CSS features in the pipeline that
+        // could help me solve this in a sane way[1], but we aren't
+        // there yet.
+        //
+        // [1]: `text-space-collapse: discard` on the parent should
+        //      do the trick, once available.
+        content: "\A·";
+
+        margin: $margin-narrow;
+    }
+}
