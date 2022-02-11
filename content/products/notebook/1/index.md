@@ -1,5 +1,8 @@
 +++
 title = "Notebook #1"
+
+[extra]
+number = 1
 +++
 
 {{
