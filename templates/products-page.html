@@ -5,6 +5,15 @@
 {% block main %}
     <article class="product">
         <h2>{{ section.title }}</h2>
+
         {{ section.content | safe }}
+
+        <ol>
+            {% for page in section.pages | reverse %}
+                <li>
+                    <a href="{{ page.path }}">#{{ page.extra.number }}</a>
+                </li>
+            {% endfor %}
+        </ol>
     </article>
 {% endblock main %}
