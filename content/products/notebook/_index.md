@@ -30,3 +30,20 @@ template = "products-page.html"
         alt="A closeup of bottom side of the notebook. The edges of the paper and cover are visibly rough."
     )
 }}
+
+Notebooks, [Made in Odenwald](https://hanno.braun-odw.eu/made-in-odenwald/2.jpg), directly from my workshop.
+
+
+### Perfect for your back pocket
+
+A **vegan cork leather soft cover** and a size of around 105x145 mm (each one's a bit different), these are **perfect for carrying around**.
+
+
+### One of a kind
+
+Each notebook is numbered, unique, and has its own web page. Check the links below to see all the notebooks I ever made.
+
+
+### Interested?
+
+Want one of your own? Then [let me know](/contact). There's currently a waiting list for the next few, and I'd be happy to put you on it. Pay what you want!
