@@ -32,6 +32,12 @@ targetPort = 1111
 # Page redirects
 
 [[redirects]]
+from   = "/products"
+to     = "/products/notebook"
+status = 302 # found
+force  = true
+
+[[redirects]]
 from   = "/home"
 to     = "/"
 status = 301 # moved permanently
