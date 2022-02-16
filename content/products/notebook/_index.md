@@ -36,7 +36,7 @@ Notebooks, [Made in Odenwald](https://hanno.braun-odw.eu/made-in-odenwald/2.jpg)
 
 ### Perfect for your back pocket
 
-A **vegan cork leather soft cover** and a size of around 105x145 mm (each one's a bit different), these are **perfect for carrying around**.
+With a **vegan cork leather soft cover** and a size of around 105x145 mm (each one's a bit different), these are **perfect for carrying around**.
 
 
 ### Open source
