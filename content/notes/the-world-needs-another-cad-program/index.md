@@ -6,7 +6,7 @@ date  = 2022-02-22
 intro = """
 You might be looking at the huge line-up of CAD software that is available today and think, what's the point of {{ ext_link(text="building another one", url="https://www.fornjot.app/") }}? Aren't there already enough options?
 
-Yes, there are a whole lot of options to choose from. And I tried to do that, again and again. Choose, I mean. But I've always come away unhappy from that experience.
+Yes, there are a whole lot of options to choose from. And I tried to do that, again and again. Choose, I mean. But I've always come away unhappy from the experience.
 """
 +++
 
@@ -37,7 +37,7 @@ At this point, most of what's left is open source. Works for me, I prefer open s
 
 ### 3. It is GUI-based.
 
-I know this one is controversial, but I think CAD should be code-first. [I've already written about that](/notes/code-cad-advantages), so head over to that article, if you're interested in learning more.
+I know this one is controversial, but I think CAD should be code-first. [I've already written about that](/notes/code-cad-advantages), so head over to that article, if you want to learn more.
 
 Here, we lose {{ ext_link(text="FreeCAD", url="https://www.freecadweb.org/") }}, {{ ext_link(text="SolveSpace", url="https://solvespace.com/") }} (both which I use from time to time), and a bunch of others.
 
@@ -53,7 +53,7 @@ I want to use something more powerful, and that rules out OpenSCAD and a whole b
 
 At this point, we're down to a number of less popular solutions that are based on {{ ext_link(text="OCCT", url="https://www.opencascade.com/open-cascade-technology/") }}. I'm aware of {{ ext_link(text="CadQuery", url="https://cadquery.readthedocs.io/en/latest/intro.html") }}, {{ ext_link(text="Cascade Studio", url="https://zalo.github.io/CascadeStudio/") }}, and {{ ext_link(text="pythonOCC", url="https://github.com/tpaviot/pythonocc") }}.
 
-These look great, but I do think there's a lot of room for innovation:
+These look great, but I think there's a lot of room for innovation:
 
 - **Experimentation in CAD kernels:** OCCT ist just one CAD kernel. I think it's worth taking a fresh look at the problem, using a different (some might say better) language, like {{ ext_link(text="Rust", url="https://www.rust-lang.org/") }}.
 - **More diverse selection of modeling language:** All the OCCT-based options mentioned above use either Python or JavaScript, which are all dynamically typed. While using a statically typed language wouldn't be better per se, it would be nice to have a wider range of options. Different languages are good for different use cases.
