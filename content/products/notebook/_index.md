@@ -33,22 +33,9 @@ template = "products-page.html"
 
 Notebooks, [Made in Odenwald](https://hanno.braun-odw.eu/made-in-odenwald/2.jpg), directly from my workshop.
 
+- **Perfect for your back pocket:** Size of around 105x145mm (each one's a bit different), rounded edges, and vegan cork leather soft cover.
+- **Open source:** Tools, materials, build instructions... {{ ext_link(text="everything is documented", url="https://github.com/hannobraun/notebook") }}!
+- **One of a kind:** Each notebook is numbered, unique, and has its own web page. Check the links below to see all the notebooks I ever made.
 
-### Perfect for your back pocket
-
-With a **vegan cork leather soft cover** and a size of around 105x145 mm (each one's a bit different), these are **perfect for carrying around**.
-
-
-### Open source
-
-This is an {{ ext_link(text="open source hardware product", url="https://github.com/hannobraun/notebook") }}. Tools, materials, build instructions... everything is documented!
-
-
-### One of a kind
-
-Each notebook is **numbered, unique, and has its own web page**. Check the links below to see all the notebooks I ever made.
-
-
-### Interested?
 
 **Want one of your own?** Then [let me know](/contact). There's currently a waiting list for the next few, and I'd be happy to put you on it. **Pay what you want!**
