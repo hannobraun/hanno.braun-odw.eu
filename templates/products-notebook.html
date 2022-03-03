@@ -1,0 +1,15 @@
+{% import "include/macros.html" as macros %}
+
+{% extends "extend/base.html" %}
+
+{% block main %}
+    <article class="product">
+        <h2>{{ page.title }}</h2>
+
+        {{ page.content | safe }}
+
+    </article>
+
+    {% set notebook = get_section(path="products/notebook/_index.md") %}
+    <a href="{{ notebook.path }}">🢐🢐 back to product page</a>
+{% endblock main %}

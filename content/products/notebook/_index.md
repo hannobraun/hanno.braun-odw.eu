@@ -1,6 +1,8 @@
 +++
-title    = "Notebook"
-template = "products-page.html"
+title = "Notebook"
+
+template      = "products-page.html"
+page_template = "products-notebook.html"
 +++
 
 {{
