@@ -3,6 +3,8 @@ title = "Notebook"
 
 template      = "products-page.html"
 page_template = "products-notebook.html"
+
+sort_by = "title"
 +++
 
 {{
