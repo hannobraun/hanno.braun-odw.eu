@@ -9,133 +9,133 @@ ZOLA_VERSION = "0.14.1"
 command = "zola build --base-url $DEPLOY_PRIME_URL"
 
 [dev]
-framework  = "#custom"
-command    = "zola serve"
+framework = "#custom"
+command = "zola serve"
 targetPort = 1111
 
 
 # Custom headers
 
 [[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'none'; img-src 'self'; media-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self' https://*.braun-odw.eu https://static.mailerlite.com"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "DENY"
+for = "/*"
+[headers.values]
+Content-Security-Policy = "default-src 'none'; img-src 'self'; media-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self' https://*.braun-odw.eu https://static.mailerlite.com"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
 
 [[headers]]
-  for = "/.well-known/matrix/client"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
+for = "/.well-known/matrix/client"
+[headers.values]
+Access-Control-Allow-Origin = "*"
 
 
 # Page redirects
 
 [[redirects]]
-from   = "/products"
-to     = "/products/notebook"
-status = 302 # found
-force  = true
+from = "/products"
+to = "/products/notebook"
+status = 302              # found
+force = true
 
 [[redirects]]
-from   = "/home"
-to     = "/"
-status = 301 # moved permanently
-force  = true
+from = "/home"
+to = "/"
+status = 301   # moved permanently
+force = true
 
 [[redirects]]
-from   = "/project/*"
-to     = "/notes/:splat"
-status = 301 # moved permanently
-force  = true
+from = "/project/*"
+to = "/notes/:splat"
+status = 301         # moved permanently
+force = true
 
 [[redirects]]
-from   = "/projects/*"
-to     = "/notes/:splat"
-status = 301 # moved permanently
-force  = true
+from = "/projects/*"
+to = "/notes/:splat"
+status = 301         # moved permanently
+force = true
 
 [[redirects]]
-from   = "/products/spacer"
-to     = "/notes/spacer"
-status = 301 # moved permanently
-force  = true
+from = "/products/spacer"
+to = "/notes/spacer"
+status = 301              # moved permanently
+force = true
 
 [[redirects]]
-from   = "/notes/programmatic-cad"
-to     = "/notes/code-cad-applications"
-status = 301 # moved permanently
-force  = true
+from = "/notes/programmatic-cad"
+to = "/notes/code-cad-applications"
+status = 301                        # moved permanently
+force = true
 
 
 # Feed redirects
 
 [[redirects]]
-from   = "rss.xml"
-to     = "atom.xml"
-status = 301 # moved permanently
-force  = true
+from = "rss.xml"
+to = "atom.xml"
+status = 301     # moved permanently
+force = true
 
 
 # API proxy
 
 [[redirects]]
-from   = "/api/*"
-to     = "https://api.braun-odw.eu/:splat"
+from = "/api/*"
+to = "https://api.braun-odw.eu/:splat"
 status = 200
-force  = true
+force = true
 headers = { Authorization = "Basic Wa81oPIR1PtMIJ3cFgkvyCXXeHESx4CV" }
 
 
 # Secondary domains
 
 [[redirects]]
-from   = "https://braun-odw.eu/*"
-to     = "https://hanno.braun-odw.eu/:splat"
+from = "https://braun-odw.eu/*"
+to = "https://hanno.braun-odw.eu/:splat"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
-from   = "https://www.braun-odw.eu/*"
-to     = "https://hanno.braun-odw.eu/:splat"
+from = "https://www.braun-odw.eu/*"
+to = "https://hanno.braun-odw.eu/:splat"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
-from   = "https://hannobraun.netlify.app/*"
-to     = "https://hanno.braun-odw.eu/:splat"
+from = "https://hannobraun.netlify.app/*"
+to = "https://hanno.braun-odw.eu/:splat"
 status = 301
-force  = true
+force = true
 
 
 # Legacy domains
 
 [[redirects]]
-from   = "https://hannobraun.de/"
-to     = "https://hanno.braun-odw.eu/"
+from = "https://hannobraun.de/"
+to = "https://hanno.braun-odw.eu/"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
-from   = "https://hannobraun.de/*"
-to     = "https://archive.braun-odw.eu/:splat"
+from = "https://hannobraun.de/*"
+to = "https://archive.braun-odw.eu/:splat"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
-from   = "https://www.hannobraun.de/*"
-to     = "https://hannobraun.de/:splat"
+from = "https://www.hannobraun.de/*"
+to = "https://hannobraun.de/:splat"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
-from   = "https://madeby.hannobraun.de/*"
-to     = "https://hanno.braun-odw.eu/:splat"
+from = "https://madeby.hannobraun.de/*"
+to = "https://hanno.braun-odw.eu/:splat"
 status = 301
-force  = true
+force = true
 
 [[redirects]]
-from   = "https://made-by.braun-odw.eu/*"
-to     = "https://hanno.braun-odw.eu/:splat"
+from = "https://made-by.braun-odw.eu/*"
+to = "https://hanno.braun-odw.eu/:splat"
 status = 301
-force  = true
+force = true
