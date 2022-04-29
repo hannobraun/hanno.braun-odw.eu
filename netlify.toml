@@ -87,55 +87,10 @@ force = true
 headers = { Authorization = "Basic Wa81oPIR1PtMIJ3cFgkvyCXXeHESx4CV" }
 
 
-# Secondary domains
-
-[[redirects]]
-from = "https://braun-odw.eu/*"
-to = "https://hanno.braun-odw.eu/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://www.braun-odw.eu/*"
-to = "https://hanno.braun-odw.eu/:splat"
-status = 301
-force = true
+# Secondary domain
 
 [[redirects]]
 from = "https://hannobraun.netlify.app/*"
-to = "https://hanno.braun-odw.eu/:splat"
-status = 301
-force = true
-
-
-# Legacy domains
-
-[[redirects]]
-from = "https://hannobraun.de/"
-to = "https://hanno.braun-odw.eu/"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://hannobraun.de/*"
-to = "https://archive.braun-odw.eu/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://www.hannobraun.de/*"
-to = "https://hannobraun.de/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://madeby.hannobraun.de/*"
-to = "https://hanno.braun-odw.eu/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://made-by.braun-odw.eu/*"
 to = "https://hanno.braun-odw.eu/:splat"
 status = 301
 force = true
