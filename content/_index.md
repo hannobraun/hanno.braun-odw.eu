@@ -4,7 +4,7 @@ title = "Home"
 
 <img
     class="about"
-    src="/about/hanno-braun.jpg"
+    src="/hanno-braun.jpg"
     alt="picture of Hanno Braun" />
 
 Hey, I'm Hanno! I'm a self-employed maker and software developer, and vegan living in the beautiful [Odenwald](/made-in-odenwald/2.jpg) region in Germany, Europe.
