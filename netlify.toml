@@ -45,6 +45,12 @@ status = 301    # moved permanently
 force = true
 
 [[redirects]]
+from = "/fornjot"
+to = "/"
+status = 301      # moved permanently
+force = true
+
+[[redirects]]
 from = "/project/*"
 to = "/notes/:splat"
 status = 301         # moved permanently
