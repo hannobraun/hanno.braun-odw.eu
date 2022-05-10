@@ -3,6 +3,8 @@
 {% block main %}
     {{ section.content | safe }}
 
+    <hr />
+
     {% set updates = get_section(path="updates/_index.md") %}
     {% set notes = get_section(path="notes/_index.md") %}
 
