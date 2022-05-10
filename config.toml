@@ -13,7 +13,6 @@ paths = "safe"
 
 [extra.pages]
 "/"          = "Home"
-"/about"     = "About"
 "/updates"   = "Updates"
 "/notes"     = "Notes"
 "/products"  = "Products"
