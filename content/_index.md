@@ -9,6 +9,14 @@ title = "Home"
 
 Hey, I'm Hanno! I'm a self-employed software developer and maker, living in the beautiful [Odenwald](/made-in-odenwald/2.jpg) region in Germany.
 
+
+### Fornjot
+
+I'm working on [Fornjot](https://www.fornjot.app/), an early-stage project to create a next-generation, code-first CAD application. I had been experimenting with this for years, until I made it my primary professional focus in early 2022.
+
+If you're interested, check out [Fornjot's website](https://www.fornjot.app/) or the [GitHub repository](https://github.com/hannobraun/Fornjot). If you want to support the project, [please consider sponsoring me](https://github.com/sponsors/hannobraun).
+
+
 ### Interests
 
 I'm interested in making, automation, manufacturing, and small businesses that do all that. I enjoy nature (which is why I live pretty much in the middle of it), and believe we should do what we can to preserve it.
