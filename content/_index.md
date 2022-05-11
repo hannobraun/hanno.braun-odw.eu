@@ -17,15 +17,8 @@ I'm working on [Fornjot](https://www.fornjot.app/), an early-stage project to cr
 If you're interested, check out [Fornjot's website](https://www.fornjot.app/) or the [GitHub repository](https://github.com/hannobraun/Fornjot). If you want to support the project, [please consider sponsoring me](https://github.com/sponsors/hannobraun).
 
 
-### Interests
+### Side Projects
 
-I'm interested in making, automation, manufacturing, and small businesses that do all that. I enjoy nature (which is why I live pretty much in the middle of it), and believe we should do what we can to preserve it.
+I'm interested in making and small-scale manufacturing, and I'm working on a bunch of side projects related to that. Most notably, [I make (and occasionally sell) notebooks](/products/notebook).
 
-This website is dedicated to these topics, and I keep adding content here regularly. If you enjoy it (or don't) [please let me know](/contact)! I appreciate your feedback.
-
-I'm also a big believer in open source, and try to do as much of my work in the open as is practical. Check out my {{ ext_link(url="https://github.com/hannobraun", text="GitHub profile") }}, if you're interested in what I'm up to.
-
-
-### Let's talk!
-
-Are you interested in any of these topics? If so, [please get in touch](/contact)! I always enjoy talking to like-minded individuals. Don't have anything to say right now, but want to stay up to date? Consider [subscribing to my content](/subscribe).
+I'm also a big believer in open source, and do most of my work out in the open. Check out [my GitHub profile](https://github.com/hannobraun) or read my [updates](/updates) to follow along.
