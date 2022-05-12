@@ -9,6 +9,8 @@
 {% block main %}
     {{ macros::section_title() }}
 
+    {{ section.content | safe }}
+
     <ol class="feed">
         {% for page in paginator.pages -%}
             <li>
