@@ -10,4 +10,4 @@ page_template = "updates-page.html"
 generate_feed = true
 +++
 
-I have a daily habit of working on side projects, and I've come to appreciate the positive side effects of tracking these habits in public. Whenever the daily work I do doesn't result in a [commit on GitHub](https://github.com/hannobraun), I like to make an entry here.
+I'm a big believer in open source, and I do most of my work out in the open. Most of that {{ ext_link(text="happens on GitHub", url="https://github.com/hannobraun") }}, but I also post some of the stuff I do here. Especially when doing something that's not software, I like to make an entry here.
