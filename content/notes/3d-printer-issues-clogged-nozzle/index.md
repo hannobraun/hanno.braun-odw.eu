@@ -83,7 +83,7 @@ Quite a bit of material came out, then some fumes. Once nothing was happening an
 
 The Prusa Mini's built-in first-layer calibration procedure assumes that the default 0.4mm nozzle is equipped. Running it with the 0.25mm nozzle caused it to push more material through than intended.
 
-I should not have used the built-in calibration procedure in this case. In fact, I'm not using it at all anymore, and have come up with something better. I plan to write about that soon, so [please subscribe](/subscribe), if you don't want to miss it.
+I should not have used the built-in calibration procedure in this case. In fact, I'm not using it at all anymore, and have come up with something better. I plan to write about that soon.
 
 
 ### Conclusion

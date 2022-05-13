@@ -34,7 +34,7 @@ Many licenses exist that meet these criteria. Most of them fall into one of two 
 
 A permissive license allows many freedoms in changing and distributing the source, while making little to no requirements. A copyleft license only allows the source to be redistributed under the same license, which can complicate or outright prevent commercial use.
 
-Personally, I'm a proponent of permissive licenses. I plan to write about that in the future, so [stay tuned](/subscribe).
+Personally, I'm a proponent of permissive licenses.
 
 
 ### Benefits for Users
