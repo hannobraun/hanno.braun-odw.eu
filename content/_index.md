@@ -12,7 +12,7 @@ Hey, I'm Hanno! I'm a self-employed software developer and maker, living in the 
 
 ### Fornjot
 
-I'm working on [Fornjot](https://www.fornjot.app/), an early-stage project to create a next-generation, code-first CAD application. I've been experimenting with this for years on the side, and it's now my main professional focus.
+I work on [Fornjot](https://www.fornjot.app/), an early-stage project to create a next-generation, code-first CAD application. I've been experimenting with this for years on the side, and it's now my main professional focus.
 
 If you're interested, check out [Fornjot's website](https://www.fornjot.app/) or the [GitHub repository](https://github.com/hannobraun/Fornjot). If you want to support the project, [please consider sponsoring me](https://github.com/sponsors/hannobraun).
 
