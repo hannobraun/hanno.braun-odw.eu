@@ -10,19 +10,6 @@
 
     <div class="feeds">
         <section>
-            <h3>Latest Updates</h3>
-            <ol class="feed">
-                {% for page in updates.pages | slice(end=3) -%}
-                    <li>
-                        {{ macros::update(page=page, show_permalink=true) }}
-                    </li>
-                {%- endfor %}
-            </ol>
-            <div class="more">
-                <a href="/updates">More updates...</a>
-            </div>
-        </section>
-        <section>
             <h3>Latest Notes</h3>
             <ol class="feed">
                 {% for page in notes.pages | slice(end=3) -%}
@@ -33,6 +20,19 @@
             </ol>
             <div class="more">
                 <a href="/notes">More notes...</a>
+            </div>
+        </section>
+        <section>
+            <h3>Latest Updates</h3>
+            <ol class="feed">
+                {% for page in updates.pages | slice(end=3) -%}
+                    <li>
+                        {{ macros::update(page=page, show_permalink=true) }}
+                    </li>
+                {%- endfor %}
+            </ol>
+            <div class="more">
+                <a href="/updates">More updates...</a>
             </div>
         </section>
     </div>
