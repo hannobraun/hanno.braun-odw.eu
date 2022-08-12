@@ -11,8 +11,8 @@
     {{ macros::update(page=page, show_permalink=false) }}
 
     <nav class="pagination">
-        {% if page.earlier %}
-            <a href ="{{ page.earlier.path }}">
+        {% if page.higher %}
+            <a href ="{{ page.higher.path }}">
                 🢐 previous update
             </a>
         {% else %}
@@ -20,8 +20,8 @@
                 🢐 previous update
             </p>
         {% endif %}
-        {% if page.later %}
-            <a href="{{ page.later.path }}">
+        {% if page.lower %}
+            <a href="{{ page.lower.path }}">
                 next update 🢒
             </a>
         {% else %}
