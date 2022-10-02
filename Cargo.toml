@@ -5,3 +5,6 @@ edition = "2021"
 
 [dependencies]
 anyhow = "*"
+
+[dependencies.site-builder]
+git = "https://github.com/hannobraun/site-builder.git"
