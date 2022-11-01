@@ -4,7 +4,7 @@ date    = 2022-01-03
 updated = 2022-11-01
 
 [extra]
-image = "notebook-closed.jpg"
+image = "original-build/notebook-closed.jpg"
 intro = """
 One day, I wanted to make a notebook. I liked it, so I made more. Then I got tired of it and stopped. This is an archive of the material that I published about this.
 """
