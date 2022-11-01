@@ -18,12 +18,12 @@ This was originally the report of the first notebook build. Moved that to a sub-
 
 I started out with a single notebook. I published a <a href="/notes/notebook/original-build/">detailed report about this original build</a>. I made 6 notebooks overall, and created a page to present each one:
 
-- <a href="/products/notebook/1/">Notebook #1</a>
-- <a href="/products/notebook/2/">Notebook #2</a>
-- <a href="/products/notebook/3/">Notebook #3</a>
-- <a href="/products/notebook/4/">Notebook #4</a>
-- <a href="/products/notebook/5/">Notebook #5</a>
-- <a href="/products/notebook/6/">Notebook #6</a>
+- <a href="/notes/notebook/1/">Notebook #1</a>
+- <a href="/notes/notebook/2/">Notebook #2</a>
+- <a href="/notes/notebook/3/">Notebook #3</a>
+- <a href="/notes/notebook/4/">Notebook #4</a>
+- <a href="/notes/notebook/5/">Notebook #5</a>
+- <a href="/notes/notebook/6/">Notebook #6</a>
 
 These notebooks were an open source hardware product (emphasis on *open source*, less so on the *hard* part). I collected all documentation on how to source materials and how to build them in a GitHub repository: {{ ext_link(text="https://github.com/hannobraun/notebooks", url="https://github.com/hannobraun/notebooks") }}
 
