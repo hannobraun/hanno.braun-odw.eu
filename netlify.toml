@@ -74,6 +74,12 @@ to = "/notes/code-cad-applications"
 status = 301                        # moved permanently
 force = true
 
+[[redirects]]
+from = "/products/notebook/*"
+to = "/notes/notebook/:splat"
+status = 301                  # moved permanently
+force = true
+
 
 # Feed redirects
 
