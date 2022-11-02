@@ -17,7 +17,7 @@ That is what I wanted to replicate with my own build. Here's the result.
 
 {{
     preview_image(
-        path="/notes/notebook/notebook-closed.jpg",
+        path="/notes/notebook/original-build/notebook-closed.jpg",
         alt="A closed notebook, bound in cork leather."
     )
 }}
@@ -26,7 +26,7 @@ It's far from perfect, but I'm very happy with it. Especially for a first try.
 
 {{
     preview_image(
-        path="/notes/notebook/notebook-open.jpg",
+        path="/notes/notebook/original-build/notebook-open.jpg",
         alt="An open notebook with blank pages. The sides of the paper are visibly rough."
     )
 }}
@@ -49,7 +49,7 @@ There were a few tools I needed. The only substantial one, which I decided to bu
 
 {{
     preview_image(
-        path="/notes/notebook/book-press.jpg",
+        path="/notes/notebook/original-build/book-press.jpg",
         alt="A book press, built from two cutting boards and some bolts and wing nuts from the hardware store."
     )
 }}
@@ -88,14 +88,14 @@ First problem: I have A4 paper, but need (roughly) A5-sized paper. Solution: Fol
 
 {{
     preview_image(
-        path="/notes/notebook/01-a4-folded.jpg",
+        path="/notes/notebook/original-build/01-a4-folded.jpg",
         alt="A stack of folded A4 paper."
     )
 }}
 
 {{
     video(
-        path="/notes/notebook/02-a4-cut.webm",
+        path="/notes/notebook/original-build/02-a4-cut.webm",
         text="Cutting the fold off of folded A4 paper to create A5-ish paper."
     )
 }}
@@ -104,7 +104,7 @@ Repeating that a bunch of times gave me a nice stack of A5-ish paper.
 
 {{
     preview_image(
-        path="/notes/notebook/03-a5-stack.jpg",
+        path="/notes/notebook/original-build/03-a5-stack.jpg",
         alt="A stack of A5-ish sized paper."
     )
 }}
@@ -113,7 +113,7 @@ Next, I folded it and stacked it in groups of 4.
 
 {{
     preview_image(
-        path="/notes/notebook/04-a5-folded.jpg",
+        path="/notes/notebook/original-build/04-a5-folded.jpg",
         alt="A stack of folded A5-ish sized paper, stacked in groups of 4."
     )
 }}
@@ -124,7 +124,7 @@ Now I needed to needed to make the signatures. A signature is a group of 4 folde
 
 {{
     video(
-        path="/notes/notebook/05-signature-grouping.webm",
+        path="/notes/notebook/original-build/05-signature-grouping.webm",
         text="Nesting the groups of papers into one another."
     )
 }}
@@ -135,7 +135,7 @@ To create a text block, the signatures are sewn together. For that, I needed hol
 
 {{
     preview_image(
-        path="/notes/notebook/06-signatures-marked.jpg",
+        path="/notes/notebook/original-build/06-signatures-marked.jpg",
         alt="The stack of signatures, with markings to show where holes should be made."
     )
 }}
@@ -144,7 +144,7 @@ Making the holes with the awl was straight-forward.
 
 {{
     video(
-        path="/notes/notebook/07-signatures-holes.webm",
+        path="/notes/notebook/original-build/07-signatures-holes.webm",
         text="Nesting the groups of papers into one another."
     )
 }}
@@ -153,7 +153,7 @@ At this point, I spotted this rare and wondrous sight: a wild shop dog.
 
 {{
     preview_image(
-        path="/notes/notebook/shop-dog.jpg",
+        path="/notes/notebook/original-build/shop-dog.jpg",
         alt="A dog lying under the workshop table, between my feet."
     )
 }}
@@ -164,7 +164,7 @@ Next, I sewed the signatures together to make the text block.
 
 {{
     preview_image(
-        path="/notes/notebook/08-text-block.jpg",
+        path="/notes/notebook/original-build/08-text-block.jpg",
         alt="The signatures, sewn together into a text block."
     )
 }}
@@ -175,7 +175,7 @@ I glued the text block using two coats of PVA glue.
 
 {{
     preview_image(
-        path="/notes/notebook/09-text-block-glued.jpg",
+        path="/notes/notebook/original-build/09-text-block-glued.jpg",
         alt="The text block, pressed together in the book pressed, with PVA glue applied along its spine."
     )
 }}
@@ -188,7 +188,7 @@ I just glued a piece of cork leather directly on the text block.
 
 {{
     preview_image(
-        path="/notes/notebook/10-cover-glue-up.jpg",
+        path="/notes/notebook/original-build/10-cover-glue-up.jpg",
         alt="The text block, a piece of cork leather glued around it as the cover, in the book press."
     )
 }}
@@ -197,7 +197,7 @@ The glue-up resulted in the signatures moving, and a large gap forming between t
 
 {{
     preview_image(
-        path="/notes/notebook/11-notebook-spine-gap.jpg",
+        path="/notes/notebook/original-build/11-notebook-spine-gap.jpg",
         alt="A close-up of the notebook, shown from the side. The signatures have moved relative to each other. The spine of the text block is no longer straight, an there's a large gap between the spine and the cover in that location."
     )
 }}
@@ -206,7 +206,7 @@ This is the aspect of the build I'm least happy with. Next time, I'll definitely
 
 {{
     preview_image(
-        path="/notes/notebook/12-notebook-unfinished.jpg",
+        path="/notes/notebook/original-build/12-notebook-unfinished.jpg",
         alt="The notebook, glued up but not yet finished. The edges of the cover and paper are not aligned with each other."
     )
 }}
@@ -215,7 +215,7 @@ To finish the notebook, all that was left to do at this point was to cut off som
 
 {{
     preview_image(
-        path="/notes/notebook/13-notebook-edge-cutting.jpg",
+        path="/notes/notebook/original-build/13-notebook-edge-cutting.jpg",
         alt="The notebook, a combination square held to it to allow for cutting in a straight, at a right angle to the spine."
     )
 }}
@@ -226,7 +226,7 @@ Fortunately, a bit of sand paper did the trick.
 
 {{
     preview_image(
-        path="/notes/notebook/14-notebook-sanding.jpg",
+        path="/notes/notebook/original-build/14-notebook-sanding.jpg",
         alt="The notebook, held in the book press. The visible face having been sanded to be a bit straighter than it was directly after the cut."
     )
 }}
@@ -237,7 +237,7 @@ The result still looked a bit ragged. Maybe this could be improved using another
 
 {{
     preview_image(
-        path="/notes/notebook/15-notebook-one-face-finished.jpg",
+        path="/notes/notebook/original-build/15-notebook-one-face-finished.jpg",
         alt="The notebook up close, with one face sanded to be reasonably straight. The look is still somewhat ragged."
     )
 }}
@@ -252,7 +252,7 @@ I already started using it, to sketch some ideas. Using a notebook I made myself
 
 {{
     preview_image(
-        path="/notes/notebook/notebook-mark.jpg",
+        path="/notes/notebook/original-build/notebook-mark.jpg",
         alt="The notebook, showing the following mark: Notebook · Hanno Braun · 2021-W48 · #1 · Made in Odenwald"
     )
 }}
