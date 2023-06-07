@@ -4,6 +4,3 @@ content/notes/**/*.webm filter=lfs diff=lfs merge=lfs -text
 content/products/**/*.jpg filter=lfs diff=lfs merge=lfs -text
 content/products/**/*.png filter=lfs diff=lfs merge=lfs -text
 content/products/**/*.webm filter=lfs diff=lfs merge=lfs -text
-content/updates/**/*.jpg filter=lfs diff=lfs merge=lfs -text
-content/updates/**/*.png filter=lfs diff=lfs merge=lfs -text
-content/updates/**/*.webm filter=lfs diff=lfs merge=lfs -text
