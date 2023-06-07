@@ -19,6 +19,6 @@ If you're interested, check out [Fornjot's website](https://www.fornjot.app/) or
 
 ### Side Projects
 
-I'm interested in making and small-scale manufacturing, and I'm working on a bunch of side projects related to that. Most notably, [I make (and occasionally sell) notebooks](/products/notebook).
+I'm interested in making and small-scale manufacturing, and I'm working on a bunch of side projects related to that. [I used to make (and occasionally sell) notebooks](/products/notebook).
 
 I'm also a big believer in open source, and do most of my work out in the open. Check out [my GitHub profile](https://github.com/hannobraun) or read my [updates](/updates) to follow along.
