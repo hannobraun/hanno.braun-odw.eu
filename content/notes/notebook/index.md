@@ -27,6 +27,8 @@ I started out with a single notebook. I published a <a href="/notes/notebook/ori
 
 These notebooks were an open source hardware product (emphasis on *open source*, less so on the *hard* part). I collected all documentation on how to source materials and how to build them in a GitHub repository: {{ ext_link(text="https://github.com/hannobraun/notebooks", url="https://github.com/hannobraun/notebooks") }}
 
+I also posted <a href="/updates/">updates about about the process on this site</a>, whenever I made a bit of progress that I wanted to share.
+
 I eventually stopped making them. I didn't have the right tools, which made the process hard to control, tedious, and eventually frustrating. I didn't want to invest any more in tooling (either in the form of money or labor), so I decided to call it quits.
 
 Overall, it was a fun experiment on how to manufacture a specific kind of product. I even sold a few, which was a nice feeling. I hope to eventually repeat that, but probably with something else.

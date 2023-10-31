@@ -1,0 +1,35 @@
+{% import "include/macros.html" as macros %}
+
+{% extends "extend/base.html" %}
+
+{% block feed %}
+    {% set feed = "/" ~ page.components[0] ~ "/atom.xml" %}
+{% endblock %}
+
+{% block main %}
+    {{ macros::back(path="/updates") }}
+    {{ macros::update(page=page, show_permalink=false) }}
+
+    <nav class="pagination">
+        {% if page.higher %}
+            <a href ="{{ page.higher.path }}">
+                🢐 previous update
+            </a>
+        {% else %}
+            <p class="disabled">
+                🢐 previous update
+            </p>
+        {% endif %}
+        {% if page.lower %}
+            <a href="{{ page.lower.path }}">
+                next update 🢒
+            </a>
+        {% else %}
+            <p class="disabled">
+                next update 🢒
+            </p>
+        {% endif %}
+    </nav>
+
+    {{ macros::back(path="/updates") }}
+{% endblock %}
