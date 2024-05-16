@@ -13,12 +13,6 @@ Want to get in touch? Here's how to contact me:
             </td>
         </tr>
         <tr>
-            <th>Matrix</th>
-            <td>
-                {{ matrix() }}
-            </td>
-        </tr>
-        <tr>
             <th>Deliveries</th>
             <td>
                 <p>Hanno Braun</p>
